@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "[HRM] GUI", "[HRM] GUI\[HRM] GUI.csproj", "{C85A8AE7-ADFB-4EA1-9F61-6B51F3581072}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "[HRM] GUI.Web", "[HRM] GUI.Web\[HRM] GUI.Web.csproj", "{1A489091-7858-478B-8632-F1C829F24B88}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C85A8AE7-ADFB-4EA1-9F61-6B51F3581072}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C85A8AE7-ADFB-4EA1-9F61-6B51F3581072}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C85A8AE7-ADFB-4EA1-9F61-6B51F3581072}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C85A8AE7-ADFB-4EA1-9F61-6B51F3581072}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1A489091-7858-478B-8632-F1C829F24B88}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A489091-7858-478B-8632-F1C829F24B88}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A489091-7858-478B-8632-F1C829F24B88}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A489091-7858-478B-8632-F1C829F24B88}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

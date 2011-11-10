@@ -1,0 +1,5 @@
+C:\Users\Nguyen\Dropbox\Capstone Project\hrm-k14vlu\Requirement Management\Software Requirement Specification\[HRM] GUI\[HRM] GUI.Web\bin\[HRM] GUI.Web.dll
+C:\Users\Nguyen\Dropbox\Capstone Project\hrm-k14vlu\Requirement Management\Software Requirement Specification\[HRM] GUI\[HRM] GUI.Web\bin\[HRM] GUI.Web.pdb
+C:\Users\Nguyen\Dropbox\Capstone Project\hrm-k14vlu\Requirement Management\Software Requirement Specification\[HRM] GUI\[HRM] GUI.Web\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Nguyen\Dropbox\Capstone Project\hrm-k14vlu\Requirement Management\Software Requirement Specification\[HRM] GUI\[HRM] GUI.Web\obj\Debug\[HRM] GUI.Web.dll
+C:\Users\Nguyen\Dropbox\Capstone Project\hrm-k14vlu\Requirement Management\Software Requirement Specification\[HRM] GUI\[HRM] GUI.Web\obj\Debug\[HRM] GUI.Web.pdb
