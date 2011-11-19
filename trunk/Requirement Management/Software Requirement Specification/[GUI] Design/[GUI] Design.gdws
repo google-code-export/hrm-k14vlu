@@ -1,7 +1,7 @@
 <Workspace
 	CID = "1"
 	NextCID = "2"
-	IconCategory = "Documents">
+	IconCategory = "Widgets">
 	<OpenFiles
 		CID = "1"
 		LastActive = "3">
@@ -16,6 +16,10 @@
 		<File
 			RootPath = "$Absolute"
 			RelativePathname = "C:\Users\Nguyen\Dropbox\Capstone Project\hrm-k14vlu\Requirement Management\Software Requirement Specification\[HRM] GUI\QLNL.gui"
+			ViewSettings = ""/>
+		<File
+			RootPath = "$Absolute"
+			RelativePathname = "C:\Users\Nguyen\Dropbox\Capstone Project\hrm-k14vlu\Requirement Management\Software Requirement Specification\[HRM] GUI\HRM.gui"
 			ViewSettings = ""/>
 	</OpenFiles>
 </Workspace>
