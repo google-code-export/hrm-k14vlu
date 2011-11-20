@@ -1,0 +1,149 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="962ee2f4-984c-4599-8629-089f96471532" name="Level3_PersonalInformationManagement_View" linkedPackageId="18cd6612-08ba-4f62-81db-c3b988bcc8a2" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <ownedCommentsInternal>
+    <comment Id="db75545b-b311-4799-9ea4-246068bdca57">
+      <elementDefinition Id="2dfb8cf4-3cf3-4c93-b940-e0f974ebfa3b" />
+      <body>View Personal Information</body>
+    </comment>
+  </ownedCommentsInternal>
+  <profileInstances>
+    <packageHasProfileInstances Id="5a89d5c8-f3ba-476e-96ba-003e7533e92b">
+      <profileInstance Id="baa72870-b094-4b49-b9ec-43e3206337ff" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="611b1f67-6ed3-4b4a-812a-a2e543a1b2ce">
+      <profileInstance Id="4eb58ff3-3423-4e98-a804-c9f9c450a58e" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="2a973ed9-1faa-441d-bdc4-0dffc29ac0ea" name="HR staff" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="701e3d2a-f81a-4ff1-9afa-f57f26e622d1" />
+        <targetEnds>
+          <association Id="c555e479-b6f6-414c-8c0f-53b4c1f0317f" isDerived="false" sourceEndRoleName="HR staff" targetEndRoleName="View Summary Information" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="55a23e07-dd6f-4eb7-a8c4-7f77d6980f12" LastKnownName="View Summary Information" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="5e9f3fa1-eb7e-44c9-982c-c5f76ba61d5a" name="HR staff" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="8369cba4-98d4-448f-bf03-641797f4832a" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="f6198f55-45bc-44a4-837b-f627e3a92b84" name="View Summary Information" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="2062e316-ebe8-483d-bb2e-7edbcce40dcc" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="dba0aec2-753d-475e-a86c-f7533ff1993e" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="fb367756-d6f8-4686-bbbd-e07ed2170993" name="Staff" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="23f5a0ee-ba8a-4c2f-b813-56e721a04fdd" />
+        <targetEnds>
+          <association Id="4c881df2-406c-4273-a6ee-d990fa8a1370" isDerived="false" sourceEndRoleName="Staff" targetEndRoleName="View Detail Information" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="6c5ee891-18e4-4071-8c2d-35ace22ec5cb" LastKnownName="View Detail Information" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="3eb57abe-8ddb-4541-9808-4444ca3e21cb" name="Staff" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="b1e1695c-1221-465b-a383-5fc40050539b" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="73cdae3e-454c-4b68-81c2-e1737293a796" name="View Detail Information" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="2aaa5e87-e152-462e-9399-8f41c807f73e" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="55a6df47-28e2-4176-9fa1-cc01902a3e00" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="55a23e07-dd6f-4eb7-a8c4-7f77d6980f12" name="View Summary Information" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="6e69de48-8d32-45a4-86d5-9345f965d507" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="6c5ee891-18e4-4071-8c2d-35ace22ec5cb" name="View Detail Information" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="a430771d-3012-42e7-888e-b881a6b2a733" />
+        <extendedCases>
+          <extend Id="b556b35e-2d68-4ed8-af71-bf2fabfc8462">
+            <useCaseMoniker Id="55a23e07-dd6f-4eb7-a8c4-7f77d6980f12" LastKnownName="View Summary Information" />
+            <elementDefinition Id="2978930d-40c1-4b4b-8013-322927f0a3d4" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="4c2a4b1d-b793-4850-bf7d-47a3624ca2c0" name="View Extend Information" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="2ebd8f5d-4aaf-49ea-9452-51166ccb185f" />
+        <extendedCases>
+          <extend Id="3d6a680f-e6f3-49c5-81d0-fa2b9ecba864">
+            <useCaseMoniker Id="6c5ee891-18e4-4071-8c2d-35ace22ec5cb" LastKnownName="View Detail Information" />
+            <elementDefinition Id="9eaf172c-8882-4fbb-86e1-5a02ded4e4d4" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="6936120e-575a-482c-8787-290bedc5e23a" name="Edit Personal Information" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="976d5f94-7ef1-4b8c-a8de-85a937250abd" />
+        <extendedCases>
+          <extend Id="866e0bc6-92d2-43a4-8814-915a091774ba">
+            <useCaseMoniker Id="6c5ee891-18e4-4071-8c2d-35ace22ec5cb" LastKnownName="View Detail Information" />
+            <elementDefinition Id="9351a36b-e13b-47f5-92a1-cf0ce5504e7a" />
+          </extend>
+          <extend Id="35924048-39f1-49b4-81ab-3e9300f4ba58">
+            <useCaseMoniker Id="4c2a4b1d-b793-4850-bf7d-47a3624ca2c0" LastKnownName="View Extend Information" />
+            <elementDefinition Id="b9ef65d8-1155-4620-a8aa-b0d1bf6efb37" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="18f1e43b-ccb2-48fa-bff4-993034295b10" name="Sort" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="da8a19a0-23e6-43b1-80bd-8cc083b9b46f" />
+        <extendedCases>
+          <extend Id="23561747-f3f6-4219-a493-6207205d15b5">
+            <useCaseMoniker Id="55a23e07-dd6f-4eb7-a8c4-7f77d6980f12" LastKnownName="View Summary Information" />
+            <elementDefinition Id="cf4cbd76-0929-4fbc-a0f2-6bfe4a02df04" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="0bbc8978-5e21-4b54-9a99-fbd5fc3ffacf" name="Filter" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="e36e82fd-da42-4ffe-a3a2-ad4c2d4ced7a" />
+        <extendedCases>
+          <extend Id="bdafbb3f-a6b8-4221-83a1-dfc57d6a887e">
+            <useCaseMoniker Id="55a23e07-dd6f-4eb7-a8c4-7f77d6980f12" LastKnownName="View Summary Information" />
+            <elementDefinition Id="78fcaf65-d6b8-4825-a4c9-2707cdf9bc0d" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="f139b6dd-876c-447e-8f58-4e99c5956b94" name="Search" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="48c440c9-295e-46fc-a44f-90612ddd37c9" />
+        <extendedCases>
+          <extend Id="004b9ad2-6b39-42bb-a2cb-2cf0451c5583">
+            <useCaseMoniker Id="55a23e07-dd6f-4eb7-a8c4-7f77d6980f12" LastKnownName="View Summary Information" />
+            <elementDefinition Id="36e3583e-08c2-467f-9cc0-6d7525795069" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="18cd6612-08ba-4f62-81db-c3b988bcc8a2" name="[HRM] Use Case Diagram">
+    <elementDefinition Id="b8562249-351b-4bff-9674-1e6462a9535c" />
+  </package>
+</useCaseModelRoot>

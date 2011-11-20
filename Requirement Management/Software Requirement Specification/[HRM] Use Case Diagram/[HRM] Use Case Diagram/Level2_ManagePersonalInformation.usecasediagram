@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="ca917bdb-1f61-4c7d-b8ac-fab2a6b30db5" name="Level 2 -- Manage Personal Information" linkedPackageId="8dea7971-8632-4070-b9be-26b1604136f7" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <ownedCommentsInternal>
+    <comment Id="9075873b-5238-4ab7-bb6c-f3e639cfe3d9">
+      <elementDefinition Id="e75667ea-b2a4-4ca6-b307-6a7f217a7ebe" />
+      <body>Personal Information Management</body>
+    </comment>
+  </ownedCommentsInternal>
+  <profileInstances>
+    <packageHasProfileInstances Id="4fed5bec-6425-4fa2-9953-e44f7b6b71cc">
+      <profileInstance Id="5d9a28b2-bee7-4e37-9b35-5ee83db69c8b" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="6c0e7aae-6af9-41f7-bae0-78aeae74a3f4">
+      <profileInstance Id="80b44988-5af9-4bfe-b805-4ef0fb2a7ba5" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="eec1ccb6-17ef-4c29-8da5-a9f9e2f2cbce" name="Staff" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="23f5a0ee-ba8a-4c2f-b813-56e721a04fdd" />
+        <targetEnds>
+          <association Id="954544a1-08eb-4088-ada0-ed31d4e6c474" isDerived="false" sourceEndRoleName="Staff" targetEndRoleName="Manage Personal Information" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="40555d66-80ba-4900-ba39-555a6087883c" LastKnownName="Manage Personal Information" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="10a08efd-3f83-40b5-a306-e9577dc8c9ea" name="Staff" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="fb4e9be6-c9c3-4e4f-86d8-c1be3885b6f9" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="d2d2aed2-e94f-4389-aa91-fec86be10bc3" name="Manage Personal Information" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="4fed4762-9554-4780-81c4-41b3b55d13e9" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="1c20d285-736f-4c4c-aa90-a2197051bce1" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="86e7a9be-7292-4edb-9dd6-8b472f044eb2" name="HR staff" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="701e3d2a-f81a-4ff1-9afa-f57f26e622d1" />
+        <targetEnds>
+          <association Id="041fb146-9054-4b97-8dd8-1832f302a32e" isDerived="false" sourceEndRoleName="HR staff" targetEndRoleName="Manage Personal Information" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="40555d66-80ba-4900-ba39-555a6087883c" LastKnownName="Manage Personal Information" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="e43a88fd-5cff-4d8f-af5b-2942bc0646aa" name="HR staff" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="8272456f-7cf8-4297-8046-b8a796a47f9f" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="4c8a96b8-5ab8-4335-a518-683d3115b552" name="Manage Personal Information" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="e05b62f8-32e0-4115-bc30-5016a87d3eeb" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="8fd71f6a-8645-4b6f-92d2-41debe28c022" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="40555d66-80ba-4900-ba39-555a6087883c" name="Manage Personal Information" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="a1a95c48-fd81-427c-bfd4-c9552c3bc56e" />
+        <additions>
+          <include Id="b8b4dcaa-0fcf-4773-b6d9-6572e6dc08fe">
+            <useCaseMoniker Id="ed140387-fbb1-4f94-b476-5f83548abaf0" LastKnownName="View Personal Information" />
+            <elementDefinition Id="c4fe7d14-ebd4-4ddb-937b-f1c95176ce98" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="ed140387-fbb1-4f94-b476-5f83548abaf0" name="View Personal Information" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="dd36564b-cbc6-4226-920e-bb6324e698e3" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="e4b0e4a1-d9f5-491a-849e-2f68975e8d4b" name="Manage Catalog" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="db20fb28-d705-4ff5-9474-a52d1785db40" />
+        <extendedCases>
+          <extend Id="7a1aee38-b906-4a37-847e-cc3992116153">
+            <useCaseMoniker Id="40555d66-80ba-4900-ba39-555a6087883c" LastKnownName="Manage Personal Information" />
+            <elementDefinition Id="970e7f0e-f242-40e2-b67e-cf84d1f43573" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="40a0847b-a464-4258-88e3-79840402c017" name="Manage Extend Information" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="e5146c69-2a1b-49cd-ac24-6df06a2cc665" />
+        <extendedCases>
+          <extend Id="c6bbbead-72a1-4473-a820-dbeb8c6e510b">
+            <useCaseMoniker Id="40555d66-80ba-4900-ba39-555a6087883c" LastKnownName="Manage Personal Information" />
+            <elementDefinition Id="f871bdd5-4a9a-41e1-93f6-c05fb8304ac2" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="e5fcb527-47ae-4922-babe-8792fdceb3fb" name="Manage Detail Information" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="e8fa2d66-f399-46f6-9232-f2b987e20397" />
+        <extendedCases>
+          <extend Id="5b6208b8-55c2-4918-bb18-ec3627d63e4e">
+            <useCaseMoniker Id="40555d66-80ba-4900-ba39-555a6087883c" LastKnownName="Manage Personal Information" />
+            <elementDefinition Id="9e775105-c73e-4f91-b5f2-b82ad9a9e65e" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="20ad9d9f-9924-454c-a738-da11b3c9b30e" name="Check Notification" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="cc102bdf-9ebe-475d-91e6-4170d4de387a" />
+        <extendedCases>
+          <extend Id="f5e90f68-5f61-4579-9d18-6b76f6f50d32">
+            <useCaseMoniker Id="40555d66-80ba-4900-ba39-555a6087883c" LastKnownName="Manage Personal Information" />
+            <elementDefinition Id="6c6a11cf-2a90-42ef-80cb-81d57cc5fb13" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="8dea7971-8632-4070-b9be-26b1604136f7" name="[HRM] Use Case Diagram">
+    <elementDefinition Id="b8562249-351b-4bff-9674-1e6462a9535c" />
+  </package>
+</useCaseModelRoot>

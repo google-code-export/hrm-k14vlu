@@ -1,0 +1,1058 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm9="http://schemas.microsoft.com/dsltools/UseCaseModel"
+  dslVersion="1.0.0.0"
+  Id="b8562249-351b-4bff-9674-1e6462a9535c"
+  name="[HRM] Use Case Diagram" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <ownedCommentsInternal>
+    <comment
+      Id="b3a37928-0f30-4901-a7a5-159271fbae1a">
+      <body>Human Resource Management</body>
+    </comment>
+    <comment
+      Id="e75667ea-b2a4-4ca6-b307-6a7f217a7ebe">
+      <body>Personal Information Management</body>
+    </comment>
+    <comment
+      Id="2dfb8cf4-3cf3-4c93-b940-e0f974ebfa3b">
+      <body>View Personal Information</body>
+    </comment>
+    <comment
+      Id="8e6e76ed-2021-41e2-8fb3-6ec61dfb0278">
+      <body>Notification</body>
+    </comment>
+  </ownedCommentsInternal>
+  <profileInstances>
+    <packageHasProfileInstances
+      Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b">
+      <profileInstance
+        Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791"
+        name="StandardProfileL2" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances
+      Id="29349502-908c-4fda-9054-c48619c59ed0">
+      <profileInstance
+        Id="532ea607-fb19-44b8-8502-3351b05452be"
+        name="StandardProfileL3" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <packageHasNamedElement>
+      <actor
+        Id="e2192886-6cc1-4c09-927c-555fd49276f7"
+        name="Administrator"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="6cf271ef-f91a-4ce2-8245-d0b9ce180200"
+            isDerived="false"
+            sourceEndRoleName="Administrator"
+            targetEndRoleName="Actor"
+            isLeaf="false"
+            isAbstract="false">
+            <actorMoniker
+              Id="9cbe4b5b-9aaf-4788-ad56-cee528f2e760"
+              LastKnownName="Actor"
+              LastKnownLocation="[HRM] Use Case Diagram.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="1c42a1e3-ff68-44bd-b189-329a76260efe"
+                  name="Administrator"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="3d8d62f9-6790-4d91-a909-9e0d4a1284f5"
+                  name="Actor"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="9cbe4b5b-9aaf-4788-ad56-cee528f2e760"
+        name="Actor"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="ec28e809-82a1-4f56-924b-46cb67e4781a"
+            isDerived="false"
+            sourceEndRoleName="User"
+            targetEndRoleName="Start Using HRM"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="83bdcfa9-eb48-4570-83a9-cd73c3c42eee"
+              LastKnownName="Start Using HRM"
+              LastKnownLocation="[HRM] Use Case Diagram.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="ec4fdb44-a959-4327-bd24-b0eef5a5a1f2"
+                  name="User"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="1559abc7-1b5e-42a8-802c-6ed192cf4391"
+                  name="Start Using HRM"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="701e3d2a-f81a-4ff1-9afa-f57f26e622d1"
+        name="HR staff"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="457f427f-d7b2-4606-bfcf-4d20e684ab2b"
+            isDerived="false"
+            sourceEndRoleName="HR staff"
+            targetEndRoleName="Actor"
+            isLeaf="false"
+            isAbstract="false">
+            <actorMoniker
+              Id="9cbe4b5b-9aaf-4788-ad56-cee528f2e760"
+              LastKnownName="Actor"
+              LastKnownLocation="[HRM] Use Case Diagram.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="c5bf4fe2-a77d-4137-8059-29d6c54405ce"
+                  name="HR staff"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="d86fedd5-2e6e-489b-aca0-2605bfdd1060"
+                  name="Actor"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="8fd71f6a-8645-4b6f-92d2-41debe28c022"
+            isDerived="false"
+            sourceEndRoleName="HR staff"
+            targetEndRoleName="Manage Personal Information"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="a1a95c48-fd81-427c-bfd4-c9552c3bc56e"
+              LastKnownName="Manage Personal Information"
+              LastKnownLocation="[HRM] Use Case Diagram.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="8272456f-7cf8-4297-8046-b8a796a47f9f"
+                  name="HR staff"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="e05b62f8-32e0-4115-bc30-5016a87d3eeb"
+                  name="Manage Personal Information"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="dba0aec2-753d-475e-a86c-f7533ff1993e"
+            isDerived="false"
+            sourceEndRoleName="HR staff"
+            targetEndRoleName="View Summary Information"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="6e69de48-8d32-45a4-86d5-9345f965d507"
+              LastKnownName="View Summary Information"
+              LastKnownLocation="[HRM] Use Case Diagram.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="8369cba4-98d4-448f-bf03-641797f4832a"
+                  name="HR staff"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="2062e316-ebe8-483d-bb2e-7edbcce40dcc"
+                  name="View Summary Information"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="885182f9-33f3-4e2f-a254-8b5206f3a69d"
+            isDerived="false"
+            sourceEndRoleName="HR staff"
+            targetEndRoleName="Check Notification"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="7c92479d-827a-441e-9547-f5d6bc5c9b19"
+              LastKnownName="Check Notification"
+              LastKnownLocation="[HRM] Use Case Diagram.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="a2f4f097-a3c2-4f04-a6f2-e526126b84a3"
+                  name="HR staff"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="f43d16c7-ee2b-4a32-9f54-68af69f85f13"
+                  name="Check Notification"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="23f5a0ee-ba8a-4c2f-b813-56e721a04fdd"
+        name="Staff"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="5c5bda74-903a-49a6-9040-0cf395e33a28"
+            isDerived="false"
+            sourceEndRoleName="Staff"
+            targetEndRoleName="Actor"
+            isLeaf="false"
+            isAbstract="false">
+            <actorMoniker
+              Id="9cbe4b5b-9aaf-4788-ad56-cee528f2e760"
+              LastKnownName="Actor"
+              LastKnownLocation="[HRM] Use Case Diagram.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="047fecfd-b4a6-4619-96b2-d220553c9c24"
+                  name="Staff"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="b519577f-729b-471a-976d-5c2bace5c380"
+                  name="Actor"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="1c20d285-736f-4c4c-aa90-a2197051bce1"
+            isDerived="false"
+            sourceEndRoleName="Staff"
+            targetEndRoleName="Manage Personal Information"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="a1a95c48-fd81-427c-bfd4-c9552c3bc56e"
+              LastKnownName="Manage Personal Information"
+              LastKnownLocation="[HRM] Use Case Diagram.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="fb4e9be6-c9c3-4e4f-86d8-c1be3885b6f9"
+                  name="Staff"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="4fed4762-9554-4780-81c4-41b3b55d13e9"
+                  name="Manage Personal Information"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="55a6df47-28e2-4176-9fa1-cc01902a3e00"
+            isDerived="false"
+            sourceEndRoleName="Staff"
+            targetEndRoleName="View Detail Information"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="a430771d-3012-42e7-888e-b881a6b2a733"
+              LastKnownName="View Detail Information"
+              LastKnownLocation="[HRM] Use Case Diagram.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="b1e1695c-1221-465b-a383-5fc40050539b"
+                  name="Staff"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="2aaa5e87-e152-462e-9399-8f41c807f73e"
+                  name="View Detail Information"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="83bdcfa9-eb48-4570-83a9-cd73c3c42eee"
+        name="Start Using HRM"
+        isAbstract="false"
+        isLeaf="false">
+        <additions>
+          <include
+            Id="de214e3a-b01a-46c5-a458-fa17edf56407">
+            <useCaseMoniker
+              Id="76e634ed-4025-46af-bd71-65173d40d787"
+              LastKnownName="Manage User"
+              LastKnownLocation="[HRM] Use Case Diagram.uml" />
+          </include>
+          <include
+            Id="d79a6f34-2a1b-4d54-821b-2e1c20fdf450">
+            <useCaseMoniker
+              Id="c8f9a5c4-de0b-4ef4-9769-9e1768a04ef8"
+              LastKnownName="Authenticate User"
+              LastKnownLocation="[HRM] Use Case Diagram.uml" />
+          </include>
+        </additions>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="76e634ed-4025-46af-bd71-65173d40d787"
+        name="Manage User"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="c8f9a5c4-de0b-4ef4-9769-9e1768a04ef8"
+        name="Authenticate User"
+        isAbstract="false"
+        isLeaf="false">
+        <additions>
+          <include
+            Id="e024c405-a361-41de-9e2f-5f7a7afbc7e3">
+            <useCaseMoniker
+              Id="45b70286-e885-434d-84db-6f05eac5a38a"
+              LastKnownName="Log In"
+              LastKnownLocation="[HRM] Use Case Diagram.uml" />
+          </include>
+        </additions>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="f4ef9e1f-990c-4e21-91cd-72a9d79fc1bf"
+        name="Manage Recruitment"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="8361ab93-be22-418f-a703-c94ad7a9d530">
+            <useCaseMoniker
+              Id="83bdcfa9-eb48-4570-83a9-cd73c3c42eee"
+              LastKnownName="Start Using HRM"
+              LastKnownLocation="[HRM] Use Case Diagram.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="a1056527-8e69-4460-818a-b8e5ff36673a"
+        name="Manage Employee Labour Contract"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="da761f42-37a1-4473-a406-8ea1d6ea8c87">
+            <useCaseMoniker
+              Id="83bdcfa9-eb48-4570-83a9-cd73c3c42eee"
+              LastKnownName="Start Using HRM"
+              LastKnownLocation="[HRM] Use Case Diagram.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="d616cd27-e9ee-483e-bc0b-fd04ef14b745"
+        name="Manage Insurance Information"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="857598b1-4b39-440f-b7fc-d4663229f6bc">
+            <useCaseMoniker
+              Id="83bdcfa9-eb48-4570-83a9-cd73c3c42eee"
+              LastKnownName="Start Using HRM"
+              LastKnownLocation="[HRM] Use Case Diagram.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="f66aae62-ad7a-4517-9d73-9bd993d41cc7"
+        name="Manage Assessment"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="b507a22d-ea40-40f3-acf5-8e7e5d13df9b">
+            <useCaseMoniker
+              Id="83bdcfa9-eb48-4570-83a9-cd73c3c42eee"
+              LastKnownName="Start Using HRM"
+              LastKnownLocation="[HRM] Use Case Diagram.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="a5834355-3a9b-44fa-a7e7-8ebde1f48770"
+        name="Manage Attendance Tracking"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="269b30d7-f130-49eb-b920-cf095056267e">
+            <useCaseMoniker
+              Id="83bdcfa9-eb48-4570-83a9-cd73c3c42eee"
+              LastKnownName="Start Using HRM"
+              LastKnownLocation="[HRM] Use Case Diagram.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="5fadf0ba-5064-4230-a6a5-5eca9448f7b0"
+        name="Manage Personal Information"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="92b974b4-782a-48f5-9e8e-dad0d8c1af1c">
+            <useCaseMoniker
+              Id="83bdcfa9-eb48-4570-83a9-cd73c3c42eee"
+              LastKnownName="Start Using HRM"
+              LastKnownLocation="[HRM] Use Case Diagram.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="b1464497-d4b2-4764-a71d-7c885139b266"
+        name="Manage Payroll"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="68dd16a2-37ff-4bea-bb9a-0cbed55d984c">
+            <useCaseMoniker
+              Id="83bdcfa9-eb48-4570-83a9-cd73c3c42eee"
+              LastKnownName="Start Using HRM"
+              LastKnownLocation="[HRM] Use Case Diagram.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="45b70286-e885-434d-84db-6f05eac5a38a"
+        name="Log In"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="a1a95c48-fd81-427c-bfd4-c9552c3bc56e"
+        name="Manage Personal Information"
+        isAbstract="false"
+        isLeaf="false">
+        <additions>
+          <include
+            Id="c4fe7d14-ebd4-4ddb-937b-f1c95176ce98">
+            <useCaseMoniker
+              Id="dd36564b-cbc6-4226-920e-bb6324e698e3"
+              LastKnownName="View Personal Information"
+              LastKnownLocation="[HRM] Use Case Diagram.uml" />
+          </include>
+        </additions>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="dd36564b-cbc6-4226-920e-bb6324e698e3"
+        name="View Personal Information"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="c3a738f1-58f5-4f06-bc51-b11581b5fba9"
+        name="View Detail Information"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="57eadbe3-1c7d-49eb-ab28-6d69ef07bc55">
+            <useCaseMoniker
+              Id="dd36564b-cbc6-4226-920e-bb6324e698e3"
+              LastKnownName="View Personal Information"
+              LastKnownLocation="[HRM] Use Case Diagram.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="203decad-1b39-4772-a352-176cbd6c2e29"
+        name="View Extend Information"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="eea73d90-757c-4d98-9d0d-0b024d1c9501">
+            <useCaseMoniker
+              Id="dd36564b-cbc6-4226-920e-bb6324e698e3"
+              LastKnownName="View Personal Information"
+              LastKnownLocation="[HRM] Use Case Diagram.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="326a8064-b0af-44fb-a962-ddd5cc2be2b3"
+        name="Add Résume"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="fa750c17-b44b-483f-a252-e7e601456d22">
+            <useCaseMoniker
+              Id="a1a95c48-fd81-427c-bfd4-c9552c3bc56e"
+              LastKnownName="Manage Personal Information"
+              LastKnownLocation="[HRM] Use Case Diagram.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="3ecbbe78-00f2-4d8b-ab71-91d91c75898f"
+        name="Edit"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="7fb4fc6d-8aaf-41dc-a0b9-732a2d7b4ff3">
+            <useCaseMoniker
+              Id="c3a738f1-58f5-4f06-bc51-b11581b5fba9"
+              LastKnownName="View Detail Information"
+              LastKnownLocation="[HRM] Use Case Diagram.uml" />
+          </extend>
+          <extend
+            Id="bf0d3b77-3300-4264-9595-68c1c66dc6e3">
+            <useCaseMoniker
+              Id="203decad-1b39-4772-a352-176cbd6c2e29"
+              LastKnownName="View Extend Information"
+              LastKnownLocation="[HRM] Use Case Diagram.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="b971731c-3bec-4852-82ce-168bd5ffae0c"
+        name="Delete Résume"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="838a9694-7073-447a-a10f-41c8b175876a">
+            <useCaseMoniker
+              Id="a1a95c48-fd81-427c-bfd4-c9552c3bc56e"
+              LastKnownName="Manage Personal Information"
+              LastKnownLocation="[HRM] Use Case Diagram.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="db20fb28-d705-4ff5-9474-a52d1785db40"
+        name="Manage Catalog"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="970e7f0e-f242-40e2-b67e-cf84d1f43573">
+            <useCaseMoniker
+              Id="a1a95c48-fd81-427c-bfd4-c9552c3bc56e"
+              LastKnownName="Manage Personal Information"
+              LastKnownLocation="[HRM] Use Case Diagram.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="e5146c69-2a1b-49cd-ac24-6df06a2cc665"
+        name="Manage Extend Information"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="f871bdd5-4a9a-41e1-93f6-c05fb8304ac2">
+            <useCaseMoniker
+              Id="a1a95c48-fd81-427c-bfd4-c9552c3bc56e"
+              LastKnownName="Manage Personal Information"
+              LastKnownLocation="[HRM] Use Case Diagram.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="e8fa2d66-f399-46f6-9232-f2b987e20397"
+        name="Manage Detail Information"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="9e775105-c73e-4f91-b5f2-b82ad9a9e65e">
+            <useCaseMoniker
+              Id="a1a95c48-fd81-427c-bfd4-c9552c3bc56e"
+              LastKnownName="Manage Personal Information"
+              LastKnownLocation="[HRM] Use Case Diagram.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="6e69de48-8d32-45a4-86d5-9345f965d507"
+        name="View Summary Information"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="a430771d-3012-42e7-888e-b881a6b2a733"
+        name="View Detail Information"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="2978930d-40c1-4b4b-8013-322927f0a3d4">
+            <useCaseMoniker
+              Id="6e69de48-8d32-45a4-86d5-9345f965d507"
+              LastKnownName="View Summary Information"
+              LastKnownLocation="[HRM] Use Case Diagram.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="2ebd8f5d-4aaf-49ea-9452-51166ccb185f"
+        name="View Extend Information"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="9eaf172c-8882-4fbb-86e1-5a02ded4e4d4">
+            <useCaseMoniker
+              Id="a430771d-3012-42e7-888e-b881a6b2a733"
+              LastKnownName="View Detail Information"
+              LastKnownLocation="[HRM] Use Case Diagram.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="976d5f94-7ef1-4b8c-a8de-85a937250abd"
+        name="Edit Personal Information"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="9351a36b-e13b-47f5-92a1-cf0ce5504e7a">
+            <useCaseMoniker
+              Id="a430771d-3012-42e7-888e-b881a6b2a733"
+              LastKnownName="View Detail Information"
+              LastKnownLocation="[HRM] Use Case Diagram.uml" />
+          </extend>
+          <extend
+            Id="b9ef65d8-1155-4620-a8aa-b0d1bf6efb37">
+            <useCaseMoniker
+              Id="2ebd8f5d-4aaf-49ea-9452-51166ccb185f"
+              LastKnownName="View Extend Information"
+              LastKnownLocation="[HRM] Use Case Diagram.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="da8a19a0-23e6-43b1-80bd-8cc083b9b46f"
+        name="Sort"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="cf4cbd76-0929-4fbc-a0f2-6bfe4a02df04">
+            <useCaseMoniker
+              Id="6e69de48-8d32-45a4-86d5-9345f965d507"
+              LastKnownName="View Summary Information"
+              LastKnownLocation="[HRM] Use Case Diagram.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="e36e82fd-da42-4ffe-a3a2-ad4c2d4ced7a"
+        name="Filter"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="78fcaf65-d6b8-4825-a4c9-2707cdf9bc0d">
+            <useCaseMoniker
+              Id="6e69de48-8d32-45a4-86d5-9345f965d507"
+              LastKnownName="View Summary Information"
+              LastKnownLocation="[HRM] Use Case Diagram.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="48c440c9-295e-46fc-a44f-90612ddd37c9"
+        name="Search"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="36e3583e-08c2-467f-9cc0-6d7525795069">
+            <useCaseMoniker
+              Id="6e69de48-8d32-45a4-86d5-9345f965d507"
+              LastKnownName="View Summary Information"
+              LastKnownLocation="[HRM] Use Case Diagram.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="cc102bdf-9ebe-475d-91e6-4170d4de387a"
+        name="Check Notification"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="6c6a11cf-2a90-42ef-80cb-81d57cc5fb13">
+            <useCaseMoniker
+              Id="a1a95c48-fd81-427c-bfd4-c9552c3bc56e"
+              LastKnownName="Manage Personal Information"
+              LastKnownLocation="[HRM] Use Case Diagram.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="7c92479d-827a-441e-9547-f5d6bc5c9b19"
+        name="Check Notification"
+        isAbstract="false"
+        isLeaf="false">
+        <additions>
+          <include
+            Id="3ecea9c5-925c-4b71-b1ce-0538bf2a3e85">
+            <useCaseMoniker
+              Id="d22f203b-1115-4e12-b8fe-422a450dc457"
+              LastKnownName="View Changed CV"
+              LastKnownLocation="[HRM] Use Case Diagram.uml" />
+          </include>
+        </additions>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="d22f203b-1115-4e12-b8fe-422a450dc457"
+        name="View Changed CV"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="466b35e0-0771-457f-87eb-1a9af4cfa398"
+        name="View Information Changes in a CV"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="df0335f5-15ba-46b5-af33-828e1f9c8990">
+            <useCaseMoniker
+              Id="d22f203b-1115-4e12-b8fe-422a450dc457"
+              LastKnownName="View Changed CV"
+              LastKnownLocation="[HRM] Use Case Diagram.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="054eb4cc-1915-4424-b38f-575d06a92869"
+        name="Sort"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="0681a513-e238-4594-824d-8ff1f10c12d4">
+            <useCaseMoniker
+              Id="d22f203b-1115-4e12-b8fe-422a450dc457"
+              LastKnownName="View Changed CV"
+              LastKnownLocation="[HRM] Use Case Diagram.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="a28d7e62-9361-43a3-8de2-1b30527b027a"
+        name="Search"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="c40d819c-0d15-42c6-a4bb-3d5e4e88eebd">
+            <useCaseMoniker
+              Id="d22f203b-1115-4e12-b8fe-422a450dc457"
+              LastKnownName="View Changed CV"
+              LastKnownLocation="[HRM] Use Case Diagram.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="16ee5130-eb18-43b2-985f-355d5ea1dcf6"
+        name="Filter"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="1a9ec7b1-70ba-405c-9ff3-60869bec417c">
+            <useCaseMoniker
+              Id="d22f203b-1115-4e12-b8fe-422a450dc457"
+              LastKnownName="View Changed CV"
+              LastKnownLocation="[HRM] Use Case Diagram.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="c52fd850-7258-4af4-a305-535d722378a3"
+        name="Accept"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="aed57731-e6ea-4c0d-bd26-b03e81aa44ae">
+            <useCaseMoniker
+              Id="466b35e0-0771-457f-87eb-1a9af4cfa398"
+              LastKnownName="View Information Changes in a CV"
+              LastKnownLocation="[HRM] Use Case Diagram.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="33e183d7-7e52-4169-8eae-cf51371d1a03"
+        name="Reject"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="8d5ce1da-dd2d-4993-a72b-a37575ebb25c">
+            <useCaseMoniker
+              Id="466b35e0-0771-457f-87eb-1a9af4cfa398"
+              LastKnownName="View Information Changes in a CV"
+              LastKnownLocation="[HRM] Use Case Diagram.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="979196db-62a9-44e6-8534-318cb5db36ae"
+        name="Write Comment"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+  </packagedElements>
+  <primitiveType
+    Id="220a3521-e091-4221-bae9-3ef9018e845c"
+    name="Integer"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+    name="Boolean"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+    name="String"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="3ab42e7d-4969-445a-b209-471f5cb8209c"
+    name="UnlimitedNatural"
+    isAbstract="false"
+    isLeaf="false" />
+</modelStoreModel>

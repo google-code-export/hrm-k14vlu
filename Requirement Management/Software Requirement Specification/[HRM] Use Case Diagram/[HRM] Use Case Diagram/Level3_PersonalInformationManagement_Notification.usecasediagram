@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="f259788f-121c-41a0-b018-75028b8903a5" name="Level3_PersonalInformationManagement_Notification" linkedPackageId="12b58276-9658-4edb-809b-bf540d30f4be" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <ownedCommentsInternal>
+    <comment Id="0fa86194-862d-4ae8-9895-62a9cc35ab35">
+      <elementDefinition Id="8e6e76ed-2021-41e2-8fb3-6ec61dfb0278" />
+      <body>Notification</body>
+    </comment>
+  </ownedCommentsInternal>
+  <profileInstances>
+    <packageHasProfileInstances Id="3d9b3e0a-f9c7-4366-b785-a3758ce51ef1">
+      <profileInstance Id="6627b2b5-172c-44e2-acb2-ad32e854c86f" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="e4b87aee-ca29-454f-88e2-cb48ee0d798f">
+      <profileInstance Id="fc7a8d74-ad6c-4fb8-babf-b65e962866f5" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="84a325b5-083a-4370-86c4-76e610909c2e" name="HR staff" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="701e3d2a-f81a-4ff1-9afa-f57f26e622d1" />
+        <targetEnds>
+          <association Id="7aa8b12f-476e-4028-ab20-5ddaaafeeecc" isDerived="false" sourceEndRoleName="HR staff" targetEndRoleName="Check Notification" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="ef8715c2-e44c-4723-8083-c2e1bb27763a" LastKnownName="Check Notification" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="f09b2577-39ba-48c9-a1cf-f6ebf42b94c0" name="HR staff" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="a2f4f097-a3c2-4f04-a6f2-e526126b84a3" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="e6966ca6-b64d-4e97-91d9-013b18bca704" name="Check Notification" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="f43d16c7-ee2b-4a32-9f54-68af69f85f13" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="885182f9-33f3-4e2f-a254-8b5206f3a69d" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="ef8715c2-e44c-4723-8083-c2e1bb27763a" name="Check Notification" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="7c92479d-827a-441e-9547-f5d6bc5c9b19" />
+        <additions>
+          <include Id="db13bc10-c193-4184-b72d-b27a5f67686f">
+            <useCaseMoniker Id="ca236189-545f-4504-92e7-5542b0e6989c" LastKnownName="View Changed CV" />
+            <elementDefinition Id="3ecea9c5-925c-4b71-b1ce-0538bf2a3e85" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="ca236189-545f-4504-92e7-5542b0e6989c" name="View Changed CV" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="d22f203b-1115-4e12-b8fe-422a450dc457" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="7179984a-32aa-427e-91ac-95756f6449b3" name="View Information Changes in a CV" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="466b35e0-0771-457f-87eb-1a9af4cfa398" />
+        <extendedCases>
+          <extend Id="7c832a0e-182f-4c2d-ac89-a324f5fd5fbf">
+            <useCaseMoniker Id="ca236189-545f-4504-92e7-5542b0e6989c" LastKnownName="View Changed CV" />
+            <elementDefinition Id="df0335f5-15ba-46b5-af33-828e1f9c8990" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="2064f671-ff05-40f6-ba8e-a4e97f14814e" name="Sort" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="054eb4cc-1915-4424-b38f-575d06a92869" />
+        <extendedCases>
+          <extend Id="56bff340-8e63-43a7-a328-05b8feca192f">
+            <useCaseMoniker Id="ca236189-545f-4504-92e7-5542b0e6989c" LastKnownName="View Changed CV" />
+            <elementDefinition Id="0681a513-e238-4594-824d-8ff1f10c12d4" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="6f1436cf-0898-42f0-8daa-181b8c5438e4" name="Search" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="a28d7e62-9361-43a3-8de2-1b30527b027a" />
+        <extendedCases>
+          <extend Id="e1d34063-4eaf-42e9-9fcc-4d2130ebeaea">
+            <useCaseMoniker Id="ca236189-545f-4504-92e7-5542b0e6989c" LastKnownName="View Changed CV" />
+            <elementDefinition Id="c40d819c-0d15-42c6-a4bb-3d5e4e88eebd" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="278a6505-a375-44ce-b468-4c4b53d7842f" name="Filter" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="16ee5130-eb18-43b2-985f-355d5ea1dcf6" />
+        <extendedCases>
+          <extend Id="4baca396-efa0-47b0-af0d-c4d696ff5d06">
+            <useCaseMoniker Id="ca236189-545f-4504-92e7-5542b0e6989c" LastKnownName="View Changed CV" />
+            <elementDefinition Id="1a9ec7b1-70ba-405c-9ff3-60869bec417c" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="de62e383-201c-4619-9a39-a9d37e52d332" name="Accept" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="c52fd850-7258-4af4-a305-535d722378a3" />
+        <extendedCases>
+          <extend Id="68fd7c74-74db-4448-969c-943af0328422">
+            <useCaseMoniker Id="7179984a-32aa-427e-91ac-95756f6449b3" LastKnownName="View Information Changes in a CV" />
+            <elementDefinition Id="aed57731-e6ea-4c0d-bd26-b03e81aa44ae" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="217f6407-39b3-4ba0-9e9f-0ff0f435b6d5" name="Reject" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="33e183d7-7e52-4169-8eae-cf51371d1a03" />
+        <extendedCases>
+          <extend Id="81f5bc41-4a00-4ddd-a4e4-7d98acbe83f3">
+            <useCaseMoniker Id="7179984a-32aa-427e-91ac-95756f6449b3" LastKnownName="View Information Changes in a CV" />
+            <elementDefinition Id="8d5ce1da-dd2d-4993-a72b-a37575ebb25c" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="12b58276-9658-4edb-809b-bf540d30f4be" name="[HRM] Use Case Diagram">
+    <elementDefinition Id="b8562249-351b-4bff-9674-1e6462a9535c" />
+  </package>
+</useCaseModelRoot>
