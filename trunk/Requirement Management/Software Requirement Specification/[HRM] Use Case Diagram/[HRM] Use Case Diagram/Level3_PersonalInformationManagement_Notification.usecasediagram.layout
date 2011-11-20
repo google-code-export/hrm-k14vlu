@@ -2,7 +2,7 @@
 <useCaseDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="Level3_PersonalInformationManagement_Notification">
   <useCaseModelRootMoniker Id="f259788f-121c-41a0-b018-75028b8903a5" />
   <nestedChildShapes>
-    <actorShape Id="6b337c74-70d2-4ba4-bcb8-049905b85d81" absoluteBounds="0.75, 2.25, 0.5, 0.5" isReference="false" heightOffset="0">
+    <actorShape Id="6b337c74-70d2-4ba4-bcb8-049905b85d81" absoluteBounds="0.5, 2.25, 0.5, 0.5" isReference="false" heightOffset="0">
       <actorMoniker Id="84a325b5-083a-4370-86c4-76e610909c2e" LastKnownName="HR staff" />
       <relativeChildShapes />
     </actorShape>
@@ -10,7 +10,7 @@
       <useCaseMoniker Id="ef8715c2-e44c-4723-8083-c2e1bb27763a" LastKnownName="Check Notification" />
       <relativeChildShapes />
     </useCaseShape>
-    <useCaseAssociationConnector edgePoints="[(1.25 : 2.5); (1.625 : 2.5)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
+    <useCaseAssociationConnector edgePoints="[(1 : 2.5); (1.625 : 2.5)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
       <associationMoniker Id="7aa8b12f-476e-4028-ab20-5ddaaafeeecc" />
       <relativeChildShapes />
       <nodes>
@@ -106,6 +106,6 @@
       <commentMoniker Id="0fa86194-862d-4ae8-9895-62a9cc35ab35" />
       <relativeChildShapes />
     </commentShape>
-    <rectangleShape Id="e393082e-ddf9-4b0b-97b9-f3d5ec09891f" absoluteBounds="1.5, 1, 7.875, 3" outlineColor="83, 134, 191" outlineThickness="0.03125" />
+    <rectangleShape Id="e393082e-ddf9-4b0b-97b9-f3d5ec09891f" absoluteBounds="1.375, 1, 8, 3" outlineColor="83, 134, 191" outlineThickness="0.03125" />
   </nestedChildShapes>
 </useCaseDiagram>
