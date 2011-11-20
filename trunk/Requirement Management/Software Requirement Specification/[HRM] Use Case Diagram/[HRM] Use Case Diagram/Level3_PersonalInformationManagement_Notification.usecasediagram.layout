@@ -102,7 +102,7 @@
         <useCaseShapeMoniker Id="da1598fb-59c0-492f-b4bb-cb3750feed4d" />
       </nodes>
     </extendConnector>
-    <commentShape Id="b57a6cee-5ba4-40c6-8750-f25ac7975ede" absoluteBounds="1.5, 3.625, 1, 0.375" customColor="251, 247, 200">
+    <commentShape Id="b57a6cee-5ba4-40c6-8750-f25ac7975ede" absoluteBounds="1.375, 3.625, 1, 0.375" customColor="251, 247, 200">
       <commentMoniker Id="0fa86194-862d-4ae8-9895-62a9cc35ab35" />
       <relativeChildShapes />
     </commentShape>
