@@ -6,20 +6,6 @@
       <body>Personal Information Management</body>
     </comment>
   </ownedCommentsInternal>
-  <profileInstances>
-    <packageHasProfileInstances Id="4fed5bec-6425-4fa2-9953-e44f7b6b71cc">
-      <profileInstance Id="5d9a28b2-bee7-4e37-9b35-5ee83db69c8b" name="StandardProfileL2">
-        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
-      </profileInstance>
-      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
-    </packageHasProfileInstances>
-    <packageHasProfileInstances Id="6c0e7aae-6af9-41f7-bae0-78aeae74a3f4">
-      <profileInstance Id="80b44988-5af9-4bfe-b805-4ef0fb2a7ba5" name="StandardProfileL3">
-        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
-      </profileInstance>
-      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
-    </packageHasProfileInstances>
-  </profileInstances>
   <packagedElements>
     <useCaseModelRootHasTypes>
       <actor Id="eec1ccb6-17ef-4c29-8da5-a9f9e2f2cbce" name="Staff" isAbstract="false" isLeaf="false">
@@ -95,28 +81,6 @@
       </useCase>
     </useCaseModelRootHasTypes>
     <useCaseModelRootHasTypes>
-      <useCase Id="40a0847b-a464-4258-88e3-79840402c017" name="Manage Extend Information" isAbstract="false" isLeaf="false">
-        <elementDefinition Id="e5146c69-2a1b-49cd-ac24-6df06a2cc665" />
-        <extendedCases>
-          <extend Id="c6bbbead-72a1-4473-a820-dbeb8c6e510b">
-            <useCaseMoniker Id="40555d66-80ba-4900-ba39-555a6087883c" LastKnownName="Manage Personal Information" />
-            <elementDefinition Id="f871bdd5-4a9a-41e1-93f6-c05fb8304ac2" />
-          </extend>
-        </extendedCases>
-      </useCase>
-    </useCaseModelRootHasTypes>
-    <useCaseModelRootHasTypes>
-      <useCase Id="e5fcb527-47ae-4922-babe-8792fdceb3fb" name="Manage Detail Information" isAbstract="false" isLeaf="false">
-        <elementDefinition Id="e8fa2d66-f399-46f6-9232-f2b987e20397" />
-        <extendedCases>
-          <extend Id="5b6208b8-55c2-4918-bb18-ec3627d63e4e">
-            <useCaseMoniker Id="40555d66-80ba-4900-ba39-555a6087883c" LastKnownName="Manage Personal Information" />
-            <elementDefinition Id="9e775105-c73e-4f91-b5f2-b82ad9a9e65e" />
-          </extend>
-        </extendedCases>
-      </useCase>
-    </useCaseModelRootHasTypes>
-    <useCaseModelRootHasTypes>
       <useCase Id="20ad9d9f-9924-454c-a738-da11b3c9b30e" name="Check Notification" isAbstract="false" isLeaf="false">
         <elementDefinition Id="cc102bdf-9ebe-475d-91e6-4170d4de387a" />
         <extendedCases>
@@ -130,5 +94,19 @@
   </packagedElements>
   <package Id="8dea7971-8632-4070-b9be-26b1604136f7" name="[HRM] Use Case Diagram">
     <elementDefinition Id="b8562249-351b-4bff-9674-1e6462a9535c" />
+    <profileInstances>
+      <packageHasProfileInstances Id="4fed5bec-6425-4fa2-9953-e44f7b6b71cc">
+        <profileInstance Id="5d9a28b2-bee7-4e37-9b35-5ee83db69c8b" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="6c0e7aae-6af9-41f7-bae0-78aeae74a3f4">
+        <profileInstance Id="80b44988-5af9-4bfe-b805-4ef0fb2a7ba5" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
   </package>
 </useCaseModelRoot>

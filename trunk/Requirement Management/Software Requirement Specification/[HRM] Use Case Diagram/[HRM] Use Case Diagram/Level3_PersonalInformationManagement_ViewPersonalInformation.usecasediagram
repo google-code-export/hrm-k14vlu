@@ -6,20 +6,6 @@
       <body>View Personal Information</body>
     </comment>
   </ownedCommentsInternal>
-  <profileInstances>
-    <packageHasProfileInstances Id="5a89d5c8-f3ba-476e-96ba-003e7533e92b">
-      <profileInstance Id="baa72870-b094-4b49-b9ec-43e3206337ff" name="StandardProfileL2">
-        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
-      </profileInstance>
-      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
-    </packageHasProfileInstances>
-    <packageHasProfileInstances Id="611b1f67-6ed3-4b4a-812a-a2e543a1b2ce">
-      <profileInstance Id="4eb58ff3-3423-4e98-a804-c9f9c450a58e" name="StandardProfileL3">
-        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
-      </profileInstance>
-      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
-    </packageHasProfileInstances>
-  </profileInstances>
   <packagedElements>
     <useCaseModelRootHasTypes>
       <actor Id="2a973ed9-1faa-441d-bdc4-0dffc29ac0ea" name="HR staff" isAbstract="false" isLeaf="false">
@@ -142,8 +128,33 @@
         </extendedCases>
       </useCase>
     </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="de5e2c00-fb05-4e39-a347-70d5520a460c" name="Do an Advanced Search" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="c0702086-0a1b-476b-b3f9-400fe1eb3e42" />
+        <extendedCases>
+          <extend Id="b1871c5d-d7d1-49cd-b468-21a834bed091">
+            <useCaseMoniker Id="55a23e07-dd6f-4eb7-a8c4-7f77d6980f12" LastKnownName="View Summary Information" />
+            <elementDefinition Id="1451f944-b145-4a40-9ac3-423a725aebbe" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
   </packagedElements>
   <package Id="18cd6612-08ba-4f62-81db-c3b988bcc8a2" name="[HRM] Use Case Diagram">
     <elementDefinition Id="b8562249-351b-4bff-9674-1e6462a9535c" />
+    <profileInstances>
+      <packageHasProfileInstances Id="5a89d5c8-f3ba-476e-96ba-003e7533e92b">
+        <profileInstance Id="baa72870-b094-4b49-b9ec-43e3206337ff" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="611b1f67-6ed3-4b4a-812a-a2e543a1b2ce">
+        <profileInstance Id="4eb58ff3-3423-4e98-a804-c9f9c450a58e" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
   </package>
 </useCaseModelRoot>
