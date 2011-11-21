@@ -1034,6 +1034,69 @@
         isAbstract="false"
         isLeaf="false" />
     </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="7a7c65a1-9247-4903-9fd1-036559fbc417"
+        name="HR Staff"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="bd372a61-0c59-4df9-a41d-ff2df6608709"
+            isDerived="false"
+            sourceEndRoleName="HR Staff"
+            targetEndRoleName="Manage Catalog"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="ddbd8702-1fec-4b90-8756-c8ed9125eb45"
+              LastKnownName="Manage Catalog"
+              LastKnownLocation="[HRM] Use Case Diagram.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="738e65fe-7033-4cd0-a35e-b1ad7666db0d"
+                  name="HR Staff"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="3376a483-ae57-4f14-af05-ca0c17fce11a"
+                  name="Manage Catalog"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="ddbd8702-1fec-4b90-8756-c8ed9125eb45"
+        name="Manage Catalog"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="8ce560a3-d94c-4d39-816b-82cd46a5a5f3"
+        name="HR Staff"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
   </packagedElements>
   <primitiveType
     Id="220a3521-e091-4221-bae9-3ef9018e845c"
