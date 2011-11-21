@@ -32,13 +32,6 @@
       <SubType>Content</SubType>
       <DependentUpon>Level2_ManagePersonalInformation.usecasediagram</DependentUpon>
     </Content>
-    <Content Include="Level3_PersionalInformationManagement_CatalogManagement.usecasediagram">
-      <SubType>Content</SubType>
-    </Content>
-    <Content Include="Level3_PersionalInformationManagement_CatalogManagement.usecasediagram.layout">
-      <SubType>Content</SubType>
-      <DependentUpon>Level3_PersionalInformationManagement_CatalogManagement.usecasediagram</DependentUpon>
-    </Content>
     <Content Include="Level3_PersonalInformationManagement_Notification.usecasediagram">
       <SubType>Content</SubType>
     </Content>

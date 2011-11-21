@@ -1097,6 +1097,23 @@
         isAbstract="false"
         isLeaf="false" />
     </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="c0702086-0a1b-476b-b3f9-400fe1eb3e42"
+        name="Do an Advanced Search"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="1451f944-b145-4a40-9ac3-423a725aebbe">
+            <useCaseMoniker
+              Id="6e69de48-8d32-45a4-86d5-9345f965d507"
+              LastKnownName="View Summary Information"
+              LastKnownLocation="[HRM] Use Case Diagram.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
   </packagedElements>
   <primitiveType
     Id="220a3521-e091-4221-bae9-3ef9018e845c"
