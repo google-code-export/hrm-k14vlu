@@ -1,0 +1,718 @@
+<Screen
+	CID = "449727885"
+	AppID = "2"
+	AppVer = "4.1.109.0"
+	DocID = ""
+	HasCanvas = "1"
+	Width = "1280"
+	Height = "800"
+	NextCID = "6"
+	RepresentativeRefID = "0"
+	UseDefRepresentative = "1">
+	<Elements
+		CID = "1">
+		<Element
+			CID = "449714287"
+			Type = "DesignGrid"
+			X = "1"
+			Y = "-1"
+			Width = "1282"
+			Height = "801"
+			Flags = "0"
+			HorzLineColour = "28,81,128,0,7"
+			VertLineColour = "28,81,128,0,7"
+			ShadowColour = "28,81,128,0,7"
+			HighlightColour = "28,81,128,0,7"
+			FillColour = "255,255,255,0,6"
+			UnderlayColour = "192,192,255,0,0"
+			OuterMarginLeft = "12"
+			OuterMarginRight = "12"
+			OuterMarginTop = "12"
+			OuterMarginBottom = "15"
+			InnerMarginLeft = "0"
+			InnerMarginRight = "0"
+			InnerMarginTop = "0"
+			InnerMarginBottom = "0"
+			ColumnType = "Count"
+			Columns = "1"
+			ColumnEvery = "40"
+			ColumnSpacing = "8"
+			RowType = "Count"
+			Rows = "1"
+			RowEvery = "30"
+			RowSpacing = "5"
+			ShowHorzLines = "0"
+			ShowVertLines = "0"
+			ShowCellBorders = "0"
+			FillCells = "0"
+			ManualUnderlay = "0"/>
+		<Element
+			CID = "449734184"
+			Type = "StaticText"
+			X = "1171"
+			Y = "11"
+			Width = "100"
+			Height = "21"
+			Flags = "0"
+			FillColour = "236,233,216,0,16"
+			TextColour = "0,0,255,0,0"
+			Typeface = ""
+			FontAttributes = "4"
+			TextSize = "Large"
+			Text = "Log Out"
+			IsDisabled = "0"
+			Fill = "None"
+			HorzAlign = "Centre"
+			VertAlign = "Centre"/>
+		<Element
+			CID = "449727822"
+			Type = "StaticText"
+			X = "1063"
+			Y = "11"
+			Width = "115"
+			Height = "21"
+			Flags = "0"
+			FillColour = "236,233,216,0,16"
+			TextColour = "0,0,255,0,0"
+			Typeface = ""
+			FontAttributes = "5"
+			TextSize = "Large"
+			Text = "Nguyen Dinh"
+			IsDisabled = "0"
+			Fill = "None"
+			HorzAlign = "Left"
+			VertAlign = "Centre"/>
+		<Element
+			CID = "449729693"
+			Type = "StaticText"
+			X = "965"
+			Y = "11"
+			Width = "100"
+			Height = "21"
+			Flags = "0"
+			FillColour = "236,233,216,0,16"
+			TextColour = "0,0,0,0,19"
+			Typeface = ""
+			FontAttributes = "0"
+			TextSize = "Large"
+			Text = "Hello, "
+			IsDisabled = "0"
+			Fill = "None"
+			HorzAlign = "Right"
+			VertAlign = "Centre"/>
+		<Element
+			CID = "449724252"
+			Type = "StaticText"
+			X = "14"
+			Y = "12"
+			Width = "331"
+			Height = "33"
+			Flags = "0"
+			FillColour = "236,233,216,0,16"
+			TextColour = "0,0,0,0,19"
+			Typeface = ""
+			FontAttributes = "0"
+			TextSize = "VeryLarge"
+			Text = "Human Resource Management"
+			IsDisabled = "0"
+			Fill = "None"
+			HorzAlign = "Centre"
+			VertAlign = "Centre"/>
+		<Element
+			CID = "449714248"
+			Type = "Tree"
+			X = "14"
+			Y = "166"
+			Width = "179"
+			Height = "619"
+			Flags = "0"
+			Typeface = ""
+			FontAttributes = "0"
+			TextSize = "Normal"
+			NextItemID = "19"
+			IsDisabled = "0"
+			HasBorder = "1"
+			HasButtons = "1"
+			HasLines = "1"
+			HasLinesAtRoot = "0"
+			HasHorzScrollBar = "0"
+			HasVertScrollBar = "1"
+			Mirror = "0"
+			WordWrap = "0"
+			IconMargin = "0"
+			ItemHeight = "16"
+			Icons = "Folders">
+			<TreeItem
+				ItemID = "1"
+				Text = "Persional Information Management"
+				IsBold = "1"
+				IsChecked = "0"
+				IsExpanded = "1"
+				IsSelected = "0">
+				<TreeItem
+					ItemID = "2"
+					Text = "Extend Information Management"
+					IsBold = "1"
+					IsChecked = "0"
+					IsExpanded = "1"
+					IsSelected = "0">
+					<TreeItem
+						ItemID = "5"
+						Text = "Employee History Management"
+						IsBold = "0"
+						IsChecked = "0"
+						IsExpanded = "0"
+						IsSelected = "0"/>
+					<TreeItem
+						ItemID = "6"
+						Text = "Family Relationship Management"
+						IsBold = "0"
+						IsChecked = "0"
+						IsExpanded = "0"
+						IsSelected = "0"/>
+					<TreeItem
+						ItemID = "11"
+						Text = "Suported People Management"
+						IsBold = "0"
+						IsChecked = "1"
+						IsExpanded = "0"
+						IsSelected = "0"/>
+					<TreeItem
+						ItemID = "13"
+						Text = "Wage Changes Management"
+						IsBold = "0"
+						IsChecked = "1"
+						IsExpanded = "0"
+						IsSelected = "1"/>
+					<TreeItem
+						ItemID = "14"
+						Text = "Training Management"
+						IsBold = "0"
+						IsChecked = "1"
+						IsExpanded = "0"
+						IsSelected = "0"/>
+					<TreeItem
+						ItemID = "15"
+						Text = "Reward, Discipline Management"
+						IsBold = "0"
+						IsChecked = "1"
+						IsExpanded = "0"
+						IsSelected = "0"/>
+					<TreeItem
+						ItemID = "16"
+						Text = "Job Title Management"
+						IsBold = "0"
+						IsChecked = "1"
+						IsExpanded = "0"
+						IsSelected = "0"/>
+					<TreeItem
+						ItemID = "17"
+						Text = "Equipment Management"
+						IsBold = "0"
+						IsChecked = "1"
+						IsExpanded = "0"
+						IsSelected = "0"/>
+				</TreeItem>
+				<TreeItem
+					ItemID = "3"
+					Text = "Branch"
+					IsBold = "1"
+					IsChecked = "0"
+					IsExpanded = "1"
+					IsSelected = "0">
+					<TreeItem
+						ItemID = "7"
+						Text = "Leaf"
+						IsBold = "0"
+						IsChecked = "0"
+						IsExpanded = "0"
+						IsSelected = "0"/>
+				</TreeItem>
+				<TreeItem
+					ItemID = "4"
+					Text = "Branch"
+					IsBold = "1"
+					IsChecked = "0"
+					IsExpanded = "1"
+					IsSelected = "0">
+					<TreeItem
+						ItemID = "8"
+						Text = "Leaf"
+						IsBold = "0"
+						IsChecked = "0"
+						IsExpanded = "0"
+						IsSelected = "0"/>
+					<TreeItem
+						ItemID = "9"
+						Text = "Leaf"
+						IsBold = "0"
+						IsChecked = "0"
+						IsExpanded = "0"
+						IsSelected = "0"/>
+					<TreeItem
+						ItemID = "10"
+						Text = "Leaf"
+						IsBold = "0"
+						IsChecked = "0"
+						IsExpanded = "0"
+						IsSelected = "0"/>
+				</TreeItem>
+			</TreeItem>
+		</Element>
+		<Element
+			CID = "449720443"
+			Type = "Rectangle"
+			X = "13"
+			Y = "84"
+			Width = "1258"
+			Height = "82"
+			Flags = "0"
+			HighlightColour = "250,250,250,0,21"
+			ShadowColour = "172,168,153,0,17"
+			FillColour = "236,233,216,0,16"
+			GradientColour = "172,168,153,0,17"
+			BorderColour = "28,81,128,0,7"
+			TextColour = "0,0,0,0,19"
+			Fill = "None"
+			Border = "Solid"
+			TextPlacement = "Top"
+			HorzAlign = "Left"
+			BorderDepth = "2"
+			BorderWidth = "2"
+			Text = ""
+			TextOutsideExtent = "1"
+			IsDisabled = "0"/>
+		<Element
+			CID = "449737650"
+			Type = "StaticText"
+			X = "425"
+			Y = "51"
+			Width = "477"
+			Height = "33"
+			Flags = "0"
+			FillColour = "236,233,216,0,16"
+			TextColour = "0,0,0,0,19"
+			Typeface = ""
+			FontAttributes = "0"
+			TextSize = "VeryLarge"
+			Text = "Persional Information Management"
+			IsDisabled = "0"
+			Fill = "None"
+			HorzAlign = "Centre"
+			VertAlign = "Centre"/>
+		<Element
+			CID = "449734797"
+			Type = "EditBox"
+			X = "1060"
+			Y = "95"
+			Width = "120"
+			Height = "21"
+			Flags = "2"
+			Typeface = ""
+			FontAttributes = "0"
+			TextSize = "Large"
+			Text = ""
+			IsDisabled = "0"
+			IsReadOnly = "0"
+			HorzAlign = "Left"
+			EditType = "Text"
+			OverrideTextColour = "0"
+			OverrideDisabledTextColour = "0"
+			OverrideFillColour = "0"
+			OverrideDisabledFillColour = "0"
+			OverrideBorderColour = "0"
+			MarginLeft = "0"
+			MarginRight = "0"
+			MarginTop = "0"
+			MarginBottom = "0"
+			TextColour = "0,0,0,0,9"
+			DisabledTextColour = "161,161,146,0,18"
+			FillColour = "255,255,153,0,0"
+			DisabledFillColour = "236,233,216,0,16"
+			BorderColour = "164,185,127,0,12"/>
+		<Element
+			CID = "449734825"
+			Type = "TextButton"
+			X = "1187"
+			Y = "93"
+			Width = "75"
+			Height = "23"
+			Flags = "0"
+			TextColour = "0,0,0,0,19"
+			Typeface = ""
+			FontAttributes = "0"
+			TextSize = "Normal"
+			Text = "Search"
+			Depth = "2"
+			IsDefault = "0"
+			IsDisabled = "0"
+			MarginLeft = "0"
+			MarginRight = "0"
+			MarginTop = "0"
+			MarginBottom = "0"
+			AutoNavType = ""/>
+		<Element
+			CID = "449723836"
+			Type = "TextButton"
+			X = "42"
+			Y = "113"
+			Width = "75"
+			Height = "23"
+			Flags = "0"
+			TextColour = "0,0,0,0,19"
+			Typeface = ""
+			FontAttributes = "0"
+			TextSize = "Normal"
+			Text = "Add"
+			Depth = "2"
+			IsDefault = "0"
+			IsDisabled = "0"
+			MarginLeft = "0"
+			MarginRight = "0"
+			MarginTop = "0"
+			MarginBottom = "0"
+			AutoNavType = ""/>
+		<Element
+			CID = "449718781"
+			Type = "HorizontalScrollBar"
+			X = "15"
+			Y = "769"
+			Width = "160"
+			Height = "16"
+			Flags = "2"
+			IsDisabled = "0"
+			HasSquareButtons = "1"
+			ButtonSize = "16"
+			RangeMin = "0"
+			RangeMax = "100"
+			PageSize = "50"
+			SliderPos = "25"/>
+		<Element
+			CID = "449716155"
+			Type = "Table"
+			X = "193"
+			Y = "166"
+			Width = "1078"
+			Height = "619"
+			Flags = "0"
+			HeaderBackgroundColour = "236,233,216,0,16"
+			HeaderBorderColour = "172,168,153,0,17"
+			HeaderTextColour = "0,0,0,0,19"
+			BackgroundColour = "172,168,153,0,13"
+			BorderColour = "164,185,127,0,12"
+			GridLineColour = "241,239,226,0,23"
+			SortedBlendColour = "64,64,64,0,0"
+			DefOddBackgroundColour = "255,255,255,0,6"
+			DefEvenBackgroundColour = "255,255,255,0,6"
+			DefTextColour = "0,0,0,0,9"
+			Typeface = ""
+			FontAttributes = "0"
+			TextSize = "Normal"
+			NextColumnID = "7"
+			IsFlat = "0"
+			IsHeaderBold = "0"
+			IsTransparent = "0"
+			HasBorder = "1"
+			HasHorzScrollBar = "1"
+			HasVertScrollBar = "1"
+			Mirror = "0"
+			HasHorzLines = "1"
+			HasVertLines = "1"
+			HasExtHorzLines = "0"
+			HasExtVertLines = "0"
+			ExtendColumnHeaders = "1"
+			ExtendColumns = "1"
+			ExtendRows = "1"
+			VariableHeightRows = "1"
+			FullRowSelection = "1"
+			HeaderWordWrap = "0"
+			WordWrap = "0"
+			HeaderSpace = "0"
+			HeaderHeight = "22"
+			RowHeight = "18"
+			FirstVisibleRow = "0"
+			FixedColumns = "0"
+			SortedColumn = "0"
+			SortedBlendFactor = "0.000000"
+			ColumnSort = "Ascending"
+			HeaderStyle = "Standard"
+			FixedCellStyle = "SemiFlat">
+			<Columns>
+				<ColumnItem
+					OddBackgroundColour = "255,255,255,0,6"
+					EvenBackgroundColour = "255,255,255,0,6"
+					TextColour = "0,0,0,0,9"
+					ColumnID = "1"
+					Heading = "ID"
+					Width = "41"
+					HeaderMargin = "0"
+					CellMargin = "0"
+					HasCustomOddBgColour = "0"
+					HasCustomEvenBgColour = "0"
+					HasCustomTextColour = "0"
+					HeadingAlignment = "Left"
+					CellAlignment = "Left"/>
+				<ColumnItem
+					OddBackgroundColour = "255,255,255,0,6"
+					EvenBackgroundColour = "255,255,255,0,6"
+					TextColour = "0,0,0,0,9"
+					ColumnID = "3"
+					Heading = "Name"
+					Width = "104"
+					HeaderMargin = "0"
+					CellMargin = "0"
+					HasCustomOddBgColour = "0"
+					HasCustomEvenBgColour = "0"
+					HasCustomTextColour = "0"
+					HeadingAlignment = "Left"
+					CellAlignment = "Left"/>
+				<ColumnItem
+					OddBackgroundColour = "255,255,255,0,6"
+					EvenBackgroundColour = "255,255,255,0,6"
+					TextColour = "0,0,0,0,9"
+					ColumnID = "4"
+					Heading = "Date of Birth"
+					Width = "81"
+					HeaderMargin = "0"
+					CellMargin = "0"
+					HasCustomOddBgColour = "0"
+					HasCustomEvenBgColour = "0"
+					HasCustomTextColour = "0"
+					HeadingAlignment = "Left"
+					CellAlignment = "Left"/>
+				<ColumnItem
+					OddBackgroundColour = "255,255,255,0,6"
+					EvenBackgroundColour = "255,255,255,0,6"
+					TextColour = "0,0,0,0,9"
+					ColumnID = "5"
+					Heading = "Phone Number"
+					Width = "83"
+					HeaderMargin = "0"
+					CellMargin = "0"
+					HasCustomOddBgColour = "0"
+					HasCustomEvenBgColour = "0"
+					HasCustomTextColour = "0"
+					HeadingAlignment = "Left"
+					CellAlignment = "Left"/>
+				<ColumnItem
+					OddBackgroundColour = "255,255,255,0,6"
+					EvenBackgroundColour = "255,255,255,0,6"
+					TextColour = "0,0,0,0,9"
+					ColumnID = "6"
+					Heading = "Wage Change"
+					Width = "600"
+					HeaderMargin = "0"
+					CellMargin = "0"
+					HasCustomOddBgColour = "0"
+					HasCustomEvenBgColour = "0"
+					HasCustomTextColour = "0"
+					HeadingAlignment = "Left"
+					CellAlignment = "Left"/>
+			</Columns>
+			<Data>
+				<Row
+					IsSelected = "0">
+					<Cell>
+						
+					</Cell>
+					<Cell>
+						
+					</Cell>
+					<Cell>
+						
+					</Cell>
+					<Cell>
+						
+					</Cell>
+					<Cell>
+						
+					</Cell>
+				</Row>
+				<Row
+					IsSelected = "0">
+					<Cell>
+						
+					</Cell>
+					<Cell>
+						
+					</Cell>
+					<Cell>
+						
+					</Cell>
+					<Cell>
+						
+					</Cell>
+					<Cell>
+						
+					</Cell>
+				</Row>
+				<Row
+					IsSelected = "0">
+					<Cell>
+						
+					</Cell>
+					<Cell>
+						
+					</Cell>
+					<Cell>
+						
+					</Cell>
+					<Cell>
+						
+					</Cell>
+					<Cell>
+						
+					</Cell>
+				</Row>
+				<Row
+					IsSelected = "0">
+					<Cell>
+						
+					</Cell>
+					<Cell>
+						
+					</Cell>
+					<Cell>
+						
+					</Cell>
+					<Cell>
+						
+					</Cell>
+					<Cell>
+						
+					</Cell>
+				</Row>
+				<Row
+					IsSelected = "0">
+					<Cell>
+						
+					</Cell>
+					<Cell>
+						
+					</Cell>
+					<Cell>
+						
+					</Cell>
+					<Cell>
+						
+					</Cell>
+					<Cell>
+						
+					</Cell>
+				</Row>
+			</Data>
+		</Element>
+		<Element
+			CID = "449730606"
+			Type = "Icon"
+			X = "43"
+			Y = "113"
+			Width = "20"
+			Height = "20"
+			Flags = "3"
+			RootPath = "$Application"
+			Filename = "Icons\Miscellaneous\SymbolPlus.ico"
+			IconIndex = "0"/>
+		<Element
+			CID = "449726011"
+			Type = "TextButton"
+			X = "137"
+			Y = "112"
+			Width = "75"
+			Height = "23"
+			Flags = "0"
+			TextColour = "0,0,0,0,19"
+			Typeface = ""
+			FontAttributes = "0"
+			TextSize = "Normal"
+			Text = "Delete"
+			Depth = "2"
+			IsDefault = "0"
+			IsDisabled = "0"
+			MarginLeft = "0"
+			MarginRight = "0"
+			MarginTop = "0"
+			MarginBottom = "0"
+			AutoNavType = ""/>
+		<Element
+			CID = "449726615"
+			Type = "Icon"
+			X = "138"
+			Y = "118"
+			Width = "16"
+			Height = "16"
+			Flags = "3"
+			RootPath = "$Application"
+			Filename = "Icons\Toolbars\Delete.ico"
+			IconIndex = "0"/>
+		<Element
+			CID = "449733615"
+			Type = "StaticText"
+			X = "1070"
+			Y = "123"
+			Width = "180"
+			Height = "21"
+			Flags = "0"
+			FillColour = "236,233,216,0,16"
+			TextColour = "0,0,255,0,0"
+			Typeface = ""
+			FontAttributes = "4"
+			TextSize = "Normal"
+			Text = "Advanced Search"
+			IsDisabled = "0"
+			Fill = "None"
+			HorzAlign = "Centre"
+			VertAlign = "Centre"/>
+		<Element
+			CID = "449729235"
+			Type = "Icon"
+			X = "402"
+			Y = "168"
+			Width = "16"
+			Height = "16"
+			Flags = "3"
+			RootPath = "$Application"
+			Filename = "Icons\Widgets\IndentTop.ico"
+			IconIndex = "0"/>
+		<Element
+			CID = "449710805"
+			Type = "Icon"
+			X = "321"
+			Y = "168"
+			Width = "16"
+			Height = "16"
+			Flags = "3"
+			RootPath = "$Application"
+			Filename = "Icons\Widgets\IndentTop.ico"
+			IconIndex = "0"/>
+		<Element
+			CID = "449724018"
+			Type = "Icon"
+			X = "217"
+			Y = "169"
+			Width = "16"
+			Height = "16"
+			Flags = "3"
+			RootPath = "$Application"
+			Filename = "Icons\Widgets\IndentTop.ico"
+			IconIndex = "0"/>
+	</Elements>
+	<Connections
+		CID = "2"/>
+	<Groups
+		CID = "3"/>
+	<SelectionGroups
+		CID = "4"/>
+	<Notes
+		CID = "5">
+		<Note
+			CID = "449713054"
+			Name = "Description"
+			NextCID = "2">
+			<Text
+				CID = "1">
+				
+			</Text>
+		</Note>
+	</Notes>
+</Screen>
