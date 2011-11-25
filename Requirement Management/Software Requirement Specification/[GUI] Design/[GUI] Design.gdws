@@ -3,8 +3,7 @@
 	NextCID = "2"
 	IconCategory = "Widgets">
 	<OpenFiles
-		CID = "1"
-		LastActive = "3">
+		CID = "1">
 		<File
 			RootPath = "$Absolute"
 			RelativePathname = "C:\Users\Nguyen\Dropbox\Capstone Project\hrm-k14vlu\Requirement Management\Software Requirement Specification\[HRM] GUI\MainPage.gui"
@@ -15,11 +14,11 @@
 			ViewSettings = ""/>
 		<File
 			RootPath = "$Absolute"
-			RelativePathname = "C:\Users\Nguyen\Dropbox\Capstone Project\hrm-k14vlu\Requirement Management\Software Requirement Specification\[HRM] GUI\QLNL.gui"
+			RelativePathname = "C:\Users\Nguyen\Dropbox\Capstone Project\hrm-k14vlu\Requirement Management\Software Requirement Specification\[HRM] GUI\HRM.gui"
 			ViewSettings = ""/>
 		<File
 			RootPath = "$Absolute"
-			RelativePathname = "C:\Users\Nguyen\Dropbox\Capstone Project\hrm-k14vlu\Requirement Management\Software Requirement Specification\[HRM] GUI\HRM.gui"
+			RelativePathname = "C:\Users\Nguyen\Dropbox\Capstone Project\hrm-k14vlu\Requirement Management\Software Requirement Specification\[HRM] GUI\QLNL.gui"
 			ViewSettings = ""/>
 	</OpenFiles>
 </Workspace>
