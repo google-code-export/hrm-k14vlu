@@ -1,0 +1,49 @@
+﻿<telerik:RadWindow x:Class="WebManagement.Client.EditChooseCategoryView"
+           xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+           xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+           xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+           xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+           xmlns:common="clr-namespace:WebManagement.Common;assembly=WebManagement.Common"     
+           xmlns:i="clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity"                
+           xmlns:cmd="clr-namespace:GalaSoft.MvvmLight.Command;assembly=GalaSoft.MvvmLight.Extras.SL4"          
+           xmlns:system="clr-namespace:System;assembly=mscorlib" 
+           xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation" 
+           mc:Ignorable="d"
+           WindowStartupLocation="CenterScreen"
+           Width="500" Height="400"
+           Header="Chọn lớp">
+    <Grid x:Name="LayoutRoot">
+        <telerik:RadBusyIndicator Name="rbiLoading" IsBusy="{Binding IsLoading}">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition />
+                    <RowDefinition Height="1" />
+                </Grid.RowDefinitions>
+                <telerik:RadToolBar VerticalAlignment="Top">
+                    <telerik:RadButton Margin="2" ToolTipService.ToolTip="Làm mới" Command="{Binding RefreshClickCommand}">
+                        <Image Source="/WebManagement.Client;component/Images/Common/refresh.png" Stretch="None"/>
+                    </telerik:RadButton>
+                    <telerik:RadButton Name="btnChoose" Margin="2" ToolTipService.ToolTip="Chọn" Command="{Binding ChooseClickCommand}">
+                        <Image Source="/WebManagement.Client;component/Images/Common/approved.png" Stretch="None"/>
+                    </telerik:RadButton>
+                    <telerik:RadButton Name="btnCancel" Margin="2" ToolTipService.ToolTip="Thoát" Command="{Binding CancelClickCommand}">
+                        <Image Source="/WebManagement.Client;component/Images/Common/exit.png" Stretch="None"/>
+                    </telerik:RadButton>
+                </telerik:RadToolBar>
+
+                <telerik:RadTreeListView Grid.Row="1" Margin="0,3,0,0" AutoGenerateColumns="False" 
+                                 ItemsSource="{Binding ListData}" SelectedItem="{Binding SelectedItem, Mode=TwoWay}" IsReadOnly="True" RowIndicatorVisibility="Collapsed">
+                    <telerik:RadTreeListView.ChildTableDefinitions>
+                        <telerik:TreeListViewTableDefinition />
+                    </telerik:RadTreeListView.ChildTableDefinitions>
+                    <telerik:RadTreeListView.Columns>
+                        <telerik:GridViewDataColumn Header="Tên chuyên mục"/>
+                        <telerik:GridViewDataColumn Header="Hiển thị"/>
+                        <telerik:GridViewDataColumn Header="Internet"/>
+                    </telerik:RadTreeListView.Columns>
+                </telerik:RadTreeListView>
+            </Grid>
+        </telerik:RadBusyIndicator>
+    </Grid>
+</telerik:RadWindow>

@@ -1,0 +1,49 @@
+<ResourceDictionary
+		xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+		xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+	<ResourceDictionary.MergedDictionaries>
+		<ResourceDictionary Source="/Telerik.Windows.Themes.Summer;component/themes/summer/GridViewToggleButton.xaml" />
+		<ResourceDictionary Source="/Telerik.Windows.Themes.Summer;component/themes/summer/ChildDataControlsPresenter.xaml" />
+		<ResourceDictionary Source="/Telerik.Windows.Themes.Summer;component/themes/summer/DataCellsPresenter.xaml" />
+		<ResourceDictionary Source="/Telerik.Windows.Themes.Summer;component/themes/summer/DetailsPresenter.xaml" />
+		<ResourceDictionary Source="/Telerik.Windows.Themes.Summer;component/themes/summer/DistinctFilterControl.xaml" />
+		<ResourceDictionary Source="/Telerik.Windows.Themes.Summer;component/themes/summer/FilteringControl.xaml" />
+		<ResourceDictionary Source="/Telerik.Windows.Themes.Summer;component/themes/summer/DraggedElement.xaml" />
+		<ResourceDictionary Source="/Telerik.Windows.Themes.Summer;component/themes/summer/FrozenColumnsSplitter.xaml" />
+		<ResourceDictionary Source="/Telerik.Windows.Themes.Summer;component/themes/summer/GridViewAggregateResultCell.xaml" />
+		<ResourceDictionary Source="/Telerik.Windows.Themes.Summer;component/themes/summer/GridViewCell.xaml" />
+		<ResourceDictionary Source="/Telerik.Windows.Themes.Summer;component/themes/summer/GridViewDataControl.xaml" />
+		<ResourceDictionary Source="/Telerik.Windows.Themes.Summer;component/themes/summer/GridViewFilteringDropDown.xaml" />
+		<ResourceDictionary Source="/Telerik.Windows.Themes.Summer;component/themes/summer/GridViewFooterCell.xaml" />
+		<ResourceDictionary Source="/Telerik.Windows.Themes.Summer;component/themes/summer/GridViewFooterIndentCell.xaml" />
+		<ResourceDictionary Source="/Telerik.Windows.Themes.Summer;component/themes/summer/GridViewFooterRow.xaml" />
+		<ResourceDictionary Source="/Telerik.Windows.Themes.Summer;component/themes/summer/GridViewGroupFooterCell.xaml" />
+		<ResourceDictionary Source="/Telerik.Windows.Themes.Summer;component/themes/summer/GridViewGroupFooterIndentCell.xaml" />
+		<ResourceDictionary Source="/Telerik.Windows.Themes.Summer;component/themes/summer/GridViewGroupFooterRow.xaml" />
+		<ResourceDictionary Source="/Telerik.Windows.Themes.Summer;component/themes/summer/GridViewGroupPanel.xaml" />
+		<ResourceDictionary Source="/Telerik.Windows.Themes.Summer;component/themes/summer/GridViewGroupPanelCell.xaml" />
+		<ResourceDictionary Source="/Telerik.Windows.Themes.Summer;component/themes/summer/GridViewGroupPanelItem.xaml" />
+		<ResourceDictionary Source="/Telerik.Windows.Themes.Summer;component/themes/summer/GridViewGroupRow.xaml" />
+		<ResourceDictionary Source="/Telerik.Windows.Themes.Summer;component/themes/summer/GridViewHeaderCell.xaml" />
+		<ResourceDictionary Source="/Telerik.Windows.Themes.Summer;component/themes/summer/GridViewHeaderIndentCell.xaml" />
+		<ResourceDictionary Source="/Telerik.Windows.Themes.Summer;component/themes/summer/GridViewHeaderRow.xaml" />
+		<ResourceDictionary Source="/Telerik.Windows.Themes.Summer;component/themes/summer/GridViewIndentCell.xaml" />
+		<ResourceDictionary Source="/Telerik.Windows.Themes.Summer;component/themes/summer/GridViewIndicatorCell.xaml" />
+		<ResourceDictionary Source="/Telerik.Windows.Themes.Summer;component/themes/summer/GridViewLoadingIndicator.xaml" />
+		<ResourceDictionary Source="/Telerik.Windows.Themes.Summer;component/themes/summer/GridViewNewRow.xaml" />
+		<ResourceDictionary Source="/Telerik.Windows.Themes.Summer;component/themes/summer/GridViewRow.xaml" />
+		<ResourceDictionary Source="/Telerik.Windows.Themes.Summer;component/themes/summer/GridViewScrollViewer.xaml" />
+		<ResourceDictionary Source="/Telerik.Windows.Themes.Summer;component/themes/summer/IndentPresenter.xaml" />
+		<ResourceDictionary Source="/Telerik.Windows.Themes.Summer;component/themes/summer/IndicatorPresenter.xaml" />
+		<ResourceDictionary Source="/Telerik.Windows.Themes.Summer;component/themes/summer/RadGridView.xaml" />
+		<ResourceDictionary Source="/Telerik.Windows.Themes.Summer;component/themes/summer/ScrollPositionIndicator.xaml" />
+		<ResourceDictionary Source="/Telerik.Windows.Themes.Summer;component/themes/summer/GridViewEditorPresenter.xaml" />
+		<ResourceDictionary Source="/Telerik.Windows.Themes.Summer;component/themes/summer/AggregateResultsList.xaml" />
+		<ResourceDictionary Source="/Telerik.Windows.Themes.Summer;component/themes/summer/LookupElement.xaml" />
+		<ResourceDictionary Source="/Telerik.Windows.Themes.Summer;component/themes/summer/GridViewCheckBox.xaml" />
+		<ResourceDictionary Source="/Telerik.Windows.Themes.Summer;component/themes/summer/RadTreeListView.xaml" />
+		<ResourceDictionary Source="/Telerik.Windows.Themes.Summer;component/themes/summer/TreeListViewRow.xaml" />
+	</ResourceDictionary.MergedDictionaries>
+
+</ResourceDictionary>
