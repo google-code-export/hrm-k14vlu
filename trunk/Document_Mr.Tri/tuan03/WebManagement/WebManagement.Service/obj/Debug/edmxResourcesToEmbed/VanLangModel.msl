@@ -1,0 +1,507 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Portal_VanLangModelStoreContainer" CdmEntityContainer="Portal_VanLangEntities">
+    <EntitySetMapping Name="Vlu_CamNhan">
+      <EntityTypeMapping TypeName="Portal_VanLangModel.Vlu_CamNhan">
+        <MappingFragment StoreEntitySet="Vlu_CamNhan">
+          <ScalarProperty Name="PortalID" ColumnName="PortalID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="NhomID" ColumnName="NhomID" />
+          <ScalarProperty Name="TieuDe" ColumnName="TieuDe" />
+          <ScalarProperty Name="NoiDung" ColumnName="NoiDung" />
+          <ScalarProperty Name="NgayGui" ColumnName="NgayGui" />
+          <ScalarProperty Name="NguoiGui" ColumnName="NguoiGui" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="HienThi" ColumnName="HienThi" />
+          <ScalarProperty Name="Duyet" ColumnName="Duyet" />
+          <ScalarProperty Name="NgayDuyet" ColumnName="NgayDuyet" />
+          <ScalarProperty Name="NguoiDuyet" ColumnName="NguoiDuyet" />
+          <ScalarProperty Name="NgayCapNhat" ColumnName="NgayCapNhat" />
+          <ScalarProperty Name="NguoiCapNhat" ColumnName="NguoiCapNhat" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Vlu_CamNhanNhom">
+      <EntityTypeMapping TypeName="Portal_VanLangModel.Vlu_CamNhanNhom">
+        <MappingFragment StoreEntitySet="Vlu_CamNhanNhom">
+          <ScalarProperty Name="NhomID" ColumnName="NhomID" />
+          <ScalarProperty Name="ParentID" ColumnName="ParentID" />
+          <ScalarProperty Name="TenNhom" ColumnName="TenNhom" />
+          <ScalarProperty Name="NoiDung" ColumnName="NoiDung" />
+          <ScalarProperty Name="SapXep" ColumnName="SapXep" />
+          <ScalarProperty Name="HienThi" ColumnName="HienThi" />
+          <ScalarProperty Name="Duyet" ColumnName="Duyet" />
+          <ScalarProperty Name="NgayTao" ColumnName="NgayTao" />
+          <ScalarProperty Name="NguoiTao" ColumnName="NguoiTao" />
+          <ScalarProperty Name="NgayCapNhat" ColumnName="NgayCapNhat" />
+          <ScalarProperty Name="NguoiCapNhat" ColumnName="NguoiCapNhat" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Vlu_ChuongTrinhDT">
+      <EntityTypeMapping TypeName="Portal_VanLangModel.Vlu_ChuongTrinhDT">
+        <MappingFragment StoreEntitySet="Vlu_ChuongTrinhDT">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="KhoaID" ColumnName="KhoaID" />
+          <ScalarProperty Name="LopID" ColumnName="LopID" />
+          <ScalarProperty Name="MonHocID" ColumnName="MonHocID" />
+          <ScalarProperty Name="NamHoc" ColumnName="NamHoc" />
+          <ScalarProperty Name="HocKy" ColumnName="HocKy" />
+          <ScalarProperty Name="NgayTao" ColumnName="NgayTao" />
+          <ScalarProperty Name="NguoiTao" ColumnName="NguoiTao" />
+          <ScalarProperty Name="NgayCapNhat" ColumnName="NgayCapNhat" />
+          <ScalarProperty Name="NguoiCapNhat" ColumnName="NguoiCapNhat" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Vlu_ChuyenMuc">
+      <EntityTypeMapping TypeName="Portal_VanLangModel.Vlu_ChuyenMuc">
+        <MappingFragment StoreEntitySet="Vlu_ChuyenMuc">
+          <ScalarProperty Name="PortalID" ColumnName="PortalID" />
+          <ScalarProperty Name="ParentID" ColumnName="ParentID" />
+          <ScalarProperty Name="ChuyenMucID" ColumnName="ChuyenMucID" />
+          <ScalarProperty Name="TenChuyenMuc" ColumnName="TenChuyenMuc" />
+          <ScalarProperty Name="Hinh" ColumnName="Hinh" />
+          <ScalarProperty Name="Duongdan" ColumnName="Duongdan" />
+          <ScalarProperty Name="NhomNguoiDung" ColumnName="NhomNguoiDung" />
+          <ScalarProperty Name="NhomQuangTri" ColumnName="NhomQuangTri" />
+          <ScalarProperty Name="DaXoa" ColumnName="DaXoa" />
+          <ScalarProperty Name="NguoiTao" ColumnName="NguoiTao" />
+          <ScalarProperty Name="NgayTao" ColumnName="NgayTao" />
+          <ScalarProperty Name="NguoiCapNhat" ColumnName="NguoiCapNhat" />
+          <ScalarProperty Name="NgayCapNhat" ColumnName="NgayCapNhat" />
+          <ScalarProperty Name="HienThi" ColumnName="HienThi" />
+          <ScalarProperty Name="SapXep" ColumnName="SapXep" />
+          <ScalarProperty Name="Internet" ColumnName="Internet" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Vlu_ChuyenMucNoiDung">
+      <EntityTypeMapping TypeName="Portal_VanLangModel.Vlu_ChuyenMucNoiDung">
+        <MappingFragment StoreEntitySet="Vlu_ChuyenMucNoiDung">
+          <ScalarProperty Name="PortalID" ColumnName="PortalID" />
+          <ScalarProperty Name="NoiDungID" ColumnName="NoiDungID" />
+          <ScalarProperty Name="TieuDe" ColumnName="TieuDe" />
+          <ScalarProperty Name="TomTat" ColumnName="TomTat" />
+          <ScalarProperty Name="NoiDung" ColumnName="NoiDung" />
+          <ScalarProperty Name="SapXep" ColumnName="SapXep" />
+          <ScalarProperty Name="NguoiTao" ColumnName="NguoiTao" />
+          <ScalarProperty Name="NguoiGiu" ColumnName="NguoiGiu" />
+          <ScalarProperty Name="NgayTao" ColumnName="NgayTao" />
+          <ScalarProperty Name="NguoiCapNhat" ColumnName="NguoiCapNhat" />
+          <ScalarProperty Name="NgayCapNhat" ColumnName="NgayCapNhat" />
+          <ScalarProperty Name="Duyet" ColumnName="Duyet" />
+          <ScalarProperty Name="HienThi" ColumnName="HienThi" />
+          <ScalarProperty Name="NguoiNhan" ColumnName="NguoiNhan" />
+          <ScalarProperty Name="DaXoa" ColumnName="DaXoa" />
+          <ScalarProperty Name="GhiChu" ColumnName="GhiChu" />
+          <ScalarProperty Name="Internet" ColumnName="Internet" />
+          <ScalarProperty Name="Loai" ColumnName="Loai" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Vlu_ChuyenMucPhanQuyen">
+      <EntityTypeMapping TypeName="Portal_VanLangModel.Vlu_ChuyenMucPhanQuyen">
+        <MappingFragment StoreEntitySet="Vlu_ChuyenMucPhanQuyen">
+          <ScalarProperty Name="PhanQuyenID" ColumnName="PhanQuyenID" />
+          <ScalarProperty Name="ChuyenMucID" ColumnName="ChuyenMucID" />
+          <ScalarProperty Name="NguoiBaoCao" ColumnName="NguoiBaoCao" />
+          <ScalarProperty Name="NguoiNhan" ColumnName="NguoiNhan" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Vlu_ChuyenMucPhienBan">
+      <EntityTypeMapping TypeName="Portal_VanLangModel.Vlu_ChuyenMucPhienBan">
+        <MappingFragment StoreEntitySet="Vlu_ChuyenMucPhienBan">
+          <ScalarProperty Name="PhienBanID" ColumnName="PhienBanID" />
+          <ScalarProperty Name="NoiDungID" ColumnName="NoiDungID" />
+          <ScalarProperty Name="PhienBan" ColumnName="PhienBan" />
+          <ScalarProperty Name="TieuDe" ColumnName="TieuDe" />
+          <ScalarProperty Name="TomTat" ColumnName="TomTat" />
+          <ScalarProperty Name="NoiDung" ColumnName="NoiDung" />
+          <ScalarProperty Name="GhiChu" ColumnName="GhiChu" />
+          <ScalarProperty Name="NguoiTao" ColumnName="NguoiTao" />
+          <ScalarProperty Name="NgayTao" ColumnName="NgayTao" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Vlu_ChuyenMucTinLienQuan">
+      <EntityTypeMapping TypeName="Portal_VanLangModel.Vlu_ChuyenMucTinLienQuan">
+        <MappingFragment StoreEntitySet="Vlu_ChuyenMucTinLienQuan">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="NoiDungID" ColumnName="NoiDungID" />
+          <ScalarProperty Name="IDKhac" ColumnName="IDKhac" />
+          <ScalarProperty Name="DuongDan" ColumnName="DuongDan" />
+          <ScalarProperty Name="TabId" ColumnName="TabId" />
+          <ScalarProperty Name="Loai" ColumnName="Loai" />
+          <ScalarProperty Name="TieuDe" ColumnName="TieuDe" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Vlu_ChuyenMucTrongNoiDung">
+      <EntityTypeMapping TypeName="Portal_VanLangModel.Vlu_ChuyenMucTrongNoiDung">
+        <MappingFragment StoreEntitySet="Vlu_ChuyenMucTrongNoiDung">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="NoiDungID" ColumnName="NoiDungID" />
+          <ScalarProperty Name="ChuyenMucID" ColumnName="ChuyenMucID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Vlu_DeCuongMH_TaiLieu">
+      <EntityTypeMapping TypeName="Portal_VanLangModel.Vlu_DeCuongMH_TaiLieu">
+        <MappingFragment StoreEntitySet="Vlu_DeCuongMH_TaiLieu">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="DeCuongID" ColumnName="DeCuongID" />
+          <ScalarProperty Name="TaiLieuID" ColumnName="TaiLieuID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Vlu_DeCuongMonHoc">
+      <EntityTypeMapping TypeName="Portal_VanLangModel.Vlu_DeCuongMonHoc">
+        <MappingFragment StoreEntitySet="Vlu_DeCuongMonHoc">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="MonHocID" ColumnName="MonHocID" />
+          <ScalarProperty Name="NamHoc" ColumnName="NamHoc" />
+          <ScalarProperty Name="HocKy" ColumnName="HocKy" />
+          <ScalarProperty Name="NoiDung" ColumnName="NoiDung" />
+          <ScalarProperty Name="Duyet" ColumnName="Duyet" />
+          <ScalarProperty Name="NgayTao" ColumnName="NgayTao" />
+          <ScalarProperty Name="NguoiTao" ColumnName="NguoiTao" />
+          <ScalarProperty Name="NgayCapNhat" ColumnName="NgayCapNhat" />
+          <ScalarProperty Name="NguoiCapNhat" ColumnName="NguoiCapNhat" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Vlu_DeCuongMonHoc_ChiTiet">
+      <EntityTypeMapping TypeName="Portal_VanLangModel.Vlu_DeCuongMonHoc_ChiTiet">
+        <MappingFragment StoreEntitySet="Vlu_DeCuongMonHoc_ChiTiet">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="DeCuongID" ColumnName="DeCuongID" />
+          <ScalarProperty Name="Chuong" ColumnName="Chuong" />
+          <ScalarProperty Name="TieuDe" ColumnName="TieuDe" />
+          <ScalarProperty Name="NoiDung" ColumnName="NoiDung" />
+          <ScalarProperty Name="GhiChu" ColumnName="GhiChu" />
+          <ScalarProperty Name="NgayTao" ColumnName="NgayTao" />
+          <ScalarProperty Name="NguoiTao" ColumnName="NguoiTao" />
+          <ScalarProperty Name="NgayCapNhat" ColumnName="NgayCapNhat" />
+          <ScalarProperty Name="NguoiCapNhat" ColumnName="NguoiCapNhat" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Vlu_Diem">
+      <EntityTypeMapping TypeName="Portal_VanLangModel.Vlu_Diem">
+        <MappingFragment StoreEntitySet="Vlu_Diem">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="SinhVienID" ColumnName="SinhVienID" />
+          <ScalarProperty Name="MonHocID" ColumnName="MonHocID" />
+          <ScalarProperty Name="LopID" ColumnName="LopID" />
+          <ScalarProperty Name="NamHoc" ColumnName="NamHoc" />
+          <ScalarProperty Name="HocKy" ColumnName="HocKy" />
+          <ScalarProperty Name="Diem" ColumnName="Diem" />
+          <ScalarProperty Name="Diem1" ColumnName="Diem1" />
+          <ScalarProperty Name="Diem2" ColumnName="Diem2" />
+          <ScalarProperty Name="DiemBT" ColumnName="DiemBT" />
+          <ScalarProperty Name="DiemTL" ColumnName="DiemTL" />
+          <ScalarProperty Name="DVHT" ColumnName="DVHT" />
+          <ScalarProperty Name="NgayTao" ColumnName="NgayTao" />
+          <ScalarProperty Name="NgayCapNhat" ColumnName="NgayCapNhat" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Vlu_Khoa">
+      <EntityTypeMapping TypeName="Portal_VanLangModel.Vlu_Khoa">
+        <MappingFragment StoreEntitySet="Vlu_Khoa">
+          <ScalarProperty Name="KhoaID" ColumnName="KhoaID" />
+          <ScalarProperty Name="ParentID" ColumnName="ParentID" />
+          <ScalarProperty Name="MaKhoa" ColumnName="MaKhoa" />
+          <ScalarProperty Name="TenKhoa" ColumnName="TenKhoa" />
+          <ScalarProperty Name="Loai" ColumnName="Loai" />
+          <ScalarProperty Name="SapXep" ColumnName="SapXep" />
+          <ScalarProperty Name="NgayTao" ColumnName="NgayTao" />
+          <ScalarProperty Name="NguoiTao" ColumnName="NguoiTao" />
+          <ScalarProperty Name="NgayCapNhat" ColumnName="NgayCapNhat" />
+          <ScalarProperty Name="NguoiCapNhat" ColumnName="NguoiCapNhat" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Vlu_Khoa_ChiTiet">
+      <EntityTypeMapping TypeName="Portal_VanLangModel.Vlu_Khoa_ChiTiet">
+        <MappingFragment StoreEntitySet="Vlu_Khoa_ChiTiet">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="KhoaID" ColumnName="KhoaID" />
+          <ScalarProperty Name="LoaiNoiDung" ColumnName="LoaiNoiDung" />
+          <ScalarProperty Name="NoiDung" ColumnName="NoiDung" />
+          <ScalarProperty Name="SapXep" ColumnName="SapXep" />
+          <ScalarProperty Name="Duyet" ColumnName="Duyet" />
+          <ScalarProperty Name="NgayTao" ColumnName="NgayTao" />
+          <ScalarProperty Name="NguoiTao" ColumnName="NguoiTao" />
+          <ScalarProperty Name="NgayCapNhat" ColumnName="NgayCapNhat" />
+          <ScalarProperty Name="NguoiCapNhat" ColumnName="NguoiCapNhat" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Vlu_LichTrinh">
+      <EntityTypeMapping TypeName="Portal_VanLangModel.Vlu_LichTrinh">
+        <MappingFragment StoreEntitySet="Vlu_LichTrinh">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="MonHocID" ColumnName="MonHocID" />
+          <ScalarProperty Name="NamHoc" ColumnName="NamHoc" />
+          <ScalarProperty Name="HocKy" ColumnName="HocKy" />
+          <ScalarProperty Name="GiangVienID" ColumnName="GiangVienID" />
+          <ScalarProperty Name="Duyet" ColumnName="Duyet" />
+          <ScalarProperty Name="NgayTao" ColumnName="NgayTao" />
+          <ScalarProperty Name="NguoiTao" ColumnName="NguoiTao" />
+          <ScalarProperty Name="NgayCapNhat" ColumnName="NgayCapNhat" />
+          <ScalarProperty Name="NguoiCapNhat" ColumnName="NguoiCapNhat" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Vlu_LichTrinh_ChiTiet">
+      <EntityTypeMapping TypeName="Portal_VanLangModel.Vlu_LichTrinh_ChiTiet">
+        <MappingFragment StoreEntitySet="Vlu_LichTrinh_ChiTiet">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="LichTrinhID" ColumnName="LichTrinhID" />
+          <ScalarProperty Name="Tuan" ColumnName="Tuan" />
+          <ScalarProperty Name="NoiDung" ColumnName="NoiDung" />
+          <ScalarProperty Name="TuNgay" ColumnName="TuNgay" />
+          <ScalarProperty Name="DenNgay" ColumnName="DenNgay" />
+          <ScalarProperty Name="SoTiet" ColumnName="SoTiet" />
+          <ScalarProperty Name="NgayTao" ColumnName="NgayTao" />
+          <ScalarProperty Name="NgayCapNhat" ColumnName="NgayCapNhat" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Vlu_LinkNhanh">
+      <EntityTypeMapping TypeName="Portal_VanLangModel.Vlu_LinkNhanh">
+        <MappingFragment StoreEntitySet="Vlu_LinkNhanh">
+          <ScalarProperty Name="LinkNhanhID" ColumnName="LinkNhanhID" />
+          <ScalarProperty Name="TieuDe" ColumnName="TieuDe" />
+          <ScalarProperty Name="DuongDan" ColumnName="DuongDan" />
+          <ScalarProperty Name="LoaiLink" ColumnName="LoaiLink" />
+          <ScalarProperty Name="Server" ColumnName="Server" />
+          <ScalarProperty Name="SapXep" ColumnName="SapXep" />
+          <ScalarProperty Name="NgayTao" ColumnName="NgayTao" />
+          <ScalarProperty Name="NguoiTao" ColumnName="NguoiTao" />
+          <ScalarProperty Name="NgayCapNhat" ColumnName="NgayCapNhat" />
+          <ScalarProperty Name="NguoiCapNhat" ColumnName="NguoiCapNhat" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Vlu_LoaiTaiLieuMH">
+      <EntityTypeMapping TypeName="Portal_VanLangModel.Vlu_LoaiTaiLieuMH">
+        <MappingFragment StoreEntitySet="Vlu_LoaiTaiLieuMH">
+          <ScalarProperty Name="LoaiID" ColumnName="LoaiID" />
+          <ScalarProperty Name="TenLoai" ColumnName="TenLoai" />
+          <ScalarProperty Name="DuongDan" ColumnName="DuongDan" />
+          <ScalarProperty Name="Duyet" ColumnName="Duyet" />
+          <ScalarProperty Name="SapXep" ColumnName="SapXep" />
+          <ScalarProperty Name="NgayTao" ColumnName="NgayTao" />
+          <ScalarProperty Name="NguoiTao" ColumnName="NguoiTao" />
+          <ScalarProperty Name="NgayCapNhat" ColumnName="NgayCapNhat" />
+          <ScalarProperty Name="NguoiCapNhat" ColumnName="NguoiCapNhat" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Vlu_LopHoc">
+      <EntityTypeMapping TypeName="Portal_VanLangModel.Vlu_LopHoc">
+        <MappingFragment StoreEntitySet="Vlu_LopHoc">
+          <ScalarProperty Name="LopID" ColumnName="LopID" />
+          <ScalarProperty Name="ParentID" ColumnName="ParentID" />
+          <ScalarProperty Name="MaLop" ColumnName="MaLop" />
+          <ScalarProperty Name="TenLop" ColumnName="TenLop" />
+          <ScalarProperty Name="KhoaID" ColumnName="KhoaID" />
+          <ScalarProperty Name="NgayTao" ColumnName="NgayTao" />
+          <ScalarProperty Name="NguoiTao" ColumnName="NguoiTao" />
+          <ScalarProperty Name="NgayCapNhat" ColumnName="NgayCapNhat" />
+          <ScalarProperty Name="NguoiCapNhat" ColumnName="NguoiCapNhat" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Vlu_MonHoc">
+      <EntityTypeMapping TypeName="Portal_VanLangModel.Vlu_MonHoc">
+        <MappingFragment StoreEntitySet="Vlu_MonHoc">
+          <ScalarProperty Name="MonHocID" ColumnName="MonHocID" />
+          <ScalarProperty Name="MaMonHoc" ColumnName="MaMonHoc" />
+          <ScalarProperty Name="TenMonHoc" ColumnName="TenMonHoc" />
+          <ScalarProperty Name="DVHT" ColumnName="DVHT" />
+          <ScalarProperty Name="TS" ColumnName="TS" />
+          <ScalarProperty Name="LT" ColumnName="LT" />
+          <ScalarProperty Name="BT" ColumnName="BT" />
+          <ScalarProperty Name="TH" ColumnName="TH" />
+          <ScalarProperty Name="BTL" ColumnName="BTL" />
+          <ScalarProperty Name="DA" ColumnName="DA" />
+          <ScalarProperty Name="LA" ColumnName="LA" />
+          <ScalarProperty Name="ThuocNhom" ColumnName="ThuocNhom" />
+          <ScalarProperty Name="Duyet" ColumnName="Duyet" />
+          <ScalarProperty Name="TinhTrang" ColumnName="TinhTrang" />
+          <ScalarProperty Name="NgayTao" ColumnName="NgayTao" />
+          <ScalarProperty Name="NguoiTao" ColumnName="NguoiTao" />
+          <ScalarProperty Name="NgayCapNhat" ColumnName="NgayCapNhat" />
+          <ScalarProperty Name="NguoiCapNhat" ColumnName="NguoiCapNhat" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Vlu_PhongHoc">
+      <EntityTypeMapping TypeName="Portal_VanLangModel.Vlu_PhongHoc">
+        <MappingFragment StoreEntitySet="Vlu_PhongHoc">
+          <ScalarProperty Name="PhongID" ColumnName="PhongID" />
+          <ScalarProperty Name="MaPhong" ColumnName="MaPhong" />
+          <ScalarProperty Name="TenPhong" ColumnName="TenPhong" />
+          <ScalarProperty Name="NgayTao" ColumnName="NgayTao" />
+          <ScalarProperty Name="NguoiTao" ColumnName="NguoiTao" />
+          <ScalarProperty Name="NgayCapNhat" ColumnName="NgayCapNhat" />
+          <ScalarProperty Name="NguoiCapNhat" ColumnName="NguoiCapNhat" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Vlu_Popup">
+      <EntityTypeMapping TypeName="Portal_VanLangModel.Vlu_Popup">
+        <MappingFragment StoreEntitySet="Vlu_Popup">
+          <ScalarProperty Name="PortalID" ColumnName="PortalID" />
+          <ScalarProperty Name="PopupID" ColumnName="PopupID" />
+          <ScalarProperty Name="TieuDe" ColumnName="TieuDe" />
+          <ScalarProperty Name="NoiDung" ColumnName="NoiDung" />
+          <ScalarProperty Name="TuNgay" ColumnName="TuNgay" />
+          <ScalarProperty Name="DenNgay" ColumnName="DenNgay" />
+          <ScalarProperty Name="Duyet" ColumnName="Duyet" />
+          <ScalarProperty Name="NgayTao" ColumnName="NgayTao" />
+          <ScalarProperty Name="NguoiTao" ColumnName="NguoiTao" />
+          <ScalarProperty Name="NgayCapNhat" ColumnName="NgayCapNhat" />
+          <ScalarProperty Name="NguoiCapNhat" ColumnName="NguoiCapNhat" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Vlu_SuKien">
+      <EntityTypeMapping TypeName="Portal_VanLangModel.Vlu_SuKien">
+        <MappingFragment StoreEntitySet="Vlu_SuKien">
+          <ScalarProperty Name="PortalID" ColumnName="PortalID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="NoiDung" ColumnName="NoiDung" />
+          <ScalarProperty Name="DuongDan" ColumnName="DuongDan" />
+          <ScalarProperty Name="ThoiGian" ColumnName="ThoiGian" />
+          <ScalarProperty Name="TuNgay" ColumnName="TuNgay" />
+          <ScalarProperty Name="DenNgay" ColumnName="DenNgay" />
+          <ScalarProperty Name="NguoiTao" ColumnName="NguoiTao" />
+          <ScalarProperty Name="NguoiGiu" ColumnName="NguoiGiu" />
+          <ScalarProperty Name="NguoiNhan" ColumnName="NguoiNhan" />
+          <ScalarProperty Name="Duyet" ColumnName="Duyet" />
+          <ScalarProperty Name="HienThi" ColumnName="HienThi" />
+          <ScalarProperty Name="Internet" ColumnName="Internet" />
+          <ScalarProperty Name="SapXep" ColumnName="SapXep" />
+          <ScalarProperty Name="DaXoa" ColumnName="DaXoa" />
+          <ScalarProperty Name="NgayTao" ColumnName="NgayTao" />
+          <ScalarProperty Name="NgayCapNhat" ColumnName="NgayCapNhat" />
+          <ScalarProperty Name="NguoiCapNhat" ColumnName="NguoiCapNhat" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Vlu_SuKien_PhanQuyen">
+      <EntityTypeMapping TypeName="Portal_VanLangModel.Vlu_SuKien_PhanQuyen">
+        <MappingFragment StoreEntitySet="Vlu_SuKien_PhanQuyen">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="NguoiTao" ColumnName="NguoiTao" />
+          <ScalarProperty Name="BaoCao" ColumnName="BaoCao" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Vlu_SuKien_PhienBan">
+      <EntityTypeMapping TypeName="Portal_VanLangModel.Vlu_SuKien_PhienBan">
+        <MappingFragment StoreEntitySet="Vlu_SuKien_PhienBan">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="SuKienID" ColumnName="SuKienID" />
+          <ScalarProperty Name="PhienBan" ColumnName="PhienBan" />
+          <ScalarProperty Name="Noidung" ColumnName="Noidung" />
+          <ScalarProperty Name="ThoiGian" ColumnName="ThoiGian" />
+          <ScalarProperty Name="TuNgay" ColumnName="TuNgay" />
+          <ScalarProperty Name="DenNgay" ColumnName="DenNgay" />
+          <ScalarProperty Name="NguoiTao" ColumnName="NguoiTao" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Vlu_TaiKhoan">
+      <EntityTypeMapping TypeName="Portal_VanLangModel.Vlu_TaiKhoan">
+        <MappingFragment StoreEntitySet="Vlu_TaiKhoan">
+          <ScalarProperty Name="TaiKhoanID" ColumnName="TaiKhoanID" />
+          <ScalarProperty Name="TenDangNhap" ColumnName="TenDangNhap" />
+          <ScalarProperty Name="MatKhau" ColumnName="MatKhau" />
+          <ScalarProperty Name="Ho" ColumnName="Ho" />
+          <ScalarProperty Name="Ten" ColumnName="Ten" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="TenHienThi" ColumnName="TenHienThi" />
+          <ScalarProperty Name="NgaySinh" ColumnName="NgaySinh" />
+          <ScalarProperty Name="KhoaID" ColumnName="KhoaID" />
+          <ScalarProperty Name="LopID" ColumnName="LopID" />
+          <ScalarProperty Name="LoaiTaiKhoan" ColumnName="LoaiTaiKhoan" />
+          <ScalarProperty Name="NgayTao" ColumnName="NgayTao" />
+          <ScalarProperty Name="NguoiTao" ColumnName="NguoiTao" />
+          <ScalarProperty Name="NgayCapNhat" ColumnName="NgayCapNhat" />
+          <ScalarProperty Name="NguoiCapNhat" ColumnName="NguoiCapNhat" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Vlu_TaiLieuMH">
+      <EntityTypeMapping TypeName="Portal_VanLangModel.Vlu_TaiLieuMH">
+        <MappingFragment StoreEntitySet="Vlu_TaiLieuMH">
+          <ScalarProperty Name="TaiLieuID" ColumnName="TaiLieuID" />
+          <ScalarProperty Name="MonHocID" ColumnName="MonHocID" />
+          <ScalarProperty Name="LoaiID" ColumnName="LoaiID" />
+          <ScalarProperty Name="NamHoc" ColumnName="NamHoc" />
+          <ScalarProperty Name="HocKy" ColumnName="HocKy" />
+          <ScalarProperty Name="TenTaiLieu" ColumnName="TenTaiLieu" />
+          <ScalarProperty Name="GhiChu" ColumnName="GhiChu" />
+          <ScalarProperty Name="TenLop" ColumnName="TenLop" />
+          <ScalarProperty Name="GiangVienID" ColumnName="GiangVienID" />
+          <ScalarProperty Name="DuongDan1" ColumnName="DuongDan1" />
+          <ScalarProperty Name="DuongDan2" ColumnName="DuongDan2" />
+          <ScalarProperty Name="LoaiDuongDan" ColumnName="LoaiDuongDan" />
+          <ScalarProperty Name="SapXep" ColumnName="SapXep" />
+          <ScalarProperty Name="Duyet" ColumnName="Duyet" />
+          <ScalarProperty Name="NgayTao" ColumnName="NgayTao" />
+          <ScalarProperty Name="NguoiTao" ColumnName="NguoiTao" />
+          <ScalarProperty Name="NgayCapNhat" ColumnName="NgayCapNhat" />
+          <ScalarProperty Name="NguoiCapNhat" ColumnName="NguoiCapNhat" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Vlu_ThoiKhoaBieu">
+      <EntityTypeMapping TypeName="Portal_VanLangModel.Vlu_ThoiKhoaBieu">
+        <MappingFragment StoreEntitySet="Vlu_ThoiKhoaBieu">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="KhoaID" ColumnName="KhoaID" />
+          <ScalarProperty Name="LopID" ColumnName="LopID" />
+          <ScalarProperty Name="NamHoc" ColumnName="NamHoc" />
+          <ScalarProperty Name="HocKy" ColumnName="HocKy" />
+          <ScalarProperty Name="Loai" ColumnName="Loai" />
+          <ScalarProperty Name="GhiChu" ColumnName="GhiChu" />
+          <ScalarProperty Name="Duyet" ColumnName="Duyet" />
+          <ScalarProperty Name="NgayTao" ColumnName="NgayTao" />
+          <ScalarProperty Name="NguoiTao" ColumnName="NguoiTao" />
+          <ScalarProperty Name="NgayCapNhat" ColumnName="NgayCapNhat" />
+          <ScalarProperty Name="NguoiCapNhat" ColumnName="NguoiCapNhat" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Vlu_ThoiKhoaBieu_ChiTiet">
+      <EntityTypeMapping TypeName="Portal_VanLangModel.Vlu_ThoiKhoaBieu_ChiTiet">
+        <MappingFragment StoreEntitySet="Vlu_ThoiKhoaBieu_ChiTiet">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ThoiKhoaBieuID" ColumnName="ThoiKhoaBieuID" />
+          <ScalarProperty Name="MonHocID" ColumnName="MonHocID" />
+          <ScalarProperty Name="PhongID" ColumnName="PhongID" />
+          <ScalarProperty Name="GiangVienID" ColumnName="GiangVienID" />
+          <ScalarProperty Name="TenLop" ColumnName="TenLop" />
+          <ScalarProperty Name="Thu" ColumnName="Thu" />
+          <ScalarProperty Name="TuTiet" ColumnName="TuTiet" />
+          <ScalarProperty Name="DenTiet" ColumnName="DenTiet" />
+          <ScalarProperty Name="TuThoiGian" ColumnName="TuThoiGian" />
+          <ScalarProperty Name="DenThoiGian" ColumnName="DenThoiGian" />
+          <ScalarProperty Name="GhiChu" ColumnName="GhiChu" />
+          <ScalarProperty Name="NgayTao" ColumnName="NgayTao" />
+          <ScalarProperty Name="NguoiTao" ColumnName="NguoiTao" />
+          <ScalarProperty Name="NgayCapNhat" ColumnName="NgayCapNhat" />
+          <ScalarProperty Name="NguoiCapNhat" ColumnName="NguoiCapNhat" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

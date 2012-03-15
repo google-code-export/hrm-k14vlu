@@ -1,0 +1,1 @@
+D:\_Working\VS2010\Winform\WebManagement\WebManagement.Service\WebManagement.Service.csproj,634569693472218960,CustomizeMetadata\Business\Training.cs,Services\AuthenticationService.cs,CustomizeMetadata\LoginUser.cs,Properties\AssemblyInfo.cs,Services\BusinessService.cs,VanLangModel.Designer.cs,VanLangService.cs,VanLangService.metadata.cs,

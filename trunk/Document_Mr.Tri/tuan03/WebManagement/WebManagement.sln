@@ -1,0 +1,123 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebManagement.Client", "WebManagement.Client\WebManagement.Client.csproj", "{6A49D73D-FF15-4779-A59E-DEB00FB8F70F}"
+	ProjectSection(ProjectDependencies) = postProject
+		{BAAD8719-AF99-4547-8D51-26240CD96E52} = {BAAD8719-AF99-4547-8D51-26240CD96E52}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebManagement.Web", "WebManagement.Web\WebManagement.Web.csproj", "{BAAD8719-AF99-4547-8D51-26240CD96E52}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Client", "Client", "{C52CF6B4-D2B4-44BF-9E13-88AC37894A28}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Server", "Server", "{2AD3DB73-3F27-4956-A501-57D51D35B1CF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Assembly", "Assembly", "{FA5125EA-961F-4D79-B340-29CEC1279E87}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MVVMLight", "MVVMLight", "{65A5A365-CC50-4711-BA3B-ECE9656DC496}"
+	ProjectSection(SolutionItems) = preProject
+		Assembly\GalaSoft.MvvmLight.Extras.SL4.dll = Assembly\GalaSoft.MvvmLight.Extras.SL4.dll
+		Assembly\GalaSoft.MvvmLight.SL4.dll = Assembly\GalaSoft.MvvmLight.SL4.dll
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Telerik", "Telerik", "{96A5A798-AC80-49DF-A2B3-6C1FD9BFB758}"
+	ProjectSection(SolutionItems) = preProject
+		Assembly\Telerik.Reporting.dll = Assembly\Telerik.Reporting.dll
+		Assembly\Telerik.Reporting.Service.dll = Assembly\Telerik.Reporting.Service.dll
+		Assembly\Telerik.ReportViewer.Silverlight.dll = Assembly\Telerik.ReportViewer.Silverlight.dll
+		Assembly\Telerik.Windows.Controls.dll = Assembly\Telerik.Windows.Controls.dll
+		Assembly\Telerik.Windows.Controls.Docking.dll = Assembly\Telerik.Windows.Controls.Docking.dll
+		Assembly\Telerik.Windows.Controls.GridView.dll = Assembly\Telerik.Windows.Controls.GridView.dll
+		Assembly\Telerik.Windows.Controls.Input.dll = Assembly\Telerik.Windows.Controls.Input.dll
+		Assembly\Telerik.Windows.Controls.Navigation.dll = Assembly\Telerik.Windows.Controls.Navigation.dll
+		Assembly\Telerik.Windows.Controls.ScheduleView.dll = Assembly\Telerik.Windows.Controls.ScheduleView.dll
+		Assembly\Telerik.Windows.Data.dll = Assembly\Telerik.Windows.Data.dll
+		Assembly\Telerik.Windows.RadUploadHandler.dll = Assembly\Telerik.Windows.RadUploadHandler.dll
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Toolkit", "Toolkit", "{7B55C6C7-0202-4B33-94DC-0C807840CFB9}"
+	ProjectSection(SolutionItems) = preProject
+		Assembly\System.Windows.Controls.DataVisualization.Toolkit.dll = Assembly\System.Windows.Controls.DataVisualization.Toolkit.dll
+		Assembly\System.Windows.Controls.Toolkit.dll = Assembly\System.Windows.Controls.Toolkit.dll
+		Assembly\System.Windows.Controls.Toolkit.Internals.dll = Assembly\System.Windows.Controls.Toolkit.Internals.dll
+		Assembly\System.Windows.Interactivity.dll = Assembly\System.Windows.Interactivity.dll
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebManagement.Common", "WebManagement.Common\WebManagement.Common.csproj", "{8E379035-6365-4248-B905-3DB4987528C4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebManagement.Data", "WebManagement.Data\WebManagement.Data.csproj", "{0F41F5BD-7558-4149-B130-7AF06B77A4FD}"
+	ProjectSection(ProjectDependencies) = postProject
+		{FCCA332A-79FE-4036-B4C5-30DBFBB028C1} = {FCCA332A-79FE-4036-B4C5-30DBFBB028C1}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebManagement.Model", "WebManagement.Model\WebManagement.Model.csproj", "{0089E30E-B2F1-4F2C-AE11-ABEC73FEA8D7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebManagement.ViewModel", "WebManagement.ViewModel\WebManagement.ViewModel.csproj", "{1FEFD130-2A62-4787-A700-BADFAB690522}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebManagement.Service", "WebManagement.Service\WebManagement.Service.csproj", "{FCCA332A-79FE-4036-B4C5-30DBFBB028C1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Authentication.Web", "Authentication.Web\Authentication.Web.csproj", "{44C44335-7EC8-4C59-948E-C83EFB4A7912}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Authentication", "Authentication", "{650F79C1-3E97-42C5-A87E-AFF9B57F9C1F}"
+	ProjectSection(SolutionItems) = preProject
+		Assembly\AuthenticationLib.dll = Assembly\AuthenticationLib.dll
+		Assembly\SystemManagement.Web.Public.dll = Assembly\SystemManagement.Web.Public.dll
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6A49D73D-FF15-4779-A59E-DEB00FB8F70F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A49D73D-FF15-4779-A59E-DEB00FB8F70F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A49D73D-FF15-4779-A59E-DEB00FB8F70F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A49D73D-FF15-4779-A59E-DEB00FB8F70F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BAAD8719-AF99-4547-8D51-26240CD96E52}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BAAD8719-AF99-4547-8D51-26240CD96E52}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BAAD8719-AF99-4547-8D51-26240CD96E52}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BAAD8719-AF99-4547-8D51-26240CD96E52}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8E379035-6365-4248-B905-3DB4987528C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E379035-6365-4248-B905-3DB4987528C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E379035-6365-4248-B905-3DB4987528C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E379035-6365-4248-B905-3DB4987528C4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0F41F5BD-7558-4149-B130-7AF06B77A4FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F41F5BD-7558-4149-B130-7AF06B77A4FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F41F5BD-7558-4149-B130-7AF06B77A4FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F41F5BD-7558-4149-B130-7AF06B77A4FD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0089E30E-B2F1-4F2C-AE11-ABEC73FEA8D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0089E30E-B2F1-4F2C-AE11-ABEC73FEA8D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0089E30E-B2F1-4F2C-AE11-ABEC73FEA8D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0089E30E-B2F1-4F2C-AE11-ABEC73FEA8D7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1FEFD130-2A62-4787-A700-BADFAB690522}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1FEFD130-2A62-4787-A700-BADFAB690522}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1FEFD130-2A62-4787-A700-BADFAB690522}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1FEFD130-2A62-4787-A700-BADFAB690522}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FCCA332A-79FE-4036-B4C5-30DBFBB028C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FCCA332A-79FE-4036-B4C5-30DBFBB028C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FCCA332A-79FE-4036-B4C5-30DBFBB028C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FCCA332A-79FE-4036-B4C5-30DBFBB028C1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{44C44335-7EC8-4C59-948E-C83EFB4A7912}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{44C44335-7EC8-4C59-948E-C83EFB4A7912}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{44C44335-7EC8-4C59-948E-C83EFB4A7912}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{44C44335-7EC8-4C59-948E-C83EFB4A7912}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{6A49D73D-FF15-4779-A59E-DEB00FB8F70F} = {C52CF6B4-D2B4-44BF-9E13-88AC37894A28}
+		{8E379035-6365-4248-B905-3DB4987528C4} = {C52CF6B4-D2B4-44BF-9E13-88AC37894A28}
+		{0F41F5BD-7558-4149-B130-7AF06B77A4FD} = {C52CF6B4-D2B4-44BF-9E13-88AC37894A28}
+		{0089E30E-B2F1-4F2C-AE11-ABEC73FEA8D7} = {C52CF6B4-D2B4-44BF-9E13-88AC37894A28}
+		{1FEFD130-2A62-4787-A700-BADFAB690522} = {C52CF6B4-D2B4-44BF-9E13-88AC37894A28}
+		{BAAD8719-AF99-4547-8D51-26240CD96E52} = {2AD3DB73-3F27-4956-A501-57D51D35B1CF}
+		{FCCA332A-79FE-4036-B4C5-30DBFBB028C1} = {2AD3DB73-3F27-4956-A501-57D51D35B1CF}
+		{44C44335-7EC8-4C59-948E-C83EFB4A7912} = {2AD3DB73-3F27-4956-A501-57D51D35B1CF}
+		{65A5A365-CC50-4711-BA3B-ECE9656DC496} = {FA5125EA-961F-4D79-B340-29CEC1279E87}
+		{96A5A798-AC80-49DF-A2B3-6C1FD9BFB758} = {FA5125EA-961F-4D79-B340-29CEC1279E87}
+		{7B55C6C7-0202-4B33-94DC-0C807840CFB9} = {FA5125EA-961F-4D79-B340-29CEC1279E87}
+		{650F79C1-3E97-42C5-A87E-AFF9B57F9C1F} = {FA5125EA-961F-4D79-B340-29CEC1279E87}
+	EndGlobalSection
+EndGlobal
