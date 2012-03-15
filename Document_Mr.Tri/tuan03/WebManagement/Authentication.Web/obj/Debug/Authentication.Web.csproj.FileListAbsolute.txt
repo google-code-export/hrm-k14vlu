@@ -1,0 +1,6 @@
+D:\_Working\VS2010\Winform\WebManagement\Authentication.Web\bin\Authentication.Web.dll
+D:\_Working\VS2010\Winform\WebManagement\Authentication.Web\bin\Authentication.Web.pdb
+D:\_Working\VS2010\Winform\WebManagement\Authentication.Web\bin\SystemManagement.Web.Public.dll
+D:\_Working\VS2010\Winform\WebManagement\Authentication.Web\obj\Debug\ResolveAssemblyReference.cache
+D:\_Working\VS2010\Winform\WebManagement\Authentication.Web\obj\Debug\Authentication.Web.dll
+D:\_Working\VS2010\Winform\WebManagement\Authentication.Web\obj\Debug\Authentication.Web.pdb

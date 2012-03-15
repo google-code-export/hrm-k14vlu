@@ -1,0 +1,55 @@
+﻿<telerik:RadWindow x:Class="WebManagement.Client.LoginView"
+           xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+           xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+           xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+           xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+           xmlns:common="clr-namespace:WebManagement.Common;assembly=WebManagement.Common"     
+           xmlns:i="clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity"                
+           xmlns:cmd="clr-namespace:GalaSoft.MvvmLight.Command;assembly=GalaSoft.MvvmLight.Extras.SL4"          
+           xmlns:system="clr-namespace:System;assembly=mscorlib" 
+           xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation" 
+           mc:Ignorable="d"
+           WindowStartupLocation="CenterScreen" ResizeMode="NoResize"
+           Width="300" Height="156" 
+           Header="Đăng nhập" CanClose="False">
+    <telerik:RadWindow.Resources>
+        <common:BooleanToVisibilityConverter x:Key="visibleConverter"/>
+    </telerik:RadWindow.Resources>
+    <Grid x:Name="LayoutRoot">
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="20" />
+                <ColumnDefinition Width="100" />
+                <ColumnDefinition />
+                <ColumnDefinition Width="30" />
+            </Grid.ColumnDefinitions>
+
+            <TextBlock Height="22" Margin="0,6,0,0" Text="Tên đăng nhập:" VerticalAlignment="Top" Grid.Column="1" />
+            <TextBox Name="txtUserName" Grid.Column="2" Height="22" Margin="0,6,0,0" MaxLength="50" VerticalAlignment="Top" IsEnabled="{Binding NotLoading}" Text="{Binding Path=UserName, Mode=TwoWay}" TabIndex="0" />
+            <Image Source="/WebManagement.Client;component/Images/Common/error.png" 
+                   Grid.Column="3" Margin="0,6,0,0" Height="22" Width="22" Stretch="Fill" VerticalAlignment="Top" HorizontalAlignment="Left" 
+                   ToolTipService.ToolTip="{Binding StringErrUserName}" Visibility="{Binding Path=VisibleErrUserName, Converter={StaticResource visibleConverter}}"/>
+
+            <TextBlock Grid.Column="1" Height="22" Margin="0,34,0,0" Text="Mật khẩu:" VerticalAlignment="Top" />
+            <PasswordBox Name="txtPassword" Grid.Column="2" Height="22" Margin="0,34,0,0" MaxLength="50" VerticalAlignment="Top" IsEnabled="{Binding NotLoading}" Password="{Binding Path=Password, Mode=TwoWay}" TabIndex="1" />
+            <Image Source="/WebManagement.Client;component/Images/Common/error.png" 
+                    Grid.Column="3" Margin="0,34,0,0" Height="22" Width="22" Stretch="Fill" VerticalAlignment="Top" HorizontalAlignment="Left" 
+                    ToolTipService.ToolTip="{Binding StringErrPassword}" Visibility="{Binding Path=VisibleErrPassword, Converter={StaticResource visibleConverter}}"/>
+
+            <CheckBox Grid.Column="2" Height="16" Margin="0,63,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Content="Lưu mật khẩu" TabIndex="2" IsEnabled="{Binding NotLoading}" IsChecked="{Binding RememberPassword, Mode=TwoWay}"/>
+
+            <telerik:RadButton Name="btnLogin" Height="30" VerticalAlignment="Top" HorizontalAlignment="Right" Width="90" Grid.Column="2" Margin="0,86,0,0" IsEnabled="{Binding NotLoading}" Command="{Binding LoginClickCommand}" TabIndex="3">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="16"/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <Image Source="/WebManagement.Client;component/Images/Common/approved.png" Stretch="None" />
+                    <TextBlock Grid.Column="1" Text="Đăng nhập" Height="16" VerticalAlignment="Top" HorizontalAlignment="Left" Width="Auto" Margin="2,0,0,0" />
+                </Grid>
+            </telerik:RadButton>
+        </Grid>
+        <telerik:RadBusyIndicator Name="rbiLoading" IsBusy="{Binding IsLoading}" Visibility="{Binding Path=IsLoading, Converter={StaticResource visibleConverter}}">
+        </telerik:RadBusyIndicator>
+    </Grid>
+</telerik:RadWindow>

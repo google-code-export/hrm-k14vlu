@@ -1,0 +1,2 @@
+D:\_Working\VS2010\Winform\WebManagement\WebManagement.Data
+Generated_Code\WebManagement.Service.g.cs

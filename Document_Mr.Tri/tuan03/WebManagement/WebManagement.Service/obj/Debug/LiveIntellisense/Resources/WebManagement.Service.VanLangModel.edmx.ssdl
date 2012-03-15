@@ -1,0 +1,1067 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Portal_VanLangModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2005" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="Portal_VanLangModelStoreContainer">
+    <EntitySet Name="Vlu_CamNhan" EntityType="Portal_VanLangModel.Store.Vlu_CamNhan" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Vlu_CamNhanNhom" EntityType="Portal_VanLangModel.Store.Vlu_CamNhanNhom" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Vlu_ChuongTrinhDT" EntityType="Portal_VanLangModel.Store.Vlu_ChuongTrinhDT" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Vlu_ChuyenMuc" EntityType="Portal_VanLangModel.Store.Vlu_ChuyenMuc" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Vlu_ChuyenMucNoiDung" EntityType="Portal_VanLangModel.Store.Vlu_ChuyenMucNoiDung" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Vlu_ChuyenMucPhanQuyen" EntityType="Portal_VanLangModel.Store.Vlu_ChuyenMucPhanQuyen" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Vlu_ChuyenMucPhienBan" EntityType="Portal_VanLangModel.Store.Vlu_ChuyenMucPhienBan" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Vlu_ChuyenMucTinLienQuan" EntityType="Portal_VanLangModel.Store.Vlu_ChuyenMucTinLienQuan" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Vlu_ChuyenMucTrongNoiDung" EntityType="Portal_VanLangModel.Store.Vlu_ChuyenMucTrongNoiDung" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Vlu_DeCuongMH_TaiLieu" EntityType="Portal_VanLangModel.Store.Vlu_DeCuongMH_TaiLieu" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Vlu_DeCuongMonHoc" EntityType="Portal_VanLangModel.Store.Vlu_DeCuongMonHoc" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Vlu_DeCuongMonHoc_ChiTiet" EntityType="Portal_VanLangModel.Store.Vlu_DeCuongMonHoc_ChiTiet" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Vlu_Diem" EntityType="Portal_VanLangModel.Store.Vlu_Diem" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Vlu_Khoa" EntityType="Portal_VanLangModel.Store.Vlu_Khoa" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Vlu_Khoa_ChiTiet" EntityType="Portal_VanLangModel.Store.Vlu_Khoa_ChiTiet" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Vlu_LichTrinh" EntityType="Portal_VanLangModel.Store.Vlu_LichTrinh" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Vlu_LichTrinh_ChiTiet" EntityType="Portal_VanLangModel.Store.Vlu_LichTrinh_ChiTiet" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Vlu_LinkNhanh" EntityType="Portal_VanLangModel.Store.Vlu_LinkNhanh" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Vlu_LoaiTaiLieuMH" EntityType="Portal_VanLangModel.Store.Vlu_LoaiTaiLieuMH" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Vlu_LopHoc" EntityType="Portal_VanLangModel.Store.Vlu_LopHoc" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Vlu_MonHoc" EntityType="Portal_VanLangModel.Store.Vlu_MonHoc" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Vlu_PhongHoc" EntityType="Portal_VanLangModel.Store.Vlu_PhongHoc" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Vlu_Popup" EntityType="Portal_VanLangModel.Store.Vlu_Popup" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Vlu_SuKien" EntityType="Portal_VanLangModel.Store.Vlu_SuKien" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Vlu_SuKien_PhanQuyen" EntityType="Portal_VanLangModel.Store.Vlu_SuKien_PhanQuyen" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Vlu_SuKien_PhienBan" EntityType="Portal_VanLangModel.Store.Vlu_SuKien_PhienBan" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Vlu_TaiKhoan" EntityType="Portal_VanLangModel.Store.Vlu_TaiKhoan" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Vlu_TaiLieuMH" EntityType="Portal_VanLangModel.Store.Vlu_TaiLieuMH" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Vlu_ThoiKhoaBieu" EntityType="Portal_VanLangModel.Store.Vlu_ThoiKhoaBieu" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Vlu_ThoiKhoaBieu_ChiTiet" EntityType="Portal_VanLangModel.Store.Vlu_ThoiKhoaBieu_ChiTiet" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="FK_Vlu_CamNhan_Vlu_CamNhanNhom" Association="Portal_VanLangModel.Store.FK_Vlu_CamNhan_Vlu_CamNhanNhom">
+      <End Role="Vlu_CamNhanNhom" EntitySet="Vlu_CamNhanNhom" />
+      <End Role="Vlu_CamNhan" EntitySet="Vlu_CamNhan" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Vlu_CamNhanNhom_Vlu_CamNhanNhom" Association="Portal_VanLangModel.Store.FK_Vlu_CamNhanNhom_Vlu_CamNhanNhom">
+      <End Role="Vlu_CamNhanNhom" EntitySet="Vlu_CamNhanNhom" />
+      <End Role="Vlu_CamNhanNhom1" EntitySet="Vlu_CamNhanNhom" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Vlu_ChuongTrinhDT_Vlu_Khoa" Association="Portal_VanLangModel.Store.FK_Vlu_ChuongTrinhDT_Vlu_Khoa">
+      <End Role="Vlu_Khoa" EntitySet="Vlu_Khoa" />
+      <End Role="Vlu_ChuongTrinhDT" EntitySet="Vlu_ChuongTrinhDT" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Vlu_ChuongTrinhDT_Vlu_LopHoc" Association="Portal_VanLangModel.Store.FK_Vlu_ChuongTrinhDT_Vlu_LopHoc">
+      <End Role="Vlu_LopHoc" EntitySet="Vlu_LopHoc" />
+      <End Role="Vlu_ChuongTrinhDT" EntitySet="Vlu_ChuongTrinhDT" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Vlu_ChuongTrinhDT_Vlu_MonHoc" Association="Portal_VanLangModel.Store.FK_Vlu_ChuongTrinhDT_Vlu_MonHoc">
+      <End Role="Vlu_MonHoc" EntitySet="Vlu_MonHoc" />
+      <End Role="Vlu_ChuongTrinhDT" EntitySet="Vlu_ChuongTrinhDT" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Vlu_ChuyenMuc_Vlu_ChuyenMuc" Association="Portal_VanLangModel.Store.FK_Vlu_ChuyenMuc_Vlu_ChuyenMuc">
+      <End Role="Vlu_ChuyenMuc" EntitySet="Vlu_ChuyenMuc" />
+      <End Role="Vlu_ChuyenMuc1" EntitySet="Vlu_ChuyenMuc" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Vlu_ChuyenMucPhanQuyen_Vlu_ChuyenMuc" Association="Portal_VanLangModel.Store.FK_Vlu_ChuyenMucPhanQuyen_Vlu_ChuyenMuc">
+      <End Role="Vlu_ChuyenMuc" EntitySet="Vlu_ChuyenMuc" />
+      <End Role="Vlu_ChuyenMucPhanQuyen" EntitySet="Vlu_ChuyenMucPhanQuyen" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Vlu_ChuyenMucPhienBan_Vlu_ChuyenMucNoiDung" Association="Portal_VanLangModel.Store.FK_Vlu_ChuyenMucPhienBan_Vlu_ChuyenMucNoiDung">
+      <End Role="Vlu_ChuyenMucNoiDung" EntitySet="Vlu_ChuyenMucNoiDung" />
+      <End Role="Vlu_ChuyenMucPhienBan" EntitySet="Vlu_ChuyenMucPhienBan" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Vlu_ChuyenMucTinLienQuan_Vlu_ChuyenMucNoiDung" Association="Portal_VanLangModel.Store.FK_Vlu_ChuyenMucTinLienQuan_Vlu_ChuyenMucNoiDung">
+      <End Role="Vlu_ChuyenMucNoiDung" EntitySet="Vlu_ChuyenMucNoiDung" />
+      <End Role="Vlu_ChuyenMucTinLienQuan" EntitySet="Vlu_ChuyenMucTinLienQuan" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Vlu_ChuyenMucTrongNoiDung_Vlu_ChuyenMuc" Association="Portal_VanLangModel.Store.FK_Vlu_ChuyenMucTrongNoiDung_Vlu_ChuyenMuc">
+      <End Role="Vlu_ChuyenMuc" EntitySet="Vlu_ChuyenMuc" />
+      <End Role="Vlu_ChuyenMucTrongNoiDung" EntitySet="Vlu_ChuyenMucTrongNoiDung" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Vlu_ChuyenMucTrongNoiDung_Vlu_ChuyenMucNoiDung1" Association="Portal_VanLangModel.Store.FK_Vlu_ChuyenMucTrongNoiDung_Vlu_ChuyenMucNoiDung1">
+      <End Role="Vlu_ChuyenMucNoiDung" EntitySet="Vlu_ChuyenMucNoiDung" />
+      <End Role="Vlu_ChuyenMucTrongNoiDung" EntitySet="Vlu_ChuyenMucTrongNoiDung" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Vlu_DeCuongMH_TaiLieu_Vlu_DeCuongMonHoc" Association="Portal_VanLangModel.Store.FK_Vlu_DeCuongMH_TaiLieu_Vlu_DeCuongMonHoc">
+      <End Role="Vlu_DeCuongMonHoc" EntitySet="Vlu_DeCuongMonHoc" />
+      <End Role="Vlu_DeCuongMH_TaiLieu" EntitySet="Vlu_DeCuongMH_TaiLieu" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Vlu_DeCuongMH_TaiLieu_Vlu_TaiLieuMH" Association="Portal_VanLangModel.Store.FK_Vlu_DeCuongMH_TaiLieu_Vlu_TaiLieuMH">
+      <End Role="Vlu_TaiLieuMH" EntitySet="Vlu_TaiLieuMH" />
+      <End Role="Vlu_DeCuongMH_TaiLieu" EntitySet="Vlu_DeCuongMH_TaiLieu" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Vlu_DeCuongMonHoc_ChiTiet_Vlu_DeCuongMonHoc" Association="Portal_VanLangModel.Store.FK_Vlu_DeCuongMonHoc_ChiTiet_Vlu_DeCuongMonHoc">
+      <End Role="Vlu_DeCuongMonHoc" EntitySet="Vlu_DeCuongMonHoc" />
+      <End Role="Vlu_DeCuongMonHoc_ChiTiet" EntitySet="Vlu_DeCuongMonHoc_ChiTiet" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Vlu_DeCuongMonHoc_Vlu_MonHoc" Association="Portal_VanLangModel.Store.FK_Vlu_DeCuongMonHoc_Vlu_MonHoc">
+      <End Role="Vlu_MonHoc" EntitySet="Vlu_MonHoc" />
+      <End Role="Vlu_DeCuongMonHoc" EntitySet="Vlu_DeCuongMonHoc" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Vlu_Diem_Vlu_LopHoc" Association="Portal_VanLangModel.Store.FK_Vlu_Diem_Vlu_LopHoc">
+      <End Role="Vlu_LopHoc" EntitySet="Vlu_LopHoc" />
+      <End Role="Vlu_Diem" EntitySet="Vlu_Diem" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Vlu_Diem_Vlu_MonHoc" Association="Portal_VanLangModel.Store.FK_Vlu_Diem_Vlu_MonHoc">
+      <End Role="Vlu_MonHoc" EntitySet="Vlu_MonHoc" />
+      <End Role="Vlu_Diem" EntitySet="Vlu_Diem" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Vlu_Diem_Vlu_TaiKhoan" Association="Portal_VanLangModel.Store.FK_Vlu_Diem_Vlu_TaiKhoan">
+      <End Role="Vlu_TaiKhoan" EntitySet="Vlu_TaiKhoan" />
+      <End Role="Vlu_Diem" EntitySet="Vlu_Diem" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Vlu_Khoa_ChiTiet_Vlu_Khoa" Association="Portal_VanLangModel.Store.FK_Vlu_Khoa_ChiTiet_Vlu_Khoa">
+      <End Role="Vlu_Khoa" EntitySet="Vlu_Khoa" />
+      <End Role="Vlu_Khoa_ChiTiet" EntitySet="Vlu_Khoa_ChiTiet" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Vlu_Khoa_Vlu_Khoa" Association="Portal_VanLangModel.Store.FK_Vlu_Khoa_Vlu_Khoa">
+      <End Role="Vlu_Khoa" EntitySet="Vlu_Khoa" />
+      <End Role="Vlu_Khoa1" EntitySet="Vlu_Khoa" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Vlu_LichTrinh_ChiTiet_Vlu_LichTrinh" Association="Portal_VanLangModel.Store.FK_Vlu_LichTrinh_ChiTiet_Vlu_LichTrinh">
+      <End Role="Vlu_LichTrinh" EntitySet="Vlu_LichTrinh" />
+      <End Role="Vlu_LichTrinh_ChiTiet" EntitySet="Vlu_LichTrinh_ChiTiet" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Vlu_LichTrinh_Vlu_MonHoc" Association="Portal_VanLangModel.Store.FK_Vlu_LichTrinh_Vlu_MonHoc">
+      <End Role="Vlu_MonHoc" EntitySet="Vlu_MonHoc" />
+      <End Role="Vlu_LichTrinh" EntitySet="Vlu_LichTrinh" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Vlu_LichTrinh_Vlu_TaiKhoan" Association="Portal_VanLangModel.Store.FK_Vlu_LichTrinh_Vlu_TaiKhoan">
+      <End Role="Vlu_TaiKhoan" EntitySet="Vlu_TaiKhoan" />
+      <End Role="Vlu_LichTrinh" EntitySet="Vlu_LichTrinh" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Vlu_LopHoc_Vlu_Khoa" Association="Portal_VanLangModel.Store.FK_Vlu_LopHoc_Vlu_Khoa">
+      <End Role="Vlu_Khoa" EntitySet="Vlu_Khoa" />
+      <End Role="Vlu_LopHoc" EntitySet="Vlu_LopHoc" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Vlu_LopHoc_Vlu_LopHoc" Association="Portal_VanLangModel.Store.FK_Vlu_LopHoc_Vlu_LopHoc">
+      <End Role="Vlu_LopHoc" EntitySet="Vlu_LopHoc" />
+      <End Role="Vlu_LopHoc1" EntitySet="Vlu_LopHoc" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Vlu_SuKien_PhienBan_Vlu_SuKien" Association="Portal_VanLangModel.Store.FK_Vlu_SuKien_PhienBan_Vlu_SuKien">
+      <End Role="Vlu_SuKien" EntitySet="Vlu_SuKien" />
+      <End Role="Vlu_SuKien_PhienBan" EntitySet="Vlu_SuKien_PhienBan" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Vlu_TaiLieuMH_Vlu_LoaiTaiLieuMH" Association="Portal_VanLangModel.Store.FK_Vlu_TaiLieuMH_Vlu_LoaiTaiLieuMH">
+      <End Role="Vlu_LoaiTaiLieuMH" EntitySet="Vlu_LoaiTaiLieuMH" />
+      <End Role="Vlu_TaiLieuMH" EntitySet="Vlu_TaiLieuMH" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Vlu_TaiLieuMH_Vlu_MonHoc" Association="Portal_VanLangModel.Store.FK_Vlu_TaiLieuMH_Vlu_MonHoc">
+      <End Role="Vlu_MonHoc" EntitySet="Vlu_MonHoc" />
+      <End Role="Vlu_TaiLieuMH" EntitySet="Vlu_TaiLieuMH" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Vlu_TaiLieuMH_Vlu_TaiKhoan" Association="Portal_VanLangModel.Store.FK_Vlu_TaiLieuMH_Vlu_TaiKhoan">
+      <End Role="Vlu_TaiKhoan" EntitySet="Vlu_TaiKhoan" />
+      <End Role="Vlu_TaiLieuMH" EntitySet="Vlu_TaiLieuMH" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Vlu_ThoiKhoaBieu_ChiTiet_Vlu_MonHoc" Association="Portal_VanLangModel.Store.FK_Vlu_ThoiKhoaBieu_ChiTiet_Vlu_MonHoc">
+      <End Role="Vlu_MonHoc" EntitySet="Vlu_MonHoc" />
+      <End Role="Vlu_ThoiKhoaBieu_ChiTiet" EntitySet="Vlu_ThoiKhoaBieu_ChiTiet" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Vlu_ThoiKhoaBieu_ChiTiet_Vlu_PhongHoc" Association="Portal_VanLangModel.Store.FK_Vlu_ThoiKhoaBieu_ChiTiet_Vlu_PhongHoc">
+      <End Role="Vlu_PhongHoc" EntitySet="Vlu_PhongHoc" />
+      <End Role="Vlu_ThoiKhoaBieu_ChiTiet" EntitySet="Vlu_ThoiKhoaBieu_ChiTiet" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Vlu_ThoiKhoaBieu_ChiTiet_Vlu_TaiKhoan" Association="Portal_VanLangModel.Store.FK_Vlu_ThoiKhoaBieu_ChiTiet_Vlu_TaiKhoan">
+      <End Role="Vlu_TaiKhoan" EntitySet="Vlu_TaiKhoan" />
+      <End Role="Vlu_ThoiKhoaBieu_ChiTiet" EntitySet="Vlu_ThoiKhoaBieu_ChiTiet" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Vlu_ThoiKhoaBieu_ChiTiet_Vlu_ThoiKhoaBieu" Association="Portal_VanLangModel.Store.FK_Vlu_ThoiKhoaBieu_ChiTiet_Vlu_ThoiKhoaBieu">
+      <End Role="Vlu_ThoiKhoaBieu" EntitySet="Vlu_ThoiKhoaBieu" />
+      <End Role="Vlu_ThoiKhoaBieu_ChiTiet" EntitySet="Vlu_ThoiKhoaBieu_ChiTiet" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Vlu_ThoiKhoaBieu_Vlu_Khoa" Association="Portal_VanLangModel.Store.FK_Vlu_ThoiKhoaBieu_Vlu_Khoa">
+      <End Role="Vlu_Khoa" EntitySet="Vlu_Khoa" />
+      <End Role="Vlu_ThoiKhoaBieu" EntitySet="Vlu_ThoiKhoaBieu" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Vlu_ThoiKhoaBieu_Vlu_LopHoc" Association="Portal_VanLangModel.Store.FK_Vlu_ThoiKhoaBieu_Vlu_LopHoc">
+      <End Role="Vlu_LopHoc" EntitySet="Vlu_LopHoc" />
+      <End Role="Vlu_ThoiKhoaBieu" EntitySet="Vlu_ThoiKhoaBieu" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Vlu_CamNhan">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="PortalID" Type="int" Nullable="false" />
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="NhomID" Type="int" Nullable="false" />
+    <Property Name="TieuDe" Type="nvarchar" Nullable="false" MaxLength="500" />
+    <Property Name="NoiDung" Type="nvarchar" MaxLength="2000" />
+    <Property Name="NgayGui" Type="datetime" Nullable="false" />
+    <Property Name="NguoiGui" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="Email" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="HienThi" Type="bit" Nullable="false" />
+    <Property Name="Duyet" Type="bit" Nullable="false" />
+    <Property Name="NgayDuyet" Type="datetime" />
+    <Property Name="NguoiDuyet" Type="nvarchar" MaxLength="50" />
+    <Property Name="NgayCapNhat" Type="datetime" />
+    <Property Name="NguoiCapNhat" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Vlu_CamNhanNhom">
+    <Key>
+      <PropertyRef Name="NhomID" />
+    </Key>
+    <Property Name="NhomID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="ParentID" Type="int" />
+    <Property Name="TenNhom" Type="nvarchar" Nullable="false" MaxLength="500" />
+    <Property Name="NoiDung" Type="ntext" />
+    <Property Name="SapXep" Type="int" Nullable="false" />
+    <Property Name="HienThi" Type="bit" Nullable="false" />
+    <Property Name="Duyet" Type="bit" Nullable="false" />
+    <Property Name="NgayTao" Type="datetime" />
+    <Property Name="NguoiTao" Type="nvarchar" MaxLength="50" />
+    <Property Name="NgayCapNhat" Type="datetime" />
+    <Property Name="NguoiCapNhat" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Vlu_ChuongTrinhDT">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="KhoaID" Type="int" Nullable="false" />
+    <Property Name="LopID" Type="int" Nullable="false" />
+    <Property Name="MonHocID" Type="int" Nullable="false" />
+    <Property Name="NamHoc" Type="int" Nullable="false" />
+    <Property Name="HocKy" Type="int" Nullable="false" />
+    <Property Name="NgayTao" Type="datetime" Nullable="false" />
+    <Property Name="NguoiTao" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="NgayCapNhat" Type="datetime" />
+    <Property Name="NguoiCapNhat" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Vlu_ChuyenMuc">
+    <Key>
+      <PropertyRef Name="ChuyenMucID" />
+    </Key>
+    <Property Name="PortalID" Type="int" Nullable="false" />
+    <Property Name="ChuyenMucID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="ParentID" Type="int" Nullable="false" />
+    <Property Name="TenChuyenMuc" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="Hinh" Type="nvarchar" MaxLength="50" />
+    <Property Name="Duongdan" Type="nvarchar" MaxLength="1000" />
+    <Property Name="NhomNguoiDung" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="NhomQuangTri" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="DaXoa" Type="bit" Nullable="false" />
+    <Property Name="NguoiTao" Type="nvarchar" MaxLength="50" />
+    <Property Name="NgayTao" Type="datetime" />
+    <Property Name="NguoiCapNhat" Type="nvarchar" MaxLength="50" />
+    <Property Name="NgayCapNhat" Type="datetime" />
+    <Property Name="HienThi" Type="bit" Nullable="false" />
+    <Property Name="SapXep" Type="int" Nullable="false" />
+    <Property Name="Internet" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Vlu_ChuyenMucNoiDung">
+    <Key>
+      <PropertyRef Name="NoiDungID" />
+    </Key>
+    <Property Name="PortalID" Type="int" Nullable="false" />
+    <Property Name="NoiDungID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="TieuDe" Type="nvarchar" Nullable="false" MaxLength="500" />
+    <Property Name="TomTat" Type="nvarchar" Nullable="false" MaxLength="500" />
+    <Property Name="NoiDung" Type="ntext" />
+    <Property Name="SapXep" Type="int" Nullable="false" />
+    <Property Name="NguoiTao" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="NguoiGiu" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="NgayTao" Type="datetime" Nullable="false" />
+    <Property Name="NguoiCapNhat" Type="nvarchar" MaxLength="50" />
+    <Property Name="NgayCapNhat" Type="datetime" />
+    <Property Name="Duyet" Type="bit" Nullable="false" />
+    <Property Name="HienThi" Type="bit" Nullable="false" />
+    <Property Name="NguoiNhan" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="DaXoa" Type="bit" Nullable="false" />
+    <Property Name="GhiChu" Type="nvarchar" MaxLength="500" />
+    <Property Name="Internet" Type="bit" Nullable="false" />
+    <Property Name="Loai" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Vlu_ChuyenMucPhanQuyen">
+    <Key>
+      <PropertyRef Name="PhanQuyenID" />
+    </Key>
+    <Property Name="PhanQuyenID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="ChuyenMucID" Type="int" Nullable="false" />
+    <Property Name="NguoiBaoCao" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="NguoiNhan" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Vlu_ChuyenMucPhienBan">
+    <Key>
+      <PropertyRef Name="PhienBanID" />
+    </Key>
+    <Property Name="PhienBanID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="NoiDungID" Type="int" Nullable="false" />
+    <Property Name="PhienBan" Type="int" Nullable="false" />
+    <Property Name="TieuDe" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="TomTat" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="NoiDung" Type="ntext" />
+    <Property Name="GhiChu" Type="nvarchar" MaxLength="500" />
+    <Property Name="NguoiTao" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="NgayTao" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Vlu_ChuyenMucTinLienQuan">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="NoiDungID" Type="int" Nullable="false" />
+    <Property Name="IDKhac" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="DuongDan" Type="nvarchar" MaxLength="50" />
+    <Property Name="TabId" Type="int" Nullable="false" />
+    <Property Name="Loai" Type="int" Nullable="false" />
+    <Property Name="TieuDe" Type="nvarchar" Nullable="false" MaxLength="500" />
+  </EntityType>
+  <EntityType Name="Vlu_ChuyenMucTrongNoiDung">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="NoiDungID" Type="int" Nullable="false" />
+    <Property Name="ChuyenMucID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Vlu_DeCuongMH_TaiLieu">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="DeCuongID" Type="int" Nullable="false" />
+    <Property Name="TaiLieuID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Vlu_DeCuongMonHoc">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="MonHocID" Type="int" Nullable="false" />
+    <Property Name="NamHoc" Type="int" Nullable="false" />
+    <Property Name="HocKy" Type="int" Nullable="false" />
+    <Property Name="NoiDung" Type="ntext" Nullable="false" />
+    <Property Name="Duyet" Type="bit" Nullable="false" />
+    <Property Name="NgayTao" Type="datetime" Nullable="false" />
+    <Property Name="NguoiTao" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="NgayCapNhat" Type="datetime" />
+    <Property Name="NguoiCapNhat" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Vlu_DeCuongMonHoc_ChiTiet">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="DeCuongID" Type="int" Nullable="false" />
+    <Property Name="Chuong" Type="int" Nullable="false" />
+    <Property Name="TieuDe" Type="nvarchar" MaxLength="500" />
+    <Property Name="NoiDung" Type="nvarchar(max)" />
+    <Property Name="GhiChu" Type="nvarchar" MaxLength="1000" />
+    <Property Name="NgayTao" Type="datetime" Nullable="false" />
+    <Property Name="NguoiTao" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="NgayCapNhat" Type="datetime" />
+    <Property Name="NguoiCapNhat" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Vlu_Diem">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="SinhVienID" Type="int" Nullable="false" />
+    <Property Name="MonHocID" Type="int" Nullable="false" />
+    <Property Name="LopID" Type="int" Nullable="false" />
+    <Property Name="NamHoc" Type="int" Nullable="false" />
+    <Property Name="HocKy" Type="int" Nullable="false" />
+    <Property Name="Diem" Type="nvarchar" MaxLength="10" />
+    <Property Name="Diem1" Type="nvarchar" MaxLength="10" />
+    <Property Name="Diem2" Type="nvarchar" MaxLength="10" />
+    <Property Name="DiemBT" Type="nvarchar" MaxLength="10" />
+    <Property Name="DiemTL" Type="nvarchar" MaxLength="10" />
+    <Property Name="DVHT" Type="nvarchar" MaxLength="10" />
+    <Property Name="NgayTao" Type="datetime" Nullable="false" />
+    <Property Name="NgayCapNhat" Type="datetime" />
+  </EntityType>
+  <EntityType Name="Vlu_Khoa">
+    <Key>
+      <PropertyRef Name="KhoaID" />
+    </Key>
+    <Property Name="KhoaID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="ParentID" Type="int" />
+    <Property Name="MaKhoa" Type="nvarchar" Nullable="false" MaxLength="20" />
+    <Property Name="TenKhoa" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="Loai" Type="int" Nullable="false" />
+    <Property Name="SapXep" Type="int" Nullable="false" />
+    <Property Name="NgayTao" Type="datetime" Nullable="false" />
+    <Property Name="NguoiTao" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="NgayCapNhat" Type="datetime" />
+    <Property Name="NguoiCapNhat" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Vlu_Khoa_ChiTiet">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="KhoaID" Type="int" Nullable="false" />
+    <Property Name="LoaiNoiDung" Type="int" Nullable="false" />
+    <Property Name="NoiDung" Type="ntext" />
+    <Property Name="SapXep" Type="int" Nullable="false" />
+    <Property Name="Duyet" Type="bit" Nullable="false" />
+    <Property Name="NgayTao" Type="datetime" Nullable="false" />
+    <Property Name="NguoiTao" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="NgayCapNhat" Type="datetime" />
+    <Property Name="NguoiCapNhat" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Vlu_LichTrinh">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="MonHocID" Type="int" Nullable="false" />
+    <Property Name="NamHoc" Type="int" Nullable="false" />
+    <Property Name="HocKy" Type="int" Nullable="false" />
+    <Property Name="GiangVienID" Type="int" />
+    <Property Name="Duyet" Type="bit" Nullable="false" />
+    <Property Name="NgayTao" Type="datetime" Nullable="false" />
+    <Property Name="NguoiTao" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="NgayCapNhat" Type="datetime" />
+    <Property Name="NguoiCapNhat" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Vlu_LichTrinh_ChiTiet">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="LichTrinhID" Type="int" Nullable="false" />
+    <Property Name="Tuan" Type="int" Nullable="false" />
+    <Property Name="NoiDung" Type="ntext" />
+    <Property Name="TuNgay" Type="datetime" />
+    <Property Name="DenNgay" Type="datetime" />
+    <Property Name="SoTiet" Type="int" />
+    <Property Name="NgayTao" Type="datetime" Nullable="false" />
+    <Property Name="NgayCapNhat" Type="datetime" />
+  </EntityType>
+  <EntityType Name="Vlu_LinkNhanh">
+    <Key>
+      <PropertyRef Name="LinkNhanhID" />
+    </Key>
+    <Property Name="LinkNhanhID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="TieuDe" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="DuongDan" Type="nvarchar" Nullable="false" MaxLength="500" />
+    <Property Name="LoaiLink" Type="int" Nullable="false" />
+    <Property Name="Server" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="SapXep" Type="int" Nullable="false" />
+    <Property Name="NgayTao" Type="datetime" Nullable="false" />
+    <Property Name="NguoiTao" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="NgayCapNhat" Type="datetime" />
+    <Property Name="NguoiCapNhat" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Vlu_LoaiTaiLieuMH">
+    <Key>
+      <PropertyRef Name="LoaiID" />
+    </Key>
+    <Property Name="LoaiID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="TenLoai" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="DuongDan" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="Duyet" Type="bit" Nullable="false" />
+    <Property Name="SapXep" Type="int" Nullable="false" />
+    <Property Name="NgayTao" Type="datetime" Nullable="false" />
+    <Property Name="NguoiTao" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="NgayCapNhat" Type="datetime" />
+    <Property Name="NguoiCapNhat" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Vlu_LopHoc">
+    <Key>
+      <PropertyRef Name="LopID" />
+    </Key>
+    <Property Name="LopID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="ParentID" Type="int" />
+    <Property Name="MaLop" Type="nvarchar" Nullable="false" MaxLength="20" />
+    <Property Name="TenLop" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="KhoaID" Type="int" />
+    <Property Name="NgayTao" Type="datetime" Nullable="false" />
+    <Property Name="NguoiTao" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="NgayCapNhat" Type="datetime" />
+    <Property Name="NguoiCapNhat" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Vlu_MonHoc">
+    <Key>
+      <PropertyRef Name="MonHocID" />
+    </Key>
+    <Property Name="MonHocID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="MaMonHoc" Type="nvarchar" Nullable="false" MaxLength="20" />
+    <Property Name="TenMonHoc" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="DVHT" Type="nvarchar" MaxLength="3" />
+    <Property Name="TS" Type="nvarchar" MaxLength="3" />
+    <Property Name="LT" Type="nvarchar" MaxLength="3" />
+    <Property Name="BT" Type="nvarchar" MaxLength="3" />
+    <Property Name="TH" Type="nvarchar" MaxLength="3" />
+    <Property Name="BTL" Type="nvarchar" MaxLength="3" />
+    <Property Name="DA" Type="nvarchar" MaxLength="3" />
+    <Property Name="LA" Type="nvarchar" MaxLength="3" />
+    <Property Name="ThuocNhom" Type="int" Nullable="false" />
+    <Property Name="Duyet" Type="bit" Nullable="false" />
+    <Property Name="TinhTrang" Type="int" Nullable="false" />
+    <Property Name="NgayTao" Type="datetime" Nullable="false" />
+    <Property Name="NguoiTao" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="NgayCapNhat" Type="datetime" />
+    <Property Name="NguoiCapNhat" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Vlu_PhongHoc">
+    <Key>
+      <PropertyRef Name="PhongID" />
+    </Key>
+    <Property Name="PhongID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="MaPhong" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="TenPhong" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="NgayTao" Type="datetime" Nullable="false" />
+    <Property Name="NguoiTao" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="NgayCapNhat" Type="datetime" />
+    <Property Name="NguoiCapNhat" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Vlu_Popup">
+    <Key>
+      <PropertyRef Name="PopupID" />
+    </Key>
+    <Property Name="PortalID" Type="int" Nullable="false" />
+    <Property Name="PopupID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="TieuDe" Type="nvarchar" Nullable="false" MaxLength="500" />
+    <Property Name="NoiDung" Type="ntext" />
+    <Property Name="TuNgay" Type="datetime" Nullable="false" />
+    <Property Name="DenNgay" Type="datetime" Nullable="false" />
+    <Property Name="Duyet" Type="bit" Nullable="false" />
+    <Property Name="NgayTao" Type="datetime" />
+    <Property Name="NguoiTao" Type="nvarchar" MaxLength="50" />
+    <Property Name="NgayCapNhat" Type="datetime" />
+    <Property Name="NguoiCapNhat" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Vlu_SuKien">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="PortalID" Type="int" Nullable="false" />
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="NoiDung" Type="nvarchar" Nullable="false" MaxLength="500" />
+    <Property Name="DuongDan" Type="nvarchar" Nullable="false" MaxLength="500" />
+    <Property Name="ThoiGian" Type="datetime" Nullable="false" />
+    <Property Name="TuNgay" Type="datetime" Nullable="false" />
+    <Property Name="DenNgay" Type="datetime" Nullable="false" />
+    <Property Name="NguoiTao" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="NguoiGiu" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="NguoiNhan" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="Duyet" Type="bit" Nullable="false" />
+    <Property Name="HienThi" Type="bit" Nullable="false" />
+    <Property Name="Internet" Type="bit" Nullable="false" />
+    <Property Name="SapXep" Type="int" Nullable="false" />
+    <Property Name="DaXoa" Type="bit" Nullable="false" />
+    <Property Name="NgayTao" Type="datetime" />
+    <Property Name="NgayCapNhat" Type="datetime" />
+    <Property Name="NguoiCapNhat" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Vlu_SuKien_PhanQuyen">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="NguoiTao" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="BaoCao" Type="nvarchar" Nullable="false" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Vlu_SuKien_PhienBan">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="SuKienID" Type="int" Nullable="false" />
+    <Property Name="PhienBan" Type="int" Nullable="false" />
+    <Property Name="Noidung" Type="nvarchar" Nullable="false" MaxLength="500" />
+    <Property Name="ThoiGian" Type="datetime" Nullable="false" />
+    <Property Name="TuNgay" Type="datetime" Nullable="false" />
+    <Property Name="DenNgay" Type="datetime" Nullable="false" />
+    <Property Name="NguoiTao" Type="nvarchar" Nullable="false" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Vlu_TaiKhoan">
+    <Key>
+      <PropertyRef Name="TaiKhoanID" />
+    </Key>
+    <Property Name="TaiKhoanID" Type="int" Nullable="false" />
+    <Property Name="TenDangNhap" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="MatKhau" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="Ho" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="Ten" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="Email" Type="nvarchar" MaxLength="500" />
+    <Property Name="TenHienThi" Type="nvarchar" MaxLength="50" />
+    <Property Name="NgaySinh" Type="nvarchar" MaxLength="10" />
+    <Property Name="KhoaID" Type="int" />
+    <Property Name="LopID" Type="int" />
+    <Property Name="LoaiTaiKhoan" Type="int" Nullable="false" />
+    <Property Name="NgayTao" Type="datetime" Nullable="false" />
+    <Property Name="NguoiTao" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="NgayCapNhat" Type="datetime" />
+    <Property Name="NguoiCapNhat" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Vlu_TaiLieuMH">
+    <Key>
+      <PropertyRef Name="TaiLieuID" />
+    </Key>
+    <Property Name="TaiLieuID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="MonHocID" Type="int" Nullable="false" />
+    <Property Name="LoaiID" Type="int" Nullable="false" />
+    <Property Name="NamHoc" Type="int" Nullable="false" />
+    <Property Name="HocKy" Type="int" Nullable="false" />
+    <Property Name="TenTaiLieu" Type="nvarchar" MaxLength="50" />
+    <Property Name="GhiChu" Type="nvarchar" MaxLength="500" />
+    <Property Name="TenLop" Type="nvarchar" MaxLength="50" />
+    <Property Name="GiangVienID" Type="int" />
+    <Property Name="DuongDan1" Type="nvarchar" MaxLength="500" />
+    <Property Name="DuongDan2" Type="nvarchar" MaxLength="500" />
+    <Property Name="LoaiDuongDan" Type="int" Nullable="false" />
+    <Property Name="SapXep" Type="int" Nullable="false" />
+    <Property Name="Duyet" Type="bit" Nullable="false" />
+    <Property Name="NgayTao" Type="datetime" Nullable="false" />
+    <Property Name="NguoiTao" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="NgayCapNhat" Type="datetime" />
+    <Property Name="NguoiCapNhat" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Vlu_ThoiKhoaBieu">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="KhoaID" Type="int" Nullable="false" />
+    <Property Name="LopID" Type="int" Nullable="false" />
+    <Property Name="NamHoc" Type="int" Nullable="false" />
+    <Property Name="HocKy" Type="int" Nullable="false" />
+    <Property Name="Loai" Type="int" Nullable="false" />
+    <Property Name="GhiChu" Type="nvarchar" MaxLength="1000" />
+    <Property Name="Duyet" Type="bit" Nullable="false" />
+    <Property Name="NgayTao" Type="datetime" Nullable="false" />
+    <Property Name="NguoiTao" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="NgayCapNhat" Type="datetime" />
+    <Property Name="NguoiCapNhat" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Vlu_ThoiKhoaBieu_ChiTiet">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="ThoiKhoaBieuID" Type="int" Nullable="false" />
+    <Property Name="MonHocID" Type="int" Nullable="false" />
+    <Property Name="PhongID" Type="int" />
+    <Property Name="GiangVienID" Type="int" />
+    <Property Name="TenLop" Type="nvarchar" MaxLength="50" />
+    <Property Name="Thu" Type="int" />
+    <Property Name="TuTiet" Type="int" />
+    <Property Name="DenTiet" Type="int" />
+    <Property Name="TuThoiGian" Type="datetime" />
+    <Property Name="DenThoiGian" Type="datetime" />
+    <Property Name="GhiChu" Type="nvarchar" MaxLength="500" />
+    <Property Name="NgayTao" Type="datetime" Nullable="false" />
+    <Property Name="NguoiTao" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="NgayCapNhat" Type="datetime" />
+    <Property Name="NguoiCapNhat" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <Association Name="FK_Vlu_CamNhan_Vlu_CamNhanNhom">
+    <End Role="Vlu_CamNhanNhom" Type="Portal_VanLangModel.Store.Vlu_CamNhanNhom" Multiplicity="1" />
+    <End Role="Vlu_CamNhan" Type="Portal_VanLangModel.Store.Vlu_CamNhan" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Vlu_CamNhanNhom">
+        <PropertyRef Name="NhomID" />
+      </Principal>
+      <Dependent Role="Vlu_CamNhan">
+        <PropertyRef Name="NhomID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Vlu_CamNhanNhom_Vlu_CamNhanNhom">
+    <End Role="Vlu_CamNhanNhom" Type="Portal_VanLangModel.Store.Vlu_CamNhanNhom" Multiplicity="0..1" />
+    <End Role="Vlu_CamNhanNhom1" Type="Portal_VanLangModel.Store.Vlu_CamNhanNhom" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Vlu_CamNhanNhom">
+        <PropertyRef Name="NhomID" />
+      </Principal>
+      <Dependent Role="Vlu_CamNhanNhom1">
+        <PropertyRef Name="ParentID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Vlu_ChuongTrinhDT_Vlu_Khoa">
+    <End Role="Vlu_Khoa" Type="Portal_VanLangModel.Store.Vlu_Khoa" Multiplicity="1" />
+    <End Role="Vlu_ChuongTrinhDT" Type="Portal_VanLangModel.Store.Vlu_ChuongTrinhDT" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Vlu_Khoa">
+        <PropertyRef Name="KhoaID" />
+      </Principal>
+      <Dependent Role="Vlu_ChuongTrinhDT">
+        <PropertyRef Name="KhoaID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Vlu_ChuongTrinhDT_Vlu_LopHoc">
+    <End Role="Vlu_LopHoc" Type="Portal_VanLangModel.Store.Vlu_LopHoc" Multiplicity="1" />
+    <End Role="Vlu_ChuongTrinhDT" Type="Portal_VanLangModel.Store.Vlu_ChuongTrinhDT" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Vlu_LopHoc">
+        <PropertyRef Name="LopID" />
+      </Principal>
+      <Dependent Role="Vlu_ChuongTrinhDT">
+        <PropertyRef Name="LopID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Vlu_ChuongTrinhDT_Vlu_MonHoc">
+    <End Role="Vlu_MonHoc" Type="Portal_VanLangModel.Store.Vlu_MonHoc" Multiplicity="1" />
+    <End Role="Vlu_ChuongTrinhDT" Type="Portal_VanLangModel.Store.Vlu_ChuongTrinhDT" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Vlu_MonHoc">
+        <PropertyRef Name="MonHocID" />
+      </Principal>
+      <Dependent Role="Vlu_ChuongTrinhDT">
+        <PropertyRef Name="MonHocID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Vlu_ChuyenMuc_Vlu_ChuyenMuc">
+    <End Role="Vlu_ChuyenMuc" Type="Portal_VanLangModel.Store.Vlu_ChuyenMuc" Multiplicity="1" />
+    <End Role="Vlu_ChuyenMuc1" Type="Portal_VanLangModel.Store.Vlu_ChuyenMuc" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Vlu_ChuyenMuc">
+        <PropertyRef Name="ChuyenMucID" />
+      </Principal>
+      <Dependent Role="Vlu_ChuyenMuc1">
+        <PropertyRef Name="ParentID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Vlu_ChuyenMucPhanQuyen_Vlu_ChuyenMuc">
+    <End Role="Vlu_ChuyenMuc" Type="Portal_VanLangModel.Store.Vlu_ChuyenMuc" Multiplicity="1" />
+    <End Role="Vlu_ChuyenMucPhanQuyen" Type="Portal_VanLangModel.Store.Vlu_ChuyenMucPhanQuyen" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Vlu_ChuyenMuc">
+        <PropertyRef Name="ChuyenMucID" />
+      </Principal>
+      <Dependent Role="Vlu_ChuyenMucPhanQuyen">
+        <PropertyRef Name="ChuyenMucID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Vlu_ChuyenMucPhienBan_Vlu_ChuyenMucNoiDung">
+    <End Role="Vlu_ChuyenMucNoiDung" Type="Portal_VanLangModel.Store.Vlu_ChuyenMucNoiDung" Multiplicity="1" />
+    <End Role="Vlu_ChuyenMucPhienBan" Type="Portal_VanLangModel.Store.Vlu_ChuyenMucPhienBan" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Vlu_ChuyenMucNoiDung">
+        <PropertyRef Name="NoiDungID" />
+      </Principal>
+      <Dependent Role="Vlu_ChuyenMucPhienBan">
+        <PropertyRef Name="NoiDungID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Vlu_ChuyenMucTinLienQuan_Vlu_ChuyenMucNoiDung">
+    <End Role="Vlu_ChuyenMucNoiDung" Type="Portal_VanLangModel.Store.Vlu_ChuyenMucNoiDung" Multiplicity="1" />
+    <End Role="Vlu_ChuyenMucTinLienQuan" Type="Portal_VanLangModel.Store.Vlu_ChuyenMucTinLienQuan" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Vlu_ChuyenMucNoiDung">
+        <PropertyRef Name="NoiDungID" />
+      </Principal>
+      <Dependent Role="Vlu_ChuyenMucTinLienQuan">
+        <PropertyRef Name="NoiDungID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Vlu_ChuyenMucTrongNoiDung_Vlu_ChuyenMuc">
+    <End Role="Vlu_ChuyenMuc" Type="Portal_VanLangModel.Store.Vlu_ChuyenMuc" Multiplicity="1" />
+    <End Role="Vlu_ChuyenMucTrongNoiDung" Type="Portal_VanLangModel.Store.Vlu_ChuyenMucTrongNoiDung" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Vlu_ChuyenMuc">
+        <PropertyRef Name="ChuyenMucID" />
+      </Principal>
+      <Dependent Role="Vlu_ChuyenMucTrongNoiDung">
+        <PropertyRef Name="ChuyenMucID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Vlu_ChuyenMucTrongNoiDung_Vlu_ChuyenMucNoiDung1">
+    <End Role="Vlu_ChuyenMucNoiDung" Type="Portal_VanLangModel.Store.Vlu_ChuyenMucNoiDung" Multiplicity="1" />
+    <End Role="Vlu_ChuyenMucTrongNoiDung" Type="Portal_VanLangModel.Store.Vlu_ChuyenMucTrongNoiDung" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Vlu_ChuyenMucNoiDung">
+        <PropertyRef Name="NoiDungID" />
+      </Principal>
+      <Dependent Role="Vlu_ChuyenMucTrongNoiDung">
+        <PropertyRef Name="NoiDungID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Vlu_DeCuongMH_TaiLieu_Vlu_DeCuongMonHoc">
+    <End Role="Vlu_DeCuongMonHoc" Type="Portal_VanLangModel.Store.Vlu_DeCuongMonHoc" Multiplicity="1" />
+    <End Role="Vlu_DeCuongMH_TaiLieu" Type="Portal_VanLangModel.Store.Vlu_DeCuongMH_TaiLieu" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Vlu_DeCuongMonHoc">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Vlu_DeCuongMH_TaiLieu">
+        <PropertyRef Name="DeCuongID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Vlu_DeCuongMH_TaiLieu_Vlu_TaiLieuMH">
+    <End Role="Vlu_TaiLieuMH" Type="Portal_VanLangModel.Store.Vlu_TaiLieuMH" Multiplicity="1" />
+    <End Role="Vlu_DeCuongMH_TaiLieu" Type="Portal_VanLangModel.Store.Vlu_DeCuongMH_TaiLieu" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Vlu_TaiLieuMH">
+        <PropertyRef Name="TaiLieuID" />
+      </Principal>
+      <Dependent Role="Vlu_DeCuongMH_TaiLieu">
+        <PropertyRef Name="TaiLieuID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Vlu_DeCuongMonHoc_ChiTiet_Vlu_DeCuongMonHoc">
+    <End Role="Vlu_DeCuongMonHoc" Type="Portal_VanLangModel.Store.Vlu_DeCuongMonHoc" Multiplicity="1" />
+    <End Role="Vlu_DeCuongMonHoc_ChiTiet" Type="Portal_VanLangModel.Store.Vlu_DeCuongMonHoc_ChiTiet" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Vlu_DeCuongMonHoc">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Vlu_DeCuongMonHoc_ChiTiet">
+        <PropertyRef Name="DeCuongID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Vlu_DeCuongMonHoc_Vlu_MonHoc">
+    <End Role="Vlu_MonHoc" Type="Portal_VanLangModel.Store.Vlu_MonHoc" Multiplicity="1" />
+    <End Role="Vlu_DeCuongMonHoc" Type="Portal_VanLangModel.Store.Vlu_DeCuongMonHoc" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Vlu_MonHoc">
+        <PropertyRef Name="MonHocID" />
+      </Principal>
+      <Dependent Role="Vlu_DeCuongMonHoc">
+        <PropertyRef Name="MonHocID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Vlu_Diem_Vlu_LopHoc">
+    <End Role="Vlu_LopHoc" Type="Portal_VanLangModel.Store.Vlu_LopHoc" Multiplicity="1" />
+    <End Role="Vlu_Diem" Type="Portal_VanLangModel.Store.Vlu_Diem" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Vlu_LopHoc">
+        <PropertyRef Name="LopID" />
+      </Principal>
+      <Dependent Role="Vlu_Diem">
+        <PropertyRef Name="LopID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Vlu_Diem_Vlu_MonHoc">
+    <End Role="Vlu_MonHoc" Type="Portal_VanLangModel.Store.Vlu_MonHoc" Multiplicity="1" />
+    <End Role="Vlu_Diem" Type="Portal_VanLangModel.Store.Vlu_Diem" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Vlu_MonHoc">
+        <PropertyRef Name="MonHocID" />
+      </Principal>
+      <Dependent Role="Vlu_Diem">
+        <PropertyRef Name="MonHocID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Vlu_Diem_Vlu_TaiKhoan">
+    <End Role="Vlu_TaiKhoan" Type="Portal_VanLangModel.Store.Vlu_TaiKhoan" Multiplicity="1" />
+    <End Role="Vlu_Diem" Type="Portal_VanLangModel.Store.Vlu_Diem" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Vlu_TaiKhoan">
+        <PropertyRef Name="TaiKhoanID" />
+      </Principal>
+      <Dependent Role="Vlu_Diem">
+        <PropertyRef Name="SinhVienID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Vlu_Khoa_ChiTiet_Vlu_Khoa">
+    <End Role="Vlu_Khoa" Type="Portal_VanLangModel.Store.Vlu_Khoa" Multiplicity="1" />
+    <End Role="Vlu_Khoa_ChiTiet" Type="Portal_VanLangModel.Store.Vlu_Khoa_ChiTiet" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Vlu_Khoa">
+        <PropertyRef Name="KhoaID" />
+      </Principal>
+      <Dependent Role="Vlu_Khoa_ChiTiet">
+        <PropertyRef Name="KhoaID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Vlu_Khoa_Vlu_Khoa">
+    <End Role="Vlu_Khoa" Type="Portal_VanLangModel.Store.Vlu_Khoa" Multiplicity="0..1" />
+    <End Role="Vlu_Khoa1" Type="Portal_VanLangModel.Store.Vlu_Khoa" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Vlu_Khoa">
+        <PropertyRef Name="KhoaID" />
+      </Principal>
+      <Dependent Role="Vlu_Khoa1">
+        <PropertyRef Name="ParentID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Vlu_LichTrinh_ChiTiet_Vlu_LichTrinh">
+    <End Role="Vlu_LichTrinh" Type="Portal_VanLangModel.Store.Vlu_LichTrinh" Multiplicity="1" />
+    <End Role="Vlu_LichTrinh_ChiTiet" Type="Portal_VanLangModel.Store.Vlu_LichTrinh_ChiTiet" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Vlu_LichTrinh">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Vlu_LichTrinh_ChiTiet">
+        <PropertyRef Name="LichTrinhID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Vlu_LichTrinh_Vlu_MonHoc">
+    <End Role="Vlu_MonHoc" Type="Portal_VanLangModel.Store.Vlu_MonHoc" Multiplicity="1" />
+    <End Role="Vlu_LichTrinh" Type="Portal_VanLangModel.Store.Vlu_LichTrinh" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Vlu_MonHoc">
+        <PropertyRef Name="MonHocID" />
+      </Principal>
+      <Dependent Role="Vlu_LichTrinh">
+        <PropertyRef Name="MonHocID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Vlu_LichTrinh_Vlu_TaiKhoan">
+    <End Role="Vlu_TaiKhoan" Type="Portal_VanLangModel.Store.Vlu_TaiKhoan" Multiplicity="0..1" />
+    <End Role="Vlu_LichTrinh" Type="Portal_VanLangModel.Store.Vlu_LichTrinh" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Vlu_TaiKhoan">
+        <PropertyRef Name="TaiKhoanID" />
+      </Principal>
+      <Dependent Role="Vlu_LichTrinh">
+        <PropertyRef Name="GiangVienID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Vlu_LopHoc_Vlu_Khoa">
+    <End Role="Vlu_Khoa" Type="Portal_VanLangModel.Store.Vlu_Khoa" Multiplicity="0..1" />
+    <End Role="Vlu_LopHoc" Type="Portal_VanLangModel.Store.Vlu_LopHoc" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Vlu_Khoa">
+        <PropertyRef Name="KhoaID" />
+      </Principal>
+      <Dependent Role="Vlu_LopHoc">
+        <PropertyRef Name="KhoaID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Vlu_LopHoc_Vlu_LopHoc">
+    <End Role="Vlu_LopHoc" Type="Portal_VanLangModel.Store.Vlu_LopHoc" Multiplicity="0..1" />
+    <End Role="Vlu_LopHoc1" Type="Portal_VanLangModel.Store.Vlu_LopHoc" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Vlu_LopHoc">
+        <PropertyRef Name="LopID" />
+      </Principal>
+      <Dependent Role="Vlu_LopHoc1">
+        <PropertyRef Name="ParentID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Vlu_SuKien_PhienBan_Vlu_SuKien">
+    <End Role="Vlu_SuKien" Type="Portal_VanLangModel.Store.Vlu_SuKien" Multiplicity="1" />
+    <End Role="Vlu_SuKien_PhienBan" Type="Portal_VanLangModel.Store.Vlu_SuKien_PhienBan" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Vlu_SuKien">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Vlu_SuKien_PhienBan">
+        <PropertyRef Name="SuKienID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Vlu_TaiLieuMH_Vlu_LoaiTaiLieuMH">
+    <End Role="Vlu_LoaiTaiLieuMH" Type="Portal_VanLangModel.Store.Vlu_LoaiTaiLieuMH" Multiplicity="1" />
+    <End Role="Vlu_TaiLieuMH" Type="Portal_VanLangModel.Store.Vlu_TaiLieuMH" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Vlu_LoaiTaiLieuMH">
+        <PropertyRef Name="LoaiID" />
+      </Principal>
+      <Dependent Role="Vlu_TaiLieuMH">
+        <PropertyRef Name="LoaiID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Vlu_TaiLieuMH_Vlu_MonHoc">
+    <End Role="Vlu_MonHoc" Type="Portal_VanLangModel.Store.Vlu_MonHoc" Multiplicity="1" />
+    <End Role="Vlu_TaiLieuMH" Type="Portal_VanLangModel.Store.Vlu_TaiLieuMH" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Vlu_MonHoc">
+        <PropertyRef Name="MonHocID" />
+      </Principal>
+      <Dependent Role="Vlu_TaiLieuMH">
+        <PropertyRef Name="MonHocID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Vlu_TaiLieuMH_Vlu_TaiKhoan">
+    <End Role="Vlu_TaiKhoan" Type="Portal_VanLangModel.Store.Vlu_TaiKhoan" Multiplicity="0..1" />
+    <End Role="Vlu_TaiLieuMH" Type="Portal_VanLangModel.Store.Vlu_TaiLieuMH" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Vlu_TaiKhoan">
+        <PropertyRef Name="TaiKhoanID" />
+      </Principal>
+      <Dependent Role="Vlu_TaiLieuMH">
+        <PropertyRef Name="GiangVienID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Vlu_ThoiKhoaBieu_ChiTiet_Vlu_MonHoc">
+    <End Role="Vlu_MonHoc" Type="Portal_VanLangModel.Store.Vlu_MonHoc" Multiplicity="1" />
+    <End Role="Vlu_ThoiKhoaBieu_ChiTiet" Type="Portal_VanLangModel.Store.Vlu_ThoiKhoaBieu_ChiTiet" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Vlu_MonHoc">
+        <PropertyRef Name="MonHocID" />
+      </Principal>
+      <Dependent Role="Vlu_ThoiKhoaBieu_ChiTiet">
+        <PropertyRef Name="MonHocID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Vlu_ThoiKhoaBieu_ChiTiet_Vlu_PhongHoc">
+    <End Role="Vlu_PhongHoc" Type="Portal_VanLangModel.Store.Vlu_PhongHoc" Multiplicity="0..1" />
+    <End Role="Vlu_ThoiKhoaBieu_ChiTiet" Type="Portal_VanLangModel.Store.Vlu_ThoiKhoaBieu_ChiTiet" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Vlu_PhongHoc">
+        <PropertyRef Name="PhongID" />
+      </Principal>
+      <Dependent Role="Vlu_ThoiKhoaBieu_ChiTiet">
+        <PropertyRef Name="PhongID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Vlu_ThoiKhoaBieu_ChiTiet_Vlu_TaiKhoan">
+    <End Role="Vlu_TaiKhoan" Type="Portal_VanLangModel.Store.Vlu_TaiKhoan" Multiplicity="0..1" />
+    <End Role="Vlu_ThoiKhoaBieu_ChiTiet" Type="Portal_VanLangModel.Store.Vlu_ThoiKhoaBieu_ChiTiet" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Vlu_TaiKhoan">
+        <PropertyRef Name="TaiKhoanID" />
+      </Principal>
+      <Dependent Role="Vlu_ThoiKhoaBieu_ChiTiet">
+        <PropertyRef Name="GiangVienID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Vlu_ThoiKhoaBieu_ChiTiet_Vlu_ThoiKhoaBieu">
+    <End Role="Vlu_ThoiKhoaBieu" Type="Portal_VanLangModel.Store.Vlu_ThoiKhoaBieu" Multiplicity="1" />
+    <End Role="Vlu_ThoiKhoaBieu_ChiTiet" Type="Portal_VanLangModel.Store.Vlu_ThoiKhoaBieu_ChiTiet" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Vlu_ThoiKhoaBieu">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Vlu_ThoiKhoaBieu_ChiTiet">
+        <PropertyRef Name="ThoiKhoaBieuID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Vlu_ThoiKhoaBieu_Vlu_Khoa">
+    <End Role="Vlu_Khoa" Type="Portal_VanLangModel.Store.Vlu_Khoa" Multiplicity="1" />
+    <End Role="Vlu_ThoiKhoaBieu" Type="Portal_VanLangModel.Store.Vlu_ThoiKhoaBieu" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Vlu_Khoa">
+        <PropertyRef Name="KhoaID" />
+      </Principal>
+      <Dependent Role="Vlu_ThoiKhoaBieu">
+        <PropertyRef Name="KhoaID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Vlu_ThoiKhoaBieu_Vlu_LopHoc">
+    <End Role="Vlu_LopHoc" Type="Portal_VanLangModel.Store.Vlu_LopHoc" Multiplicity="1" />
+    <End Role="Vlu_ThoiKhoaBieu" Type="Portal_VanLangModel.Store.Vlu_ThoiKhoaBieu" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Vlu_LopHoc">
+        <PropertyRef Name="LopID" />
+      </Principal>
+      <Dependent Role="Vlu_ThoiKhoaBieu">
+        <PropertyRef Name="LopID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>
