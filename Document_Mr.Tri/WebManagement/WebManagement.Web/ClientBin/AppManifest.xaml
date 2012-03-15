@@ -1,0 +1,54 @@
+﻿<Deployment xmlns="http://schemas.microsoft.com/client/2007/deployment" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" EntryPointAssembly="WebManagement.Client" EntryPointType="WebManagement.Client.App" RuntimeVersion="4.0.50826.0">
+  <Deployment.Parts>
+    <AssemblyPart x:Name="WebManagement.Client" Source="WebManagement.Client.dll" />
+    <AssemblyPart x:Name="GalaSoft.MvvmLight.Extras.SL4" Source="GalaSoft.MvvmLight.Extras.SL4.dll" />
+    <AssemblyPart x:Name="GalaSoft.MvvmLight.SL4" Source="GalaSoft.MvvmLight.SL4.dll" />
+    <AssemblyPart x:Name="System.ComponentModel.Composition" Source="System.ComponentModel.Composition.dll" />
+    <AssemblyPart x:Name="System.ComponentModel.Composition.Initialization" Source="System.ComponentModel.Composition.Initialization.dll" />
+    <AssemblyPart x:Name="System.ComponentModel.DataAnnotations" Source="System.ComponentModel.DataAnnotations.dll" />
+    <AssemblyPart x:Name="System.ServiceModel.DomainServices.Client" Source="System.ServiceModel.DomainServices.Client.dll" />
+    <AssemblyPart x:Name="System.ServiceModel.DomainServices.Client.Web" Source="System.ServiceModel.DomainServices.Client.Web.dll" />
+    <AssemblyPart x:Name="System.ServiceModel.Web.Extensions" Source="System.ServiceModel.Web.Extensions.dll" />
+    <AssemblyPart x:Name="System.Windows.Controls.Data" Source="System.Windows.Controls.Data.dll" />
+    <AssemblyPart x:Name="System.Windows.Controls.DataVisualization.Toolkit" Source="System.Windows.Controls.DataVisualization.Toolkit.dll" />
+    <AssemblyPart x:Name="System.Windows.Controls" Source="System.Windows.Controls.dll" />
+    <AssemblyPart x:Name="System.Windows.Controls.Toolkit" Source="System.Windows.Controls.Toolkit.dll" />
+    <AssemblyPart x:Name="System.Windows.Controls.Toolkit.Internals" Source="System.Windows.Controls.Toolkit.Internals.dll" />
+    <AssemblyPart x:Name="System.Windows.Interactivity" Source="System.Windows.Interactivity.dll" />
+    <AssemblyPart x:Name="Telerik.ReportViewer.Silverlight" Source="Telerik.ReportViewer.Silverlight.dll" />
+    <AssemblyPart x:Name="Telerik.Windows.Controls.Charting" Source="Telerik.Windows.Controls.Charting.dll" />
+    <AssemblyPart x:Name="Telerik.Windows.Controls.Data" Source="Telerik.Windows.Controls.Data.dll" />
+    <AssemblyPart x:Name="Telerik.Windows.Controls.DataVisualization" Source="Telerik.Windows.Controls.DataVisualization.dll" />
+    <AssemblyPart x:Name="Telerik.Windows.Controls" Source="Telerik.Windows.Controls.dll" />
+    <AssemblyPart x:Name="Telerik.Windows.Controls.Docking" Source="Telerik.Windows.Controls.Docking.dll" />
+    <AssemblyPart x:Name="Telerik.Windows.Controls.Editor" Source="Telerik.Windows.Controls.Editor.dll" />
+    <AssemblyPart x:Name="Telerik.Windows.Controls.Gauge" Source="Telerik.Windows.Controls.Gauge.dll" />
+    <AssemblyPart x:Name="Telerik.Windows.Controls.GridView" Source="Telerik.Windows.Controls.GridView.dll" />
+    <AssemblyPart x:Name="Telerik.Windows.Controls.Input" Source="Telerik.Windows.Controls.Input.dll" />
+    <AssemblyPart x:Name="Telerik.Windows.Controls.MediaPlayer" Source="Telerik.Windows.Controls.MediaPlayer.dll" />
+    <AssemblyPart x:Name="Telerik.Windows.Controls.Navigation" Source="Telerik.Windows.Controls.Navigation.dll" />
+    <AssemblyPart x:Name="Telerik.Windows.Controls.RibbonBar" Source="Telerik.Windows.Controls.RibbonBar.dll" />
+    <AssemblyPart x:Name="Telerik.Windows.Controls.RichTextBoxUI" Source="Telerik.Windows.Controls.RichTextBoxUI.dll" />
+    <AssemblyPart x:Name="Telerik.Windows.Controls.Scheduler" Source="Telerik.Windows.Controls.Scheduler.dll" />
+    <AssemblyPart x:Name="Telerik.Windows.Controls.ScheduleView" Source="Telerik.Windows.Controls.ScheduleView.dll" />
+    <AssemblyPart x:Name="Telerik.Windows.Data" Source="Telerik.Windows.Data.dll" />
+    <AssemblyPart x:Name="Telerik.Windows.Themes.Expression_Dark" Source="Telerik.Windows.Themes.Expression_Dark.dll" />
+    <AssemblyPart x:Name="Telerik.Windows.Themes.Metro" Source="Telerik.Windows.Themes.Metro.dll" />
+    <AssemblyPart x:Name="Telerik.Windows.Themes.Office_Black" Source="Telerik.Windows.Themes.Office_Black.dll" />
+    <AssemblyPart x:Name="Telerik.Windows.Themes.Office_Blue" Source="Telerik.Windows.Themes.Office_Blue.dll" />
+    <AssemblyPart x:Name="Telerik.Windows.Themes.Office_Silver" Source="Telerik.Windows.Themes.Office_Silver.dll" />
+    <AssemblyPart x:Name="Telerik.Windows.Themes.Summer" Source="Telerik.Windows.Themes.Summer.dll" />
+    <AssemblyPart x:Name="Telerik.Windows.Themes.Transparent" Source="Telerik.Windows.Themes.Transparent.dll" />
+    <AssemblyPart x:Name="Telerik.Windows.Themes.Vista" Source="Telerik.Windows.Themes.Vista.dll" />
+    <AssemblyPart x:Name="Telerik.Windows.Themes.Windows7" Source="Telerik.Windows.Themes.Windows7.dll" />
+    <AssemblyPart x:Name="WebManagement.Common" Source="WebManagement.Common.dll" />
+    <AssemblyPart x:Name="WebManagement.Data" Source="WebManagement.Data.dll" />
+    <AssemblyPart x:Name="WebManagement.Model" Source="WebManagement.Model.dll" />
+    <AssemblyPart x:Name="WebManagement.ViewModel" Source="WebManagement.ViewModel.dll" />
+    <AssemblyPart x:Name="System.Xml.Linq" Source="System.Xml.Linq.dll" />
+    <AssemblyPart x:Name="System.Windows.Controls.Data.Input" Source="System.Windows.Controls.Data.Input.dll" />
+    <AssemblyPart x:Name="System.Windows.Data" Source="System.Windows.Data.dll" />
+    <AssemblyPart x:Name="Telerik.Windows.Documents" Source="Telerik.Windows.Documents.dll" />
+    <AssemblyPart x:Name="Telerik.Windows.Controls.ImageEditor" Source="Telerik.Windows.Controls.ImageEditor.dll" />
+  </Deployment.Parts>
+</Deployment>

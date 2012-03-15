@@ -1,0 +1,57 @@
+﻿<UserControl x:Class="WebManagement.Client.ListEventView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:common="clr-namespace:WebManagement.Common;assembly=WebManagement.Common"
+    xmlns:i="clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity"                
+    xmlns:cmd="clr-namespace:GalaSoft.MvvmLight.Command;assembly=GalaSoft.MvvmLight.Extras.SL4"          
+    xmlns:system="clr-namespace:System;assembly=mscorlib" 
+    xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation" 
+    xmlns:sdk="http://schemas.microsoft.com/winfx/2006/xaml/presentation/sdk"
+    mc:Ignorable="d"
+    d:DesignHeight="300" d:DesignWidth="700">
+    <UserControl.Resources>
+        <common:BooleanToVisibilityConverter x:Key="visibleConverter"/>
+    </UserControl.Resources>
+    <Grid x:Name="LayoutRoot">
+        <telerik:RadBusyIndicator Name="rbiLoading" IsBusy="{Binding IsLoading}">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition/>
+                    <RowDefinition Height="1"/>
+                </Grid.RowDefinitions>
+                <telerik:RadToolBar VerticalAlignment="Top">
+                    <telerik:RadButton Margin="2" Command="{Binding RefreshClickCommand}">
+                        <Image Source="/WebManagement.Client;component/Images/Common/refresh.png" Stretch="None" ToolTipService.ToolTip="Làm mới"/>
+                    </telerik:RadButton>
+                    <telerik:RadButton  Margin="2" Command="{Binding AddClickCommand}" Visibility="{Binding Path=VisibleAdd, Converter={StaticResource visibleConverter}}">
+                        <Image Source="/WebManagement.Client;component/Images/Common/add.png" Stretch="None" ToolTipService.ToolTip="Thêm mới"/>
+                    </telerik:RadButton>
+                    <telerik:RadButton Margin="2" Command="{Binding EditClickCommand}" Visibility="{Binding Path=VisibleEdit, Converter={StaticResource visibleConverter}}">
+                        <Image Source="/WebManagement.Client;component/Images/Common/edit.png" Stretch="None" ToolTipService.ToolTip="Sửa"/>
+                    </telerik:RadButton>
+                    <telerik:RadButton  Margin="2" Command="{Binding DeleteClickCommand}" Visibility="{Binding Path=VisibleDelete, Converter={StaticResource visibleConverter}}">
+                        <Image Source="/WebManagement.Client;component/Images/Common/delete.png" Stretch="None" ToolTipService.ToolTip="Xóa"/>
+                    </telerik:RadButton>
+                    <telerik:RadButton Margin="2" Command="{Binding ApprovedClickCommand}" Visibility="{Binding Path=VisibleApproved, Converter={StaticResource visibleConverter}}">
+                        <Image Source="/WebManagement.Client;component/Images/Common/approved.png" Stretch="None" ToolTipService.ToolTip="Gửi lên"/>
+                    </telerik:RadButton>
+                </telerik:RadToolBar>
+
+                <telerik:RadGridView Name="rtlData" Grid.Row="1" AutoGenerateColumns="False" ShowGroupPanel="False"
+                                 ItemsSource="{Binding ListData}" SelectedItem="{Binding SelectedItem, Mode=TwoWay}" IsReadOnly="True" RowIndicatorVisibility="Collapsed" CanUserDeleteRows="False" CanUserInsertRows="False">
+                    <telerik:RadGridView.Columns>
+                        <telerik:GridViewDataColumn Header="Nội dung"  DataMemberBinding="{Binding NoiDung}" Width="400" TextWrapping="Wrap"/>
+                        <telerik:GridViewDataColumn Header="Thời gian"  DataMemberBinding="{Binding ThoiGian}" DataFormatString="{}{0:dd/MM/yyyy hh:mm}"/>
+                        <telerik:GridViewDataColumn Header="Từ ngày"  DataMemberBinding="{Binding TuNgay}" DataFormatString="{}{0:dd/MM/yyyy}"/>
+                        <telerik:GridViewDataColumn Header="Đến ngày"  DataMemberBinding="{Binding TuNgay}" DataFormatString="{}{0:dd/MM/yyyy}"/>
+                        <telerik:GridViewDataColumn Header="Người tạo"  DataMemberBinding="{Binding NguoiTao}"/>
+                        <telerik:GridViewDataColumn Header="Ngày tạo"  DataMemberBinding="{Binding NgayTao}" DataFormatString="{}{0:dd/MM/yyyy}"/>
+                    </telerik:RadGridView.Columns>
+                </telerik:RadGridView>
+            </Grid>
+        </telerik:RadBusyIndicator>
+    </Grid>
+</UserControl>

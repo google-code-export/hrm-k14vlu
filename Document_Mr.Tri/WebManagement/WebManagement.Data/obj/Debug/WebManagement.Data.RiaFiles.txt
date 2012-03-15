@@ -1,0 +1,2 @@
+D:\Caps\Training\WebManagement\WebManagement.Data
+Generated_Code\WebManagement.Service.g.cs

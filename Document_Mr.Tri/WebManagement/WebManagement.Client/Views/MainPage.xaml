@@ -1,0 +1,22 @@
+﻿<UserControl x:Class="WebManagement.Client.MainPage"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:i="clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity"                
+             xmlns:cmd="clr-namespace:GalaSoft.MvvmLight.Command;assembly=GalaSoft.MvvmLight.Extras.SL4" 
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             xmlns:common="clr-namespace:WebManagement.Common;assembly=WebManagement.Common"             
+             xmlns:local="clr-namespace:WebManagement.Client"
+             xmlns:system="clr-namespace:System;assembly=mscorlib" 
+             xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
+             d:DesignHeight="400" d:DesignWidth="700"
+             Loaded="UserControl_Loaded">
+    <UserControl.Resources>
+        <common:BooleanToVisibilityConverter x:Key="booleanToVisibilityConverter"/>
+    </UserControl.Resources>
+    <Grid x:Name="LayoutRoot">
+        <ContentControl Name="contentMain" VerticalContentAlignment="Stretch" HorizontalContentAlignment="Stretch">            
+        </ContentControl>        
+    </Grid>
+</UserControl>
