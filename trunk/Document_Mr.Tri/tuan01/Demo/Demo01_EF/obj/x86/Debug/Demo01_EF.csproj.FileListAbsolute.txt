@@ -1,0 +1,19 @@
+D:\_Working\VS2010\Winform\Demo\Demo01_EF\bin\Debug\Demo01_EF.exe.config
+D:\_Working\VS2010\Winform\Demo\Demo01_EF\bin\Debug\Demo01_EF.exe
+D:\_Working\VS2010\Winform\Demo\Demo01_EF\bin\Debug\Demo01_EF.pdb
+D:\_Working\VS2010\Winform\Demo\Demo01_EF\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\_Working\VS2010\Winform\Demo\Demo01_EF\obj\x86\Debug\Demo01_EF.frmDemo01.resources
+D:\_Working\VS2010\Winform\Demo\Demo01_EF\obj\x86\Debug\Demo01_EF.frmDemo02.resources
+D:\_Working\VS2010\Winform\Demo\Demo01_EF\obj\x86\Debug\Demo01_EF.frmDemo02_Edit.resources
+D:\_Working\VS2010\Winform\Demo\Demo01_EF\obj\x86\Debug\Demo01_EF.frmDemo03.resources
+D:\_Working\VS2010\Winform\Demo\Demo01_EF\obj\x86\Debug\Demo01_EF.frmDemo04.resources
+D:\_Working\VS2010\Winform\Demo\Demo01_EF\obj\x86\Debug\Demo01_EF.frmMain.resources
+D:\_Working\VS2010\Winform\Demo\Demo01_EF\obj\x86\Debug\Demo01_EF.Properties.Resources.resources
+D:\_Working\VS2010\Winform\Demo\Demo01_EF\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\_Working\VS2010\Winform\Demo\Demo01_EF\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\_Working\VS2010\Winform\Demo\Demo01_EF\obj\x86\Debug\Demo01_EF.exe
+D:\_Working\VS2010\Winform\Demo\Demo01_EF\obj\x86\Debug\Demo01_EF.pdb
+D:\Caps\Training\tuan01\Demo\Demo01_EF\bin\Debug\Demo01_EF.exe.config
+D:\Caps\Training\tuan01\Demo\Demo01_EF\obj\x86\Debug\Demo01_EF.pdb
+D:\A STUDY\Caps\Training\tuan01\Demo\Demo01_EF\bin\Debug\Demo01_EF.exe.config
+D:\A STUDY\Caps\Training\tuan01\Demo\Demo01_EF\obj\x86\Debug\Demo01_EF.pdb
